@@ -1,0 +1,129 @@
+{
+  "_project": "맘마중 (Mom's Journey) — 모성보호 HR 사각지대 분석 플랫폼",
+  "_version": "2.0",
+  "_updated": "2026-04-24",
+
+  "schemas": {
+
+    "hr_law": {
+      "description": "법제처 API로 수집한 모성보호 관련 법령 조문 — RAG 지식베이스 구성용",
+      "source": "법제처 공공데이터 API (law.go.kr/DRF)",
+      "analysis_purpose": "법령 Q&A 챗봇의 근거 문서로 활용 (RAG Retrieval)",
+      "fields": {
+        "law_id":         { "type": "string",  "example": "근로기준법_74",        "desc": "법령명_조번호 조합 고유 ID" },
+        "law_name":       { "type": "string",  "example": "근로기준법",            "desc": "법령명" },
+        "article_number": { "type": "string",  "example": "제74조",               "desc": "조문 번호" },
+        "article_title":  { "type": "string",  "example": "임산부의 보호",         "desc": "조문 제목" },
+        "paragraph_no":   { "type": "string",  "example": "①",                   "desc": "항 번호 (①②③...)" },
+        "content":        { "type": "string",  "example": "사용자는 임신 중의...", "desc": "항 전문 텍스트" },
+        "category":       { "type": "string",  "example": "출산전후휴가",          "desc": "분류 태그", "values": ["출산전후휴가", "육아휴직", "단축근무", "임신중보호", "급여"] },
+        "effective_date": { "type": "string",  "example": "2024-10-22",           "desc": "시행일 (YYYY-MM-DD)" },
+        "source":         { "type": "string",  "example": "law.go.kr",            "desc": "출처 URL" },
+        "collected_at":   { "type": "string",  "example": "2026-04-21",           "desc": "수집일" }
+      }
+    },
+
+    "hr_community": {
+      "description": "임산부·육아 커뮤니티 게시글 — 모성보호 HR 사각지대 발굴용",
+      "source": "온라인 커뮤니티 (맘카페류) 텍스트 데이터",
+      "analysis_purpose": "LDA 토픽 모델링으로 HR 사각지대 유형 분류 및 빈도 파악",
+      "analysis_pipeline": "텍스트 전처리(형태소분석) → LDA 토픽 모델링(k=5) → 위반유형 레이블링",
+      "fields": {
+        "post_id":          { "type": "string",  "example": "uuid-xxxx",          "desc": "고유 ID (UUID v4)" },
+        "cafe_name":        { "type": "string",  "example": "맘카페Seoul",         "desc": "커뮤니티명" },
+        "title":            { "type": "string",  "example": "복직 후 자리가 없어요","desc": "게시글 제목" },
+        "content":          { "type": "string",  "example": "육아휴직 끝나고...",  "desc": "게시글 본문 (LDA 입력 텍스트)" },
+        "search_keyword":   { "type": "string",  "example": "복직후",              "desc": "수집 검색 키워드" },
+        "tags":             { "type": "array",   "example": ["#소규모기업","#복직"],"desc": "게시글 태그" },
+        "company_size":     { "type": "string",  "example": "20인 미만",           "desc": "언급된 회사 규모", "values": ["5인 미만", "5-20인 미만", "20-100인 미만", "100인 이상", "미상"] },
+        "industry":         { "type": "string",  "example": "제조업",              "desc": "언급된 업종", "values": ["제조업", "서비스업", "IT", "유통/물류", "의료", "교육", "금융", "기타"] },
+        "pregnancy_stage":  { "type": "string",  "example": "산후",                "desc": "임신/출산 단계", "values": ["임신초기", "임신중기", "임신후기", "출산직후", "산후6개월이내", "산후1년이내"] },
+        "hr_violation_type":{ "type": "string",  "example": "직무변경_불이익",     "desc": "HR 위반 유형 레이블", "values": ["직무변경_불이익", "복직_거부", "단축근무_거절", "야근_강요", "승진_누락", "임신_은폐_압박", "정보_접근_어려움", "기타"] },
+        "lda_topic_id":     { "type": "integer", "example": 0,                     "desc": "LDA 토픽 번호 (0-4)" },
+        "lda_topic_label":  { "type": "string",  "example": "복직_불이익",         "desc": "LDA 토픽 레이블", "values": ["복직_불이익", "단축근무_거절", "직장내_눈치", "법령_정보_부족", "임신_은폐"] },
+        "sentiment":        { "type": "string",  "example": "불안",                "desc": "게시글 감정 레이블", "values": ["불안", "억울", "막막", "분노", "슬픔", "희망"] },
+        "sentiment_score":  { "type": "float",   "example": 0.23,                  "desc": "감성 점수 (0=부정, 1=긍정)" },
+        "view_count":       { "type": "integer", "example": 4877,                  "desc": "조회수" },
+        "like_count":       { "type": "integer", "example": 71,                    "desc": "공감수" },
+        "comment_count":    { "type": "integer", "example": 2,                     "desc": "댓글수" },
+        "comments":         { "type": "array",   "example": [],                    "desc": "댓글 목록 (comment_id, content, likes, created_at)" },
+        "crawled_at":       { "type": "string",  "example": "2025-01-23",          "desc": "수집일 (YYYY-MM-DD)" }
+      },
+      "topic_definitions": {
+        "0_복직_불이익":    "육아휴직 복직 후 직무 변경·강등·소외 경험",
+        "1_단축근무_거절":  "육아기 근로시간 단축 신청 거절 또는 불이익",
+        "2_직장내_눈치":    "임신·육아 관련 신청 시 상사/동료 눈치 및 직장 분위기",
+        "3_법령_정보_부족": "모성보호 법령 정보 접근 어려움, 소규모 사업장 HR 공백",
+        "4_임신_은폐":      "임신 사실 은폐 압박, 퇴직 권고 등 고용불안"
+      }
+    },
+
+    "wellness_review": {
+      "description": "임산부 관련 제품 리뷰 — 임신 시기별 제품 신뢰도 기반 추천용",
+      "source": "이커머스 플랫폼 제품 리뷰 데이터",
+      "analysis_purpose": "감성분석 기반 신뢰점수 산출 → 임신 시기별 맞춤 제품 추천",
+      "analysis_pipeline": "리뷰 텍스트 감성분석 → trust_score 산출 → 임신주수별 추천 순위화",
+      "trust_score_formula": "trust_score = (rating/5) × 0.6 + sentiment_score × 0.4",
+      "trust_score_rationale": "별점은 수치적 만족도(60%), 감성점수는 텍스트 기반 실제 경험(40%) 반영. 별점 단독 사용 시 극단값 편향 보정 목적.",
+      "fields": {
+        "review_id":            { "type": "string",  "example": "uuid-xxxx",                "desc": "고유 ID (UUID v4)" },
+        "product_id":           { "type": "string",  "example": "36703705",                 "desc": "플랫폼 내 상품 ID" },
+        "product_name":         { "type": "string",  "example": "마더케어 임산부 배 튼살크림","desc": "상품명" },
+        "product_category":     { "type": "string",  "example": "뷰티",                     "desc": "상품 카테고리", "values": ["영양제", "뷰티", "용품", "의류", "식품"] },
+        "search_keyword":       { "type": "string",  "example": "임산부 바디로션",           "desc": "수집 검색 키워드" },
+        "period":               { "type": "string",  "example": "후기",                     "desc": "임신 시기", "values": ["초기", "중기", "후기"] },
+        "pregnancy_week":       { "type": "integer", "example": 37,                         "desc": "리뷰어 언급 임신 주수 (1-40)" },
+        "pregnancy_week_range": { "type": "string",  "example": "28-40",                    "desc": "임신 시기 주수 범위", "values": ["1-12 (초기)", "13-27 (중기)", "28-40 (후기)"] },
+        "review_title":         { "type": "string",  "example": "가격 대비 최고",            "desc": "리뷰 제목" },
+        "review_content":       { "type": "string",  "example": "성분도 좋고...",            "desc": "리뷰 본문 (감성분석 입력 텍스트)" },
+        "rating":               { "type": "float",   "example": 4.1,                        "desc": "별점 (1.0-5.0)" },
+        "sentiment_score":      { "type": "float",   "example": 0.95,                       "desc": "감성 점수 (0=부정, 1=긍정), 텍스트 분석 산출값" },
+        "sentiment_label":      { "type": "string",  "example": "긍정",                     "desc": "감성 레이블", "values": ["긍정", "부정"] },
+        "trust_score":          { "type": "float",   "example": 0.872,                      "desc": "신뢰점수 = rating/5×0.6 + sentiment_score×0.4 (0-1)" },
+        "helpful_count":        { "type": "integer", "example": 73,                         "desc": "도움됨 수" },
+        "verified_purchase":    { "type": "boolean", "example": true,                       "desc": "구매 인증 여부" },
+        "option":               { "type": "string",  "example": "3개",                      "desc": "구매 옵션" },
+        "crawled_at":           { "type": "string",  "example": "2024-06-30",               "desc": "수집일 (YYYY-MM-DD)" }
+      },
+      "recommendation_logic": "임신 시기(초기/중기/후기) × 카테고리별 trust_score 평균 기준 상위 N개 추천"
+    },
+
+    "mobility_route": {
+      "description": "산부인과 도보 경로 데이터 — 임산부 이동 접근성 평가 및 최적 경로 추천용",
+      "source": "공공데이터포털 보행환경DB + 지도 API (네이버 Directions)",
+      "analysis_purpose": "이동 스트레스 지수 산출 → 병원별 배리어프리 최적 경로 제시",
+      "analysis_pipeline": "경로 속성 수집 → 스트레스 지수 산출 → 병원별 경로 순위화",
+      "stress_index_formula": "stress_index = slope×0.40 + crosswalk×0.25 + distance×0.20 + (1-elevator)×0.10 + (1-barrier_free_ratio)×0.05",
+      "stress_index_rationale": {
+        "slope_40pct":        "경사도: 임산부 낙상 위험 가장 높은 요인 (WHO 보행안전 가이드라인)",
+        "crosswalk_25pct":    "횡단보도: 대기시간·신호 스트레스 (임산부 피로도 연구)",
+        "distance_20pct":     "거리: 보행 피로 직접 요인",
+        "elevator_10pct":     "엘리베이터 부재: 계단 이용 시 관절 부담",
+        "barrier_free_5pct":  "배리어프리 비율: 전반적 접근성 보조 지표"
+      },
+      "fields": {
+        "route_id":           { "type": "string",  "example": "uuid-xxxx",         "desc": "고유 ID (UUID v4)" },
+        "hospital_name":      { "type": "string",  "example": "이화여대목동병원",  "desc": "산부인과명" },
+        "hospital_district":  { "type": "string",  "example": "양천구",            "desc": "병원 행정구" },
+        "destination":        { "type": "object",  "example": {"name":"..","lat":37.52,"lng":126.87}, "desc": "목적지 (병원) 좌표" },
+        "origin":             { "type": "object",  "example": {"name":"..","lat":37.53,"lng":126.87}, "desc": "출발지 (주거지/대중교통) 좌표" },
+        "route_name":         { "type": "string",  "example": "경로 A",            "desc": "경로 식별명" },
+        "summary": {
+          "distance":         { "type": "integer", "example": 716,  "unit": "미터", "desc": "총 이동 거리" },
+          "duration":         { "type": "integer", "example": 650,  "unit": "초",   "desc": "예상 소요 시간" },
+          "elevator_count":   { "type": "integer", "example": 2,                    "desc": "경로 내 엘리베이터 수" },
+          "slope_section_count":{ "type": "integer","example": 1,                   "desc": "급경사 구간 수 (경사도 5도 이상)" },
+          "crosswalk_count":  { "type": "integer", "example": 6,                    "desc": "횡단보도 수" },
+          "barrier_free_ratio":{ "type": "float",  "example": 0.75, "range": "0-1", "desc": "배리어프리 구간 비율" }
+        },
+        "stress_index":       { "type": "float",   "example": 0.53, "range": "0-1", "desc": "이동 스트레스 지수 (낮을수록 임산부 친화적)", "grade": {"추천":"<0.35", "보통":"0.35-0.55", "비추천":">=0.55"} },
+        "path":               { "type": "array",   "example": [[126.87,37.52]],     "desc": "경로 좌표 배열 [[lng,lat],...]" },
+        "sections":           { "type": "array",   "example": [],                   "desc": "경로 구간별 상세 정보" },
+        "travel_mode":        { "type": "string",  "example": "WALKING",            "desc": "이동 수단", "values": ["WALKING"] },
+        "data_source":        { "type": "string",  "example": "공공데이터포털_보행환경DB", "desc": "데이터 출처" },
+        "collected_at":       { "type": "string",  "example": "2024-01-11",         "desc": "수집일 (YYYY-MM-DD)" }
+      }
+    }
+
+  }
+}

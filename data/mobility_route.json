@@ -1,0 +1,4752 @@
+[
+  {
+    "route_id": "3465b09d-f1f6-4d36-bfdb-7d2625d43c84",
+    "hospital_name": "이화여대목동병원",
+    "hospital_district": "양천구",
+    "destination": {
+      "name": "이화여대목동병원",
+      "lat": 37.5279,
+      "lng": 126.8746
+    },
+    "origin": {
+      "name": "양천구 출발지",
+      "lat": 37.5313262,
+      "lng": 126.8774867
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 430,
+      "duration": 390,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.8774867,
+        37.5313262
+      ],
+      [
+        126.8769441,
+        37.5309503
+      ],
+      [
+        126.8757619,
+        37.5303423
+      ],
+      [
+        126.8757738,
+        37.5304362
+      ],
+      [
+        126.8764182,
+        37.5283971
+      ],
+      [
+        126.875272,
+        37.5285004
+      ],
+      [
+        126.8755249,
+        37.5281178
+      ],
+      [
+        126.8746,
+        37.5279
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "왕십리 사거리",
+        "distance": 143,
+        "duration": 119,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "마포 길",
+        "distance": 143,
+        "duration": 119,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 교차로",
+        "distance": 144,
+        "duration": 120,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.384,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-03-04"
+  },
+  {
+    "route_id": "4c6938f5-59db-4bd6-9dbf-e4c53460f40a",
+    "hospital_name": "이화여대목동병원",
+    "hospital_district": "양천구",
+    "destination": {
+      "name": "이화여대목동병원",
+      "lat": 37.5279,
+      "lng": 126.8746
+    },
+    "origin": {
+      "name": "양천구 출발지",
+      "lat": 37.5303072,
+      "lng": 126.8692503
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 494,
+      "duration": 449,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.8692503,
+        37.5303072
+      ],
+      [
+        126.8696826,
+        37.5297563
+      ],
+      [
+        126.8702366,
+        37.5298359
+      ],
+      [
+        126.8719326,
+        37.5283829
+      ],
+      [
+        126.8716278,
+        37.5292822
+      ],
+      [
+        126.8724213,
+        37.5279612
+      ],
+      [
+        126.8747623,
+        37.5278321
+      ],
+      [
+        126.8746,
+        37.5279
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 지하보도",
+        "distance": 164,
+        "duration": 136,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "신촌 대로",
+        "distance": 165,
+        "duration": 137,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "홍대 대로",
+        "distance": 165,
+        "duration": 137,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.505,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-10-16"
+  },
+  {
+    "route_id": "aa5a3c52-8dbb-4a95-9dc1-78d165e6295e",
+    "hospital_name": "이화여대목동병원",
+    "hospital_district": "양천구",
+    "destination": {
+      "name": "이화여대목동병원",
+      "lat": 37.5279,
+      "lng": 126.8746
+    },
+    "origin": {
+      "name": "양천구 출발지",
+      "lat": 37.5338205,
+      "lng": 126.8686734
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 547,
+      "duration": 497,
+      "elevator_count": 2,
+      "slope_section_count": 2,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.8686734,
+        37.5338205
+      ],
+      [
+        126.8695938,
+        37.5337836
+      ],
+      [
+        126.8705444,
+        37.5313456
+      ],
+      [
+        126.8711758,
+        37.5322471
+      ],
+      [
+        126.8721777,
+        37.5304264
+      ],
+      [
+        126.872065,
+        37.5289833
+      ],
+      [
+        126.8745183,
+        37.5289015
+      ],
+      [
+        126.8746,
+        37.5279
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "건대 사거리",
+        "distance": 182,
+        "duration": 151,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "이태원 교차로",
+        "distance": 182,
+        "duration": 151,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "여의도 로",
+        "distance": 183,
+        "duration": 152,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.672,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-05-05"
+  },
+  {
+    "route_id": "9ce2a543-3a1e-406d-aa34-f3b11c1957b4",
+    "hospital_name": "이화여대목동병원",
+    "hospital_district": "양천구",
+    "destination": {
+      "name": "이화여대목동병원",
+      "lat": 37.5279,
+      "lng": 126.8746
+    },
+    "origin": {
+      "name": "양천구 출발지",
+      "lat": 37.5246357,
+      "lng": 126.8727486
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 500,
+      "duration": 454,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 6,
+      "barrier_free_ratio": 0.25
+    },
+    "path": [
+      [
+        126.8727486,
+        37.5246357
+      ],
+      [
+        126.8727849,
+        37.5252795
+      ],
+      [
+        126.8723738,
+        37.5260735
+      ],
+      [
+        126.8744895,
+        37.5261429
+      ],
+      [
+        126.8735435,
+        37.5267721
+      ],
+      [
+        126.8740991,
+        37.5264968
+      ],
+      [
+        126.8735823,
+        37.5270532
+      ],
+      [
+        126.8746,
+        37.5279
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 횡단보도 구간",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 사거리",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 교차로",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "마포 대로",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.613,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-04-03"
+  },
+  {
+    "route_id": "c19c2889-fd98-4b14-a6df-da25e60ff72f",
+    "hospital_name": "이화여대목동병원",
+    "hospital_district": "양천구",
+    "destination": {
+      "name": "이화여대목동병원",
+      "lat": 37.5279,
+      "lng": 126.8746
+    },
+    "origin": {
+      "name": "양천구 출발지",
+      "lat": 37.531137,
+      "lng": 126.8759773
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 442,
+      "duration": 401,
+      "elevator_count": 3,
+      "slope_section_count": 0,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.75
+    },
+    "path": [
+      [
+        126.8759773,
+        37.531137
+      ],
+      [
+        126.8767349,
+        37.5311475
+      ],
+      [
+        126.8758254,
+        37.5305765
+      ],
+      [
+        126.8745568,
+        37.5303809
+      ],
+      [
+        126.8757374,
+        37.5291641
+      ],
+      [
+        126.8744793,
+        37.5293532
+      ],
+      [
+        126.8750798,
+        37.5279494
+      ],
+      [
+        126.8746,
+        37.5279
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 지하보도",
+        "distance": 110,
+        "duration": 91,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "왕십리 횡단보도 구간",
+        "distance": 110,
+        "duration": 91,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 사거리",
+        "distance": 111,
+        "duration": 92,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "이태원 길",
+        "distance": 111,
+        "duration": 92,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.182,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-02-03"
+  },
+  {
+    "route_id": "8f641c54-facb-4f6c-b696-95e04271259b",
+    "hospital_name": "강남차병원",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "강남차병원",
+      "lat": 37.5043,
+      "lng": 127.0245
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.5056066,
+      "lng": 127.0280139
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 545,
+      "duration": 495,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.0280139,
+        37.5056066
+      ],
+      [
+        127.0279503,
+        37.504879
+      ],
+      [
+        127.0262996,
+        37.5052393
+      ],
+      [
+        127.0259668,
+        37.5052949
+      ],
+      [
+        127.0267682,
+        37.5055555
+      ],
+      [
+        127.0262197,
+        37.5036969
+      ],
+      [
+        127.0255777,
+        37.5052131
+      ],
+      [
+        127.0245,
+        37.5043
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 횡단보도 구간",
+        "distance": 136,
+        "duration": 113,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 횡단보도 구간",
+        "distance": 136,
+        "duration": 113,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "홍대 교차로",
+        "distance": 136,
+        "duration": 113,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "목동 횡단보도 구간",
+        "distance": 137,
+        "duration": 114,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.5,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-08-10"
+  },
+  {
+    "route_id": "904754fe-5eb3-46a1-b65d-76d30834f2c0",
+    "hospital_name": "강남차병원",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "강남차병원",
+      "lat": 37.5043,
+      "lng": 127.0245
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.5067549,
+      "lng": 127.0251297
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 611,
+      "duration": 555,
+      "elevator_count": 2,
+      "slope_section_count": 4,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0251297,
+        37.5067549
+      ],
+      [
+        127.0254122,
+        37.5054354
+      ],
+      [
+        127.0255507,
+        37.5065648
+      ],
+      [
+        127.0243416,
+        37.5060418
+      ],
+      [
+        127.024064,
+        37.5055436
+      ],
+      [
+        127.0246846,
+        37.5049144
+      ],
+      [
+        127.0253382,
+        37.5049728
+      ],
+      [
+        127.0245,
+        37.5043
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 육교구간",
+        "distance": 152,
+        "duration": 126,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "신촌 지하보도",
+        "distance": 153,
+        "duration": 127,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "건대 로",
+        "distance": 153,
+        "duration": 127,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "여의도 횡단보도 구간",
+        "distance": 153,
+        "duration": 127,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.632,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-07-27"
+  },
+  {
+    "route_id": "f6ae7712-1065-4b3f-b01c-91cae71e7f2c",
+    "hospital_name": "강남차병원",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "강남차병원",
+      "lat": 37.5043,
+      "lng": 127.0245
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.5060844,
+      "lng": 127.0256087
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 720,
+      "duration": 654,
+      "elevator_count": 2,
+      "slope_section_count": 2,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 1.0
+    },
+    "path": [
+      [
+        127.0256087,
+        37.5060844
+      ],
+      [
+        127.0249213,
+        37.5051549
+      ],
+      [
+        127.0244983,
+        37.5057106
+      ],
+      [
+        127.0261042,
+        37.5062712
+      ],
+      [
+        127.0249751,
+        37.5053838
+      ],
+      [
+        127.0254506,
+        37.5045936
+      ],
+      [
+        127.0247916,
+        37.5054423
+      ],
+      [
+        127.0245,
+        37.5043
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "왕십리 횡단보도 구간",
+        "distance": 360,
+        "duration": 300,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "목동 대로",
+        "distance": 360,
+        "duration": 300,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.596,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-01-17"
+  },
+  {
+    "route_id": "7debd469-0a67-470d-9b9b-cbce1bed8622",
+    "hospital_name": "강남차병원",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "강남차병원",
+      "lat": 37.5043,
+      "lng": 127.0245
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.5066,
+      "lng": 127.0231313
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 214,
+      "duration": 194,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.0231313,
+        37.5066
+      ],
+      [
+        127.022556,
+        37.5061394
+      ],
+      [
+        127.0235382,
+        37.5067629
+      ],
+      [
+        127.0240608,
+        37.505877
+      ],
+      [
+        127.0245175,
+        37.5054019
+      ],
+      [
+        127.0238814,
+        37.5049188
+      ],
+      [
+        127.0234717,
+        37.503651
+      ],
+      [
+        127.0245,
+        37.5043
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 언덕길",
+        "distance": 71,
+        "duration": 59,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "마포 횡단보도 구간",
+        "distance": 71,
+        "duration": 59,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "여의도 횡단보도 구간",
+        "distance": 72,
+        "duration": 60,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.514,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-07-17"
+  },
+  {
+    "route_id": "dd8d9b14-aabf-42d3-b2ac-63da97ad51e4",
+    "hospital_name": "강남차병원",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "강남차병원",
+      "lat": 37.5043,
+      "lng": 127.0245
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.499959,
+      "lng": 127.0222783
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 806,
+      "duration": 732,
+      "elevator_count": 0,
+      "slope_section_count": 3,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.0222783,
+        37.499959
+      ],
+      [
+        127.0235606,
+        37.5003965
+      ],
+      [
+        127.0232657,
+        37.5008321
+      ],
+      [
+        127.0222378,
+        37.5010148
+      ],
+      [
+        127.024537,
+        37.5029063
+      ],
+      [
+        127.0243684,
+        37.5029738
+      ],
+      [
+        127.0231896,
+        37.5045119
+      ],
+      [
+        127.0245,
+        37.5043
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 육교구간",
+        "distance": 268,
+        "duration": 223,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "목동 육교구간",
+        "distance": 269,
+        "duration": 224,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "여의도 사거리",
+        "distance": 269,
+        "duration": 224,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.748,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-12-26"
+  },
+  {
+    "route_id": "8a028db4-feb1-4b24-8673-ae24d6ff5085",
+    "hospital_name": "제일병원",
+    "hospital_district": "중구",
+    "destination": {
+      "name": "제일병원",
+      "lat": 37.5639,
+      "lng": 126.9888
+    },
+    "origin": {
+      "name": "중구 출발지",
+      "lat": 37.566349,
+      "lng": 126.9935017
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 242,
+      "duration": 219,
+      "elevator_count": 2,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.9935017,
+        37.566349
+      ],
+      [
+        126.9938036,
+        37.5668843
+      ],
+      [
+        126.9920524,
+        37.5646524
+      ],
+      [
+        126.9912843,
+        37.5649473
+      ],
+      [
+        126.9916476,
+        37.5655854
+      ],
+      [
+        126.9903806,
+        37.5641374
+      ],
+      [
+        126.989702,
+        37.5633338
+      ],
+      [
+        126.9888,
+        37.5639
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "왕십리 길",
+        "distance": 80,
+        "duration": 66,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "강남 육교구간",
+        "distance": 81,
+        "duration": 67,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "건대 사거리",
+        "distance": 81,
+        "duration": 67,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.399,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-10-12"
+  },
+  {
+    "route_id": "becf7720-2d7d-4ed2-82c8-ea58653db256",
+    "hospital_name": "제일병원",
+    "hospital_district": "중구",
+    "destination": {
+      "name": "제일병원",
+      "lat": 37.5639,
+      "lng": 126.9888
+    },
+    "origin": {
+      "name": "중구 출발지",
+      "lat": 37.5593198,
+      "lng": 126.9891497
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 729,
+      "duration": 662,
+      "elevator_count": 3,
+      "slope_section_count": 1,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9891497,
+        37.5593198
+      ],
+      [
+        126.9893814,
+        37.5603383
+      ],
+      [
+        126.9881951,
+        37.5611916
+      ],
+      [
+        126.9896055,
+        37.560344
+      ],
+      [
+        126.9886759,
+        37.5617945
+      ],
+      [
+        126.9890386,
+        37.5632791
+      ],
+      [
+        126.9878967,
+        37.5640393
+      ],
+      [
+        126.9888,
+        37.5639
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 로",
+        "distance": 182,
+        "duration": 151,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "신촌 지하보도",
+        "distance": 182,
+        "duration": 151,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "여의도 횡단보도 구간",
+        "distance": 182,
+        "duration": 151,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "건대 언덕길",
+        "distance": 183,
+        "duration": 152,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.43,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-10-24"
+  },
+  {
+    "route_id": "e9ed1e28-e00c-4f6a-8b2c-628d0c8f3086",
+    "hospital_name": "제일병원",
+    "hospital_district": "중구",
+    "destination": {
+      "name": "제일병원",
+      "lat": 37.5639,
+      "lng": 126.9888
+    },
+    "origin": {
+      "name": "중구 출발지",
+      "lat": 37.5589825,
+      "lng": 126.9917754
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 873,
+      "duration": 793,
+      "elevator_count": 0,
+      "slope_section_count": 1,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        126.9917754,
+        37.5589825
+      ],
+      [
+        126.9911206,
+        37.5596616
+      ],
+      [
+        126.9900746,
+        37.5597573
+      ],
+      [
+        126.9910947,
+        37.5611736
+      ],
+      [
+        126.9893645,
+        37.5620825
+      ],
+      [
+        126.9900757,
+        37.5616788
+      ],
+      [
+        126.9885006,
+        37.5630031
+      ],
+      [
+        126.9888,
+        37.5639
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 로",
+        "distance": 291,
+        "duration": 242,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "여의도 지하보도",
+        "distance": 291,
+        "duration": 242,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "강남 대로",
+        "distance": 291,
+        "duration": 242,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.727,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-02-16"
+  },
+  {
+    "route_id": "3595a2be-c6cb-496f-ad58-bf7952e73b8f",
+    "hospital_name": "제일병원",
+    "hospital_district": "중구",
+    "destination": {
+      "name": "제일병원",
+      "lat": 37.5639,
+      "lng": 126.9888
+    },
+    "origin": {
+      "name": "중구 출발지",
+      "lat": 37.5631214,
+      "lng": 126.9888696
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 476,
+      "duration": 432,
+      "elevator_count": 3,
+      "slope_section_count": 2,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.9888696,
+        37.5631214
+      ],
+      [
+        126.9890156,
+        37.5622384
+      ],
+      [
+        126.989589,
+        37.5625965
+      ],
+      [
+        126.9878399,
+        37.563449
+      ],
+      [
+        126.989706,
+        37.5637154
+      ],
+      [
+        126.9890841,
+        37.5627771
+      ],
+      [
+        126.9892182,
+        37.5632279
+      ],
+      [
+        126.9888,
+        37.5639
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 교차로",
+        "distance": 158,
+        "duration": 131,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "강남 교차로",
+        "distance": 159,
+        "duration": 132,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "성북 언덕길",
+        "distance": 159,
+        "duration": 132,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.549,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-06-16"
+  },
+  {
+    "route_id": "57dd25ab-22ac-4cce-82ab-a44bc8e5d24d",
+    "hospital_name": "제일병원",
+    "hospital_district": "중구",
+    "destination": {
+      "name": "제일병원",
+      "lat": 37.5639,
+      "lng": 126.9888
+    },
+    "origin": {
+      "name": "중구 출발지",
+      "lat": 37.5692438,
+      "lng": 126.9926019
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 817,
+      "duration": 742,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 1.0
+    },
+    "path": [
+      [
+        126.9926019,
+        37.5692438
+      ],
+      [
+        126.9924365,
+        37.567846
+      ],
+      [
+        126.9909964,
+        37.5681512
+      ],
+      [
+        126.9908119,
+        37.5662261
+      ],
+      [
+        126.9912973,
+        37.5659692
+      ],
+      [
+        126.9904759,
+        37.5662752
+      ],
+      [
+        126.9893061,
+        37.5644097
+      ],
+      [
+        126.9888,
+        37.5639
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 횡단보도 구간",
+        "distance": 408,
+        "duration": 340,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "신촌 사거리",
+        "distance": 409,
+        "duration": 340,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.467,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-11-03"
+  },
+  {
+    "route_id": "be85492c-09d0-4630-b140-ff23b457ba22",
+    "hospital_name": "서울아산병원 산부인과",
+    "hospital_district": "송파구",
+    "destination": {
+      "name": "서울아산병원 산부인과",
+      "lat": 37.527,
+      "lng": 127.1081
+    },
+    "origin": {
+      "name": "송파구 출발지",
+      "lat": 37.5247798,
+      "lng": 127.1072288
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 238,
+      "duration": 216,
+      "elevator_count": 2,
+      "slope_section_count": 1,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.1072288,
+        37.5247798
+      ],
+      [
+        127.1064405,
+        37.525592
+      ],
+      [
+        127.1083718,
+        37.5251396
+      ],
+      [
+        127.1074834,
+        37.5264557
+      ],
+      [
+        127.106999,
+        37.5266901
+      ],
+      [
+        127.1077758,
+        37.5254534
+      ],
+      [
+        127.1081628,
+        37.5273022
+      ],
+      [
+        127.1081,
+        37.527
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "목동 사거리",
+        "distance": 59,
+        "duration": 49,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "성북 교차로",
+        "distance": 59,
+        "duration": 49,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "강남 횡단보도 구간",
+        "distance": 60,
+        "duration": 50,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "이태원 언덕길",
+        "distance": 60,
+        "duration": 50,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.453,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-04-28"
+  },
+  {
+    "route_id": "57772508-6841-4523-805b-10cd3d565706",
+    "hospital_name": "서울아산병원 산부인과",
+    "hospital_district": "송파구",
+    "destination": {
+      "name": "서울아산병원 산부인과",
+      "lat": 37.527,
+      "lng": 127.1081
+    },
+    "origin": {
+      "name": "송파구 출발지",
+      "lat": 37.531036,
+      "lng": 127.1031571
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 573,
+      "duration": 520,
+      "elevator_count": 1,
+      "slope_section_count": 0,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.1031571,
+        37.531036
+      ],
+      [
+        127.1043051,
+        37.5307082
+      ],
+      [
+        127.1055242,
+        37.5307342
+      ],
+      [
+        127.1048972,
+        37.5287106
+      ],
+      [
+        127.105408,
+        37.5288065
+      ],
+      [
+        127.1072346,
+        37.5286942
+      ],
+      [
+        127.1070585,
+        37.5266476
+      ],
+      [
+        127.1081,
+        37.527
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 횡단보도 구간",
+        "distance": 286,
+        "duration": 238,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "여의도 지하보도",
+        "distance": 287,
+        "duration": 239,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.381,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-09-04"
+  },
+  {
+    "route_id": "0c3c9b3b-9471-43e0-b4c4-b18e8d096edb",
+    "hospital_name": "서울아산병원 산부인과",
+    "hospital_district": "송파구",
+    "destination": {
+      "name": "서울아산병원 산부인과",
+      "lat": 37.527,
+      "lng": 127.1081
+    },
+    "origin": {
+      "name": "송파구 출발지",
+      "lat": 37.5314563,
+      "lng": 127.1039166
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 495,
+      "duration": 449,
+      "elevator_count": 2,
+      "slope_section_count": 1,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.75
+    },
+    "path": [
+      [
+        127.1039166,
+        37.5314563
+      ],
+      [
+        127.1043255,
+        37.5308796
+      ],
+      [
+        127.1052032,
+        37.5297291
+      ],
+      [
+        127.105568,
+        37.5286243
+      ],
+      [
+        127.106403,
+        37.5282973
+      ],
+      [
+        127.1078977,
+        37.5292527
+      ],
+      [
+        127.1083643,
+        37.5284186
+      ],
+      [
+        127.1081,
+        37.527
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 횡단보도 구간",
+        "distance": 123,
+        "duration": 102,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "이태원 교차로",
+        "distance": 124,
+        "duration": 103,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "목동 지하보도",
+        "distance": 124,
+        "duration": 103,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "건대 언덕길",
+        "distance": 124,
+        "duration": 103,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.294,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-07-29"
+  },
+  {
+    "route_id": "74ea46ae-ceb8-4ffb-b17a-a4fa97d50f75",
+    "hospital_name": "서울아산병원 산부인과",
+    "hospital_district": "송파구",
+    "destination": {
+      "name": "서울아산병원 산부인과",
+      "lat": 37.527,
+      "lng": 127.1081
+    },
+    "origin": {
+      "name": "송파구 출발지",
+      "lat": 37.5231933,
+      "lng": 127.1119958
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 728,
+      "duration": 661,
+      "elevator_count": 1,
+      "slope_section_count": 0,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.1119958,
+        37.5231933
+      ],
+      [
+        127.111521,
+        37.5239252
+      ],
+      [
+        127.1114141,
+        37.5239475
+      ],
+      [
+        127.110313,
+        37.524039
+      ],
+      [
+        127.1102309,
+        37.5257682
+      ],
+      [
+        127.1094133,
+        37.5262445
+      ],
+      [
+        127.107856,
+        37.5272351
+      ],
+      [
+        127.1081,
+        37.527
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 지하보도",
+        "distance": 364,
+        "duration": 303,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "목동 로",
+        "distance": 364,
+        "duration": 303,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.297,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-12-04"
+  },
+  {
+    "route_id": "48488f46-535b-464b-bcc3-cf48fe1399af",
+    "hospital_name": "서울아산병원 산부인과",
+    "hospital_district": "송파구",
+    "destination": {
+      "name": "서울아산병원 산부인과",
+      "lat": 37.527,
+      "lng": 127.1081
+    },
+    "origin": {
+      "name": "송파구 출발지",
+      "lat": 37.5231258,
+      "lng": 127.1097062
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 869,
+      "duration": 789,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.67
+    },
+    "path": [
+      [
+        127.1097062,
+        37.5231258
+      ],
+      [
+        127.1097187,
+        37.5234915
+      ],
+      [
+        127.1088775,
+        37.5250714
+      ],
+      [
+        127.1085539,
+        37.525626
+      ],
+      [
+        127.1091535,
+        37.5262206
+      ],
+      [
+        127.1093448,
+        37.5268895
+      ],
+      [
+        127.1076939,
+        37.5267803
+      ],
+      [
+        127.1081,
+        37.527
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "성북 언덕길",
+        "distance": 289,
+        "duration": 240,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "목동 대로",
+        "distance": 290,
+        "duration": 241,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "강남 언덕길",
+        "distance": 290,
+        "duration": 241,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.572,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-12-13"
+  },
+  {
+    "route_id": "6bd1d434-32fa-426c-90d3-55ace8e161b6",
+    "hospital_name": "마포 미즈메디병원",
+    "hospital_district": "마포구",
+    "destination": {
+      "name": "마포 미즈메디병원",
+      "lat": 37.5497,
+      "lng": 126.913
+    },
+    "origin": {
+      "name": "마포구 출발지",
+      "lat": 37.5489567,
+      "lng": 126.9075259
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 182,
+      "duration": 165,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9075259,
+        37.5489567
+      ],
+      [
+        126.9075077,
+        37.5497324
+      ],
+      [
+        126.9084725,
+        37.549055
+      ],
+      [
+        126.9100619,
+        37.5485336
+      ],
+      [
+        126.9103617,
+        37.5484805
+      ],
+      [
+        126.9117841,
+        37.549974
+      ],
+      [
+        126.9130449,
+        37.5498816
+      ],
+      [
+        126.913,
+        37.5497
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 사거리",
+        "distance": 45,
+        "duration": 37,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "성북 길",
+        "distance": 45,
+        "duration": 37,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "성북 대로",
+        "distance": 46,
+        "duration": 38,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "목동 길",
+        "distance": 46,
+        "duration": 38,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.494,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-11-03"
+  },
+  {
+    "route_id": "07f3bc7a-672b-4099-97ba-a92dd7b09db5",
+    "hospital_name": "마포 미즈메디병원",
+    "hospital_district": "마포구",
+    "destination": {
+      "name": "마포 미즈메디병원",
+      "lat": 37.5497,
+      "lng": 126.913
+    },
+    "origin": {
+      "name": "마포구 출발지",
+      "lat": 37.5510612,
+      "lng": 126.9081255
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 791,
+      "duration": 719,
+      "elevator_count": 0,
+      "slope_section_count": 0,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.9081255,
+        37.5510612
+      ],
+      [
+        126.9091298,
+        37.5503095
+      ],
+      [
+        126.9097514,
+        37.5514333
+      ],
+      [
+        126.9103055,
+        37.5498263
+      ],
+      [
+        126.911411,
+        37.5499756
+      ],
+      [
+        126.9119793,
+        37.5509075
+      ],
+      [
+        126.9113951,
+        37.5495754
+      ],
+      [
+        126.913,
+        37.5497
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 사거리",
+        "distance": 263,
+        "duration": 219,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "성북 사거리",
+        "distance": 264,
+        "duration": 220,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "왕십리 사거리",
+        "distance": 264,
+        "duration": 220,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.345,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-12-13"
+  },
+  {
+    "route_id": "844ff03a-5d71-4d82-80d2-8a57b1f8af55",
+    "hospital_name": "마포 미즈메디병원",
+    "hospital_district": "마포구",
+    "destination": {
+      "name": "마포 미즈메디병원",
+      "lat": 37.5497,
+      "lng": 126.913
+    },
+    "origin": {
+      "name": "마포구 출발지",
+      "lat": 37.5556534,
+      "lng": 126.9130114
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 397,
+      "duration": 360,
+      "elevator_count": 3,
+      "slope_section_count": 2,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        126.9130114,
+        37.5556534
+      ],
+      [
+        126.9122604,
+        37.5551917
+      ],
+      [
+        126.9124438,
+        37.5547319
+      ],
+      [
+        126.9137031,
+        37.5524896
+      ],
+      [
+        126.9134027,
+        37.551865
+      ],
+      [
+        126.913727,
+        37.5523741
+      ],
+      [
+        126.9127869,
+        37.5495915
+      ],
+      [
+        126.913,
+        37.5497
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 로",
+        "distance": 132,
+        "duration": 110,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "신촌 사거리",
+        "distance": 132,
+        "duration": 110,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 교차로",
+        "distance": 133,
+        "duration": 110,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.548,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-07-04"
+  },
+  {
+    "route_id": "29969c19-c309-473a-a214-6d92a62b7f09",
+    "hospital_name": "마포 미즈메디병원",
+    "hospital_district": "마포구",
+    "destination": {
+      "name": "마포 미즈메디병원",
+      "lat": 37.5497,
+      "lng": 126.913
+    },
+    "origin": {
+      "name": "마포구 출발지",
+      "lat": 37.5459052,
+      "lng": 126.9077338
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 410,
+      "duration": 372,
+      "elevator_count": 1,
+      "slope_section_count": 0,
+      "crosswalk_count": 3,
+      "barrier_free_ratio": 1.0
+    },
+    "path": [
+      [
+        126.9077338,
+        37.5459052
+      ],
+      [
+        126.9093801,
+        37.5458209
+      ],
+      [
+        126.9085373,
+        37.5473944
+      ],
+      [
+        126.9096062,
+        37.5481101
+      ],
+      [
+        126.9098825,
+        37.5487857
+      ],
+      [
+        126.9105593,
+        37.5490902
+      ],
+      [
+        126.9130377,
+        37.5482376
+      ],
+      [
+        126.913,
+        37.5497
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "목동 언덕길",
+        "distance": 136,
+        "duration": 113,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "마포 사거리",
+        "distance": 137,
+        "duration": 114,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "건대 길",
+        "distance": 137,
+        "duration": 114,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.248,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-04-12"
+  },
+  {
+    "route_id": "d4431cd0-e891-4e18-9229-26fa6c1f7307",
+    "hospital_name": "마포 미즈메디병원",
+    "hospital_district": "마포구",
+    "destination": {
+      "name": "마포 미즈메디병원",
+      "lat": 37.5497,
+      "lng": 126.913
+    },
+    "origin": {
+      "name": "마포구 출발지",
+      "lat": 37.5527508,
+      "lng": 126.9189523
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 492,
+      "duration": 447,
+      "elevator_count": 0,
+      "slope_section_count": 0,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9189523,
+        37.5527508
+      ],
+      [
+        126.919066,
+        37.552428
+      ],
+      [
+        126.917966,
+        37.5517815
+      ],
+      [
+        126.9155768,
+        37.5521647
+      ],
+      [
+        126.9157382,
+        37.5511943
+      ],
+      [
+        126.9140356,
+        37.5504187
+      ],
+      [
+        126.9147568,
+        37.5492287
+      ],
+      [
+        126.913,
+        37.5497
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 로",
+        "distance": 246,
+        "duration": 205,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "왕십리 로",
+        "distance": 246,
+        "duration": 205,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.27,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-12-12"
+  },
+  {
+    "route_id": "3413cee5-0c39-4e30-afa7-d62510417da7",
+    "hospital_name": "한림대강남성심병원",
+    "hospital_district": "영등포구",
+    "destination": {
+      "name": "한림대강남성심병원",
+      "lat": 37.5255,
+      "lng": 126.9008
+    },
+    "origin": {
+      "name": "영등포구 출발지",
+      "lat": 37.521013,
+      "lng": 126.905688
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 760,
+      "duration": 690,
+      "elevator_count": 2,
+      "slope_section_count": 0,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.905688,
+        37.521013
+      ],
+      [
+        126.905592,
+        37.5208831
+      ],
+      [
+        126.9037427,
+        37.5229787
+      ],
+      [
+        126.9026054,
+        37.5234399
+      ],
+      [
+        126.9032957,
+        37.5229551
+      ],
+      [
+        126.9024906,
+        37.5235545
+      ],
+      [
+        126.9018188,
+        37.525075
+      ],
+      [
+        126.9008,
+        37.5255
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 횡단보도 구간",
+        "distance": 380,
+        "duration": 316,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "성북 대로",
+        "distance": 380,
+        "duration": 316,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.265,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-07-02"
+  },
+  {
+    "route_id": "14ff4585-9269-4749-a412-952ccb79eff2",
+    "hospital_name": "한림대강남성심병원",
+    "hospital_district": "영등포구",
+    "destination": {
+      "name": "한림대강남성심병원",
+      "lat": 37.5255,
+      "lng": 126.9008
+    },
+    "origin": {
+      "name": "영등포구 출발지",
+      "lat": 37.5234878,
+      "lng": 126.9014072
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 530,
+      "duration": 481,
+      "elevator_count": 2,
+      "slope_section_count": 0,
+      "crosswalk_count": 3,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9014072,
+        37.5234878
+      ],
+      [
+        126.9020819,
+        37.5242359
+      ],
+      [
+        126.9011612,
+        37.5242007
+      ],
+      [
+        126.9004819,
+        37.5252958
+      ],
+      [
+        126.9008237,
+        37.5250191
+      ],
+      [
+        126.9013911,
+        37.5249586
+      ],
+      [
+        126.901433,
+        37.5257134
+      ],
+      [
+        126.9008,
+        37.5255
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "건대 횡단보도 구간",
+        "distance": 265,
+        "duration": 220,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "이태원 로",
+        "distance": 265,
+        "duration": 220,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.25,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-12-05"
+  },
+  {
+    "route_id": "5b523620-29ff-4465-adea-f0ae9cc0b218",
+    "hospital_name": "한림대강남성심병원",
+    "hospital_district": "영등포구",
+    "destination": {
+      "name": "한림대강남성심병원",
+      "lat": 37.5255,
+      "lng": 126.9008
+    },
+    "origin": {
+      "name": "영등포구 출발지",
+      "lat": 37.5298948,
+      "lng": 126.9026883
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 468,
+      "duration": 425,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 3,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9026883,
+        37.5298948
+      ],
+      [
+        126.9016947,
+        37.5302578
+      ],
+      [
+        126.9021023,
+        37.5290839
+      ],
+      [
+        126.9012343,
+        37.5270137
+      ],
+      [
+        126.9011984,
+        37.526811
+      ],
+      [
+        126.9021928,
+        37.5260106
+      ],
+      [
+        126.9003403,
+        37.5270866
+      ],
+      [
+        126.9008,
+        37.5255
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "목동 교차로",
+        "distance": 234,
+        "duration": 195,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 길",
+        "distance": 234,
+        "duration": 195,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.486,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-08-14"
+  },
+  {
+    "route_id": "520605ac-418c-4acf-8bb6-41a6cf3125d7",
+    "hospital_name": "한림대강남성심병원",
+    "hospital_district": "영등포구",
+    "destination": {
+      "name": "한림대강남성심병원",
+      "lat": 37.5255,
+      "lng": 126.9008
+    },
+    "origin": {
+      "name": "영등포구 출발지",
+      "lat": 37.5280265,
+      "lng": 126.9032132
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 766,
+      "duration": 696,
+      "elevator_count": 2,
+      "slope_section_count": 1,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        126.9032132,
+        37.5280265
+      ],
+      [
+        126.9033399,
+        37.5280118
+      ],
+      [
+        126.9017789,
+        37.5277742
+      ],
+      [
+        126.9031363,
+        37.5272118
+      ],
+      [
+        126.902263,
+        37.5261368
+      ],
+      [
+        126.9021942,
+        37.5255204
+      ],
+      [
+        126.9010226,
+        37.5251221
+      ],
+      [
+        126.9008,
+        37.5255
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 대로",
+        "distance": 255,
+        "duration": 212,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "강남 횡단보도 구간",
+        "distance": 255,
+        "duration": 212,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "이태원 교차로",
+        "distance": 256,
+        "duration": 213,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.587,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-02-28"
+  },
+  {
+    "route_id": "1c8ae121-9f14-4ebd-a3de-96748e3e6c08",
+    "hospital_name": "한림대강남성심병원",
+    "hospital_district": "영등포구",
+    "destination": {
+      "name": "한림대강남성심병원",
+      "lat": 37.5255,
+      "lng": 126.9008
+    },
+    "origin": {
+      "name": "영등포구 출발지",
+      "lat": 37.528083,
+      "lng": 126.9019384
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 502,
+      "duration": 456,
+      "elevator_count": 2,
+      "slope_section_count": 2,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        126.9019384,
+        37.528083
+      ],
+      [
+        126.9016558,
+        37.5285838
+      ],
+      [
+        126.9014089,
+        37.5272642
+      ],
+      [
+        126.9016728,
+        37.5271451
+      ],
+      [
+        126.9018237,
+        37.5260555
+      ],
+      [
+        126.9014288,
+        37.5266056
+      ],
+      [
+        126.900142,
+        37.5268503
+      ],
+      [
+        126.9008,
+        37.5255
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 지하보도",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "강남 횡단보도 구간",
+        "distance": 125,
+        "duration": 104,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "왕십리 교차로",
+        "distance": 126,
+        "duration": 105,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "성북 대로",
+        "distance": 126,
+        "duration": 105,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.515,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-02-27"
+  },
+  {
+    "route_id": "f78222c0-e923-458d-ad5f-a9d630713bb8",
+    "hospital_name": "분당서울대병원",
+    "hospital_district": "성남시 분당구",
+    "destination": {
+      "name": "분당서울대병원",
+      "lat": 37.354,
+      "lng": 127.1246
+    },
+    "origin": {
+      "name": "성남시 분당구 출발지",
+      "lat": 37.3528704,
+      "lng": 127.1292176
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 525,
+      "duration": 477,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 3,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.1292176,
+        37.3528704
+      ],
+      [
+        127.1283933,
+        37.3539694
+      ],
+      [
+        127.1276848,
+        37.3541325
+      ],
+      [
+        127.1279926,
+        37.3542626
+      ],
+      [
+        127.1260467,
+        37.352597
+      ],
+      [
+        127.1252253,
+        37.3534652
+      ],
+      [
+        127.125868,
+        37.3539793
+      ],
+      [
+        127.1246,
+        37.354
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 사거리",
+        "distance": 175,
+        "duration": 145,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "목동 지하보도",
+        "distance": 175,
+        "duration": 145,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "성북 길",
+        "distance": 175,
+        "duration": 145,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.574,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-10-24"
+  },
+  {
+    "route_id": "4aeca7a6-7b15-4f08-a2d2-455b6fb77896",
+    "hospital_name": "분당서울대병원",
+    "hospital_district": "성남시 분당구",
+    "destination": {
+      "name": "분당서울대병원",
+      "lat": 37.354,
+      "lng": 127.1246
+    },
+    "origin": {
+      "name": "성남시 분당구 출발지",
+      "lat": 37.3525231,
+      "lng": 127.1240434
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 769,
+      "duration": 699,
+      "elevator_count": 3,
+      "slope_section_count": 0,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.75
+    },
+    "path": [
+      [
+        127.1240434,
+        37.3525231
+      ],
+      [
+        127.1234608,
+        37.3519931
+      ],
+      [
+        127.1249665,
+        37.3522145
+      ],
+      [
+        127.123873,
+        37.352391
+      ],
+      [
+        127.1237943,
+        37.3526608
+      ],
+      [
+        127.1237159,
+        37.3533999
+      ],
+      [
+        127.1242075,
+        37.3544465
+      ],
+      [
+        127.1246,
+        37.354
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "왕십리 언덕길",
+        "distance": 192,
+        "duration": 160,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "왕십리 사거리",
+        "distance": 192,
+        "duration": 160,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "이태원 로",
+        "distance": 192,
+        "duration": 160,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "여의도 육교구간",
+        "distance": 193,
+        "duration": 160,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.433,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-09-02"
+  },
+  {
+    "route_id": "ecc2e57b-050a-4ade-bde0-106acc3b6d26",
+    "hospital_name": "분당서울대병원",
+    "hospital_district": "성남시 분당구",
+    "destination": {
+      "name": "분당서울대병원",
+      "lat": 37.354,
+      "lng": 127.1246
+    },
+    "origin": {
+      "name": "성남시 분당구 출발지",
+      "lat": 37.356642,
+      "lng": 127.1301489
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 287,
+      "duration": 260,
+      "elevator_count": 0,
+      "slope_section_count": 1,
+      "crosswalk_count": 7,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.1301489,
+        37.356642
+      ],
+      [
+        127.129278,
+        37.355828
+      ],
+      [
+        127.1293414,
+        37.3568031
+      ],
+      [
+        127.1275001,
+        37.3558431
+      ],
+      [
+        127.1264691,
+        37.354604
+      ],
+      [
+        127.1270841,
+        37.3556533
+      ],
+      [
+        127.1257717,
+        37.3534469
+      ],
+      [
+        127.1246,
+        37.354
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 언덕길",
+        "distance": 143,
+        "duration": 119,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 언덕길",
+        "distance": 144,
+        "duration": 120,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.664,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-04-09"
+  },
+  {
+    "route_id": "1aad5c44-6338-4029-8612-fcc2187ace97",
+    "hospital_name": "분당서울대병원",
+    "hospital_district": "성남시 분당구",
+    "destination": {
+      "name": "분당서울대병원",
+      "lat": 37.354,
+      "lng": 127.1246
+    },
+    "origin": {
+      "name": "성남시 분당구 출발지",
+      "lat": 37.3550419,
+      "lng": 127.129339
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 561,
+      "duration": 509,
+      "elevator_count": 0,
+      "slope_section_count": 3,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 1.0
+    },
+    "path": [
+      [
+        127.129339,
+        37.3550419
+      ],
+      [
+        127.1281985,
+        37.355488
+      ],
+      [
+        127.128788,
+        37.3552884
+      ],
+      [
+        127.128202,
+        37.3548668
+      ],
+      [
+        127.1261108,
+        37.3541675
+      ],
+      [
+        127.1258984,
+        37.3540391
+      ],
+      [
+        127.1250631,
+        37.3548633
+      ],
+      [
+        127.1246,
+        37.354
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "성북 횡단보도 구간",
+        "distance": 140,
+        "duration": 116,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 로",
+        "distance": 140,
+        "duration": 116,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "목동 횡단보도 구간",
+        "distance": 140,
+        "duration": 116,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "성북 교차로",
+        "distance": 141,
+        "duration": 117,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.668,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-09-02"
+  },
+  {
+    "route_id": "668b1591-d005-4b66-b7a3-71764bf857de",
+    "hospital_name": "분당서울대병원",
+    "hospital_district": "성남시 분당구",
+    "destination": {
+      "name": "분당서울대병원",
+      "lat": 37.354,
+      "lng": 127.1246
+    },
+    "origin": {
+      "name": "성남시 분당구 출발지",
+      "lat": 37.3518772,
+      "lng": 127.1298794
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 296,
+      "duration": 269,
+      "elevator_count": 2,
+      "slope_section_count": 0,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.1298794,
+        37.3518772
+      ],
+      [
+        127.1289194,
+        37.3523319
+      ],
+      [
+        127.1277345,
+        37.3531722
+      ],
+      [
+        127.1270959,
+        37.3534938
+      ],
+      [
+        127.1278243,
+        37.3529966
+      ],
+      [
+        127.1258443,
+        37.3526669
+      ],
+      [
+        127.1263288,
+        37.3541315
+      ],
+      [
+        127.1246,
+        37.354
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 육교구간",
+        "distance": 98,
+        "duration": 81,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 횡단보도 구간",
+        "distance": 99,
+        "duration": 82,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "강남 육교구간",
+        "distance": 99,
+        "duration": 82,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.171,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-02-27"
+  },
+  {
+    "route_id": "78c77dfc-f68e-4a36-b4f1-d622112b5f62",
+    "hospital_name": "삼성서울병원 산부인과",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "삼성서울병원 산부인과",
+      "lat": 37.4884,
+      "lng": 127.0855
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.4891989,
+      "lng": 127.0821401
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 613,
+      "duration": 557,
+      "elevator_count": 2,
+      "slope_section_count": 0,
+      "crosswalk_count": 6,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0821401,
+        37.4891989
+      ],
+      [
+        127.0820721,
+        37.4896254
+      ],
+      [
+        127.0834614,
+        37.4898927
+      ],
+      [
+        127.0836484,
+        37.4878926
+      ],
+      [
+        127.083304,
+        37.4891149
+      ],
+      [
+        127.0851839,
+        37.4895085
+      ],
+      [
+        127.0843042,
+        37.4893536
+      ],
+      [
+        127.0855,
+        37.4884
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 언덕길",
+        "distance": 306,
+        "duration": 255,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "왕십리 교차로",
+        "distance": 307,
+        "duration": 255,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.376,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-10-13"
+  },
+  {
+    "route_id": "49b993e3-a943-45d0-b7d4-ba2821a140ac",
+    "hospital_name": "삼성서울병원 산부인과",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "삼성서울병원 산부인과",
+      "lat": 37.4884,
+      "lng": 127.0855
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.4875953,
+      "lng": 127.0903701
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 330,
+      "duration": 300,
+      "elevator_count": 3,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.25
+    },
+    "path": [
+      [
+        127.0903701,
+        37.4875953
+      ],
+      [
+        127.0891939,
+        37.4883053
+      ],
+      [
+        127.0892796,
+        37.4885135
+      ],
+      [
+        127.0873801,
+        37.4882976
+      ],
+      [
+        127.0878728,
+        37.4880496
+      ],
+      [
+        127.0871877,
+        37.4874973
+      ],
+      [
+        127.0852464,
+        37.4889168
+      ],
+      [
+        127.0855,
+        37.4884
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 언덕길",
+        "distance": 82,
+        "duration": 68,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "건대 지하보도",
+        "distance": 82,
+        "duration": 68,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "이태원 길",
+        "distance": 83,
+        "duration": 69,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "목동 사거리",
+        "distance": 83,
+        "duration": 69,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.389,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-03-05"
+  },
+  {
+    "route_id": "a527cfb3-2070-4ea4-a602-1718b91b4d08",
+    "hospital_name": "삼성서울병원 산부인과",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "삼성서울병원 산부인과",
+      "lat": 37.4884,
+      "lng": 127.0855
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.4935309,
+      "lng": 127.0839099
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 175,
+      "duration": 159,
+      "elevator_count": 1,
+      "slope_section_count": 0,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0839099,
+        37.4935309
+      ],
+      [
+        127.0844536,
+        37.493096
+      ],
+      [
+        127.0834148,
+        37.4911562
+      ],
+      [
+        127.085304,
+        37.4906359
+      ],
+      [
+        127.0840746,
+        37.4899553
+      ],
+      [
+        127.0846852,
+        37.4894843
+      ],
+      [
+        127.0861636,
+        37.4894581
+      ],
+      [
+        127.0855,
+        37.4884
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 사거리",
+        "distance": 87,
+        "duration": 72,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "여의도 길",
+        "distance": 88,
+        "duration": 73,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.15,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-07-22"
+  },
+  {
+    "route_id": "9fcea807-af77-4151-81c2-ad19a3dcdf29",
+    "hospital_name": "삼성서울병원 산부인과",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "삼성서울병원 산부인과",
+      "lat": 37.4884,
+      "lng": 127.0855
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.4847774,
+      "lng": 127.0869692
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 274,
+      "duration": 249,
+      "elevator_count": 2,
+      "slope_section_count": 3,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 1.0
+    },
+    "path": [
+      [
+        127.0869692,
+        37.4847774
+      ],
+      [
+        127.0860677,
+        37.484997
+      ],
+      [
+        127.0859015,
+        37.4863636
+      ],
+      [
+        127.0865414,
+        37.4867716
+      ],
+      [
+        127.0865822,
+        37.4862204
+      ],
+      [
+        127.086488,
+        37.4880769
+      ],
+      [
+        127.0861482,
+        37.4875704
+      ],
+      [
+        127.0855,
+        37.4884
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "신촌 길",
+        "distance": 68,
+        "duration": 56,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "건대 길",
+        "distance": 68,
+        "duration": 56,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 지하보도",
+        "distance": 69,
+        "duration": 57,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 4,
+        "name": "마포 육교구간",
+        "distance": 69,
+        "duration": 57,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.504,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-02-10"
+  },
+  {
+    "route_id": "91534fdf-f9cc-4961-8734-e284f9258906",
+    "hospital_name": "삼성서울병원 산부인과",
+    "hospital_district": "강남구",
+    "destination": {
+      "name": "삼성서울병원 산부인과",
+      "lat": 37.4884,
+      "lng": 127.0855
+    },
+    "origin": {
+      "name": "강남구 출발지",
+      "lat": 37.4932888,
+      "lng": 127.0861147
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 243,
+      "duration": 220,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.0861147,
+        37.4932888
+      ],
+      [
+        127.0860498,
+        37.4925086
+      ],
+      [
+        127.0859348,
+        37.4916702
+      ],
+      [
+        127.0863803,
+        37.4921128
+      ],
+      [
+        127.086423,
+        37.491109
+      ],
+      [
+        127.0847528,
+        37.4891966
+      ],
+      [
+        127.0848372,
+        37.4881267
+      ],
+      [
+        127.0855,
+        37.4884
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "여의도 언덕길",
+        "distance": 81,
+        "duration": 67,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "건대 육교구간",
+        "distance": 81,
+        "duration": 67,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "건대 길",
+        "distance": 81,
+        "duration": 67,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.342,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-08-09"
+  },
+  {
+    "route_id": "507c1eca-9736-499f-b432-607b7ccffd97",
+    "hospital_name": "건국대병원 산부인과",
+    "hospital_district": "광진구",
+    "destination": {
+      "name": "건국대병원 산부인과",
+      "lat": 37.5409,
+      "lng": 127.0813
+    },
+    "origin": {
+      "name": "광진구 출발지",
+      "lat": 37.5466897,
+      "lng": 127.0769996
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 857,
+      "duration": 779,
+      "elevator_count": 2,
+      "slope_section_count": 2,
+      "crosswalk_count": 2,
+      "barrier_free_ratio": 0.25
+    },
+    "path": [
+      [
+        127.0769996,
+        37.5466897
+      ],
+      [
+        127.0780381,
+        37.5451853
+      ],
+      [
+        127.0774406,
+        37.5440692
+      ],
+      [
+        127.0783501,
+        37.5444232
+      ],
+      [
+        127.0795774,
+        37.5426892
+      ],
+      [
+        127.0805525,
+        37.5428949
+      ],
+      [
+        127.081317,
+        37.5410357
+      ],
+      [
+        127.0813,
+        37.5409
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 로",
+        "distance": 214,
+        "duration": 178,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "강남 언덕길",
+        "distance": 214,
+        "duration": 178,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "마포 지하보도",
+        "distance": 214,
+        "duration": 178,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "홍대 육교구간",
+        "distance": 215,
+        "duration": 179,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.499,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-01-07"
+  },
+  {
+    "route_id": "66357b7a-b240-41ba-8419-1aa1b79b72fc",
+    "hospital_name": "건국대병원 산부인과",
+    "hospital_district": "광진구",
+    "destination": {
+      "name": "건국대병원 산부인과",
+      "lat": 37.5409,
+      "lng": 127.0813
+    },
+    "origin": {
+      "name": "광진구 출발지",
+      "lat": 37.542928,
+      "lng": 127.0780494
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 647,
+      "duration": 588,
+      "elevator_count": 0,
+      "slope_section_count": 3,
+      "crosswalk_count": 6,
+      "barrier_free_ratio": 0.33
+    },
+    "path": [
+      [
+        127.0780494,
+        37.542928
+      ],
+      [
+        127.0781235,
+        37.5427561
+      ],
+      [
+        127.0791015,
+        37.5415926
+      ],
+      [
+        127.0802195,
+        37.5413559
+      ],
+      [
+        127.0804564,
+        37.5409126
+      ],
+      [
+        127.0806934,
+        37.5408285
+      ],
+      [
+        127.0804093,
+        37.5412072
+      ],
+      [
+        127.0813,
+        37.5409
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 지하보도",
+        "distance": 215,
+        "duration": 179,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 지하보도",
+        "distance": 216,
+        "duration": 180,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "여의도 로",
+        "distance": 216,
+        "duration": 180,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.892,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-10-01"
+  },
+  {
+    "route_id": "b0750c4d-8d6b-4040-b235-5a1e01b2e062",
+    "hospital_name": "건국대병원 산부인과",
+    "hospital_district": "광진구",
+    "destination": {
+      "name": "건국대병원 산부인과",
+      "lat": 37.5409,
+      "lng": 127.0813
+    },
+    "origin": {
+      "name": "광진구 출발지",
+      "lat": 37.5358299,
+      "lng": 127.0844971
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 223,
+      "duration": 202,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 6,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0844971,
+        37.5358299
+      ],
+      [
+        127.0837003,
+        37.5369007
+      ],
+      [
+        127.0837228,
+        37.5368218
+      ],
+      [
+        127.0832794,
+        37.5383439
+      ],
+      [
+        127.0836397,
+        37.5384791
+      ],
+      [
+        127.0821152,
+        37.5396333
+      ],
+      [
+        127.0823664,
+        37.540169
+      ],
+      [
+        127.0813,
+        37.5409
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "건대 사거리",
+        "distance": 111,
+        "duration": 92,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "강남 사거리",
+        "distance": 112,
+        "duration": 93,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.739,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-04-01"
+  },
+  {
+    "route_id": "49f00c02-6e95-4c61-9640-f3c14dadca5c",
+    "hospital_name": "건국대병원 산부인과",
+    "hospital_district": "광진구",
+    "destination": {
+      "name": "건국대병원 산부인과",
+      "lat": 37.5409,
+      "lng": 127.0813
+    },
+    "origin": {
+      "name": "광진구 출발지",
+      "lat": 37.5385898,
+      "lng": 127.0865896
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 303,
+      "duration": 275,
+      "elevator_count": 1,
+      "slope_section_count": 1,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.67
+    },
+    "path": [
+      [
+        127.0865896,
+        37.5385898
+      ],
+      [
+        127.0863377,
+        37.539063
+      ],
+      [
+        127.0859716,
+        37.5391098
+      ],
+      [
+        127.0843866,
+        37.5393869
+      ],
+      [
+        127.0833789,
+        37.5402044
+      ],
+      [
+        127.0828578,
+        37.5403727
+      ],
+      [
+        127.0813856,
+        37.5400012
+      ],
+      [
+        127.0813,
+        37.5409
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "건대 길",
+        "distance": 101,
+        "duration": 84,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "이태원 사거리",
+        "distance": 101,
+        "duration": 84,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "이태원 언덕길",
+        "distance": 101,
+        "duration": 84,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.446,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-04-03"
+  },
+  {
+    "route_id": "55c86319-dac8-4bdc-b529-b8eb270db20b",
+    "hospital_name": "건국대병원 산부인과",
+    "hospital_district": "광진구",
+    "destination": {
+      "name": "건국대병원 산부인과",
+      "lat": 37.5409,
+      "lng": 127.0813
+    },
+    "origin": {
+      "name": "광진구 출발지",
+      "lat": 37.5441396,
+      "lng": 127.0792458
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 795,
+      "duration": 722,
+      "elevator_count": 0,
+      "slope_section_count": 0,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.0792458,
+        37.5441396
+      ],
+      [
+        127.0804469,
+        37.5430535
+      ],
+      [
+        127.080404,
+        37.5435582
+      ],
+      [
+        127.0794895,
+        37.543025
+      ],
+      [
+        127.079511,
+        37.5415378
+      ],
+      [
+        127.0798516,
+        37.5410677
+      ],
+      [
+        127.0815557,
+        37.5420471
+      ],
+      [
+        127.0813,
+        37.5409
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "이태원 교차로",
+        "distance": 265,
+        "duration": 220,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "목동 사거리",
+        "distance": 265,
+        "duration": 220,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "홍대 횡단보도 구간",
+        "distance": 265,
+        "duration": 220,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.505,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-04-03"
+  },
+  {
+    "route_id": "ac6f4efb-d2da-4671-84ec-adeb19a61bbb",
+    "hospital_name": "고려대안암병원 산부인과",
+    "hospital_district": "성북구",
+    "destination": {
+      "name": "고려대안암병원 산부인과",
+      "lat": 37.5897,
+      "lng": 127.0261
+    },
+    "origin": {
+      "name": "성북구 출발지",
+      "lat": 37.5891017,
+      "lng": 127.0238141
+    },
+    "route_name": "경로 A",
+    "summary": {
+      "distance": 757,
+      "duration": 688,
+      "elevator_count": 2,
+      "slope_section_count": 0,
+      "crosswalk_count": 4,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.0238141,
+        37.5891017
+      ],
+      [
+        127.0239802,
+        37.5900691
+      ],
+      [
+        127.0252483,
+        37.5886752
+      ],
+      [
+        127.025775,
+        37.5892114
+      ],
+      [
+        127.0247816,
+        37.5889574
+      ],
+      [
+        127.0249354,
+        37.5885752
+      ],
+      [
+        127.0252146,
+        37.589244
+      ],
+      [
+        127.0261,
+        37.5897
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "목동 육교구간",
+        "distance": 378,
+        "duration": 315,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "건대 대로",
+        "distance": 379,
+        "duration": 315,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.361,
+    "accessibility_grade": "보통",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-08-16"
+  },
+  {
+    "route_id": "3d06d725-685a-4df4-b89b-b47fc18effd8",
+    "hospital_name": "고려대안암병원 산부인과",
+    "hospital_district": "성북구",
+    "destination": {
+      "name": "고려대안암병원 산부인과",
+      "lat": 37.5897,
+      "lng": 127.0261
+    },
+    "origin": {
+      "name": "성북구 출발지",
+      "lat": 37.5861707,
+      "lng": 127.0284367
+    },
+    "route_name": "경로 B",
+    "summary": {
+      "distance": 478,
+      "duration": 434,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0284367,
+        37.5861707
+      ],
+      [
+        127.0285409,
+        37.586862
+      ],
+      [
+        127.0274686,
+        37.5865375
+      ],
+      [
+        127.0267574,
+        37.5870063
+      ],
+      [
+        127.0265142,
+        37.5880145
+      ],
+      [
+        127.0277425,
+        37.588291
+      ],
+      [
+        127.026662,
+        37.5899025
+      ],
+      [
+        127.0261,
+        37.5897
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "성북 횡단보도 구간",
+        "distance": 119,
+        "duration": 99,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "홍대 육교구간",
+        "distance": 119,
+        "duration": 99,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 3,
+        "name": "신촌 교차로",
+        "distance": 120,
+        "duration": 100,
+        "road_type": "이면도로",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 4,
+        "name": "여의도 교차로",
+        "distance": 120,
+        "duration": 100,
+        "road_type": "보행자전용",
+        "barrier_free": true,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.56,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2025-08-26"
+  },
+  {
+    "route_id": "6aedf186-e690-4d35-b9d7-94d6abec3a93",
+    "hospital_name": "고려대안암병원 산부인과",
+    "hospital_district": "성북구",
+    "destination": {
+      "name": "고려대안암병원 산부인과",
+      "lat": 37.5897,
+      "lng": 127.0261
+    },
+    "origin": {
+      "name": "성북구 출발지",
+      "lat": 37.5927358,
+      "lng": 127.0230095
+    },
+    "route_name": "경로 C",
+    "summary": {
+      "distance": 400,
+      "duration": 363,
+      "elevator_count": 1,
+      "slope_section_count": 2,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.0230095,
+        37.5927358
+      ],
+      [
+        127.0241664,
+        37.5927135
+      ],
+      [
+        127.0237943,
+        37.59142
+      ],
+      [
+        127.0250958,
+        37.5908876
+      ],
+      [
+        127.0243031,
+        37.5917552
+      ],
+      [
+        127.025569,
+        37.590619
+      ],
+      [
+        127.0257812,
+        37.5904484
+      ],
+      [
+        127.0261,
+        37.5897
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "마포 사거리",
+        "distance": 200,
+        "duration": 166,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "건대 길",
+        "distance": 200,
+        "duration": 166,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.625,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-01-09"
+  },
+  {
+    "route_id": "e26f5fd9-a66d-40a1-b0f6-36efa76960cf",
+    "hospital_name": "고려대안암병원 산부인과",
+    "hospital_district": "성북구",
+    "destination": {
+      "name": "고려대안암병원 산부인과",
+      "lat": 37.5897,
+      "lng": 127.0261
+    },
+    "origin": {
+      "name": "성북구 출발지",
+      "lat": 37.5890465,
+      "lng": 127.0208344
+    },
+    "route_name": "경로 D",
+    "summary": {
+      "distance": 734,
+      "duration": 667,
+      "elevator_count": 2,
+      "slope_section_count": 2,
+      "crosswalk_count": 5,
+      "barrier_free_ratio": 0.5
+    },
+    "path": [
+      [
+        127.0208344,
+        37.5890465
+      ],
+      [
+        127.0223075,
+        37.5884865
+      ],
+      [
+        127.0222968,
+        37.5897566
+      ],
+      [
+        127.0237944,
+        37.5889293
+      ],
+      [
+        127.0234175,
+        37.5891154
+      ],
+      [
+        127.0244212,
+        37.5899328
+      ],
+      [
+        127.0259485,
+        37.58928
+      ],
+      [
+        127.0261,
+        37.5897
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "강남 사거리",
+        "distance": 367,
+        "duration": 305,
+        "road_type": "일반도로",
+        "barrier_free": true,
+        "has_elevator": true,
+        "has_slope": true
+      },
+      {
+        "section_id": 2,
+        "name": "성북 육교구간",
+        "distance": 367,
+        "duration": 305,
+        "road_type": "이면도로",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": true
+      }
+    ],
+    "stress_index": 0.767,
+    "accessibility_grade": "비추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-08-16"
+  },
+  {
+    "route_id": "045ed6df-1cab-487f-94a0-72df69f92bee",
+    "hospital_name": "고려대안암병원 산부인과",
+    "hospital_district": "성북구",
+    "destination": {
+      "name": "고려대안암병원 산부인과",
+      "lat": 37.5897,
+      "lng": 127.0261
+    },
+    "origin": {
+      "name": "성북구 출발지",
+      "lat": 37.5843553,
+      "lng": 127.0204286
+    },
+    "route_name": "경로 E",
+    "summary": {
+      "distance": 730,
+      "duration": 663,
+      "elevator_count": 1,
+      "slope_section_count": 0,
+      "crosswalk_count": 1,
+      "barrier_free_ratio": 0.0
+    },
+    "path": [
+      [
+        127.0204286,
+        37.5843553
+      ],
+      [
+        127.0219881,
+        37.5859133
+      ],
+      [
+        127.0226066,
+        37.5850956
+      ],
+      [
+        127.0235868,
+        37.586054
+      ],
+      [
+        127.0234564,
+        37.587076
+      ],
+      [
+        127.0248936,
+        37.5878854
+      ],
+      [
+        127.0249513,
+        37.5887197
+      ],
+      [
+        127.0261,
+        37.5897
+      ]
+    ],
+    "sections": [
+      {
+        "section_id": 1,
+        "name": "건대 사거리",
+        "distance": 243,
+        "duration": 202,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": true,
+        "has_slope": false
+      },
+      {
+        "section_id": 2,
+        "name": "성북 길",
+        "distance": 243,
+        "duration": 202,
+        "road_type": "일반도로",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      },
+      {
+        "section_id": 3,
+        "name": "마포 교차로",
+        "distance": 244,
+        "duration": 203,
+        "road_type": "보행자전용",
+        "barrier_free": false,
+        "has_elevator": false,
+        "has_slope": false
+      }
+    ],
+    "stress_index": 0.298,
+    "accessibility_grade": "추천",
+    "travel_mode": "WALKING",
+    "data_source": "공공데이터포털_보행환경DB",
+    "collected_at": "2024-03-15"
+  }
+]

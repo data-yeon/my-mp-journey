@@ -1,0 +1,43 @@
+# OS / editor
+.DS_Store
+.idea/
+.claude/
+.vscode/*
+!.vscode/extensions.json
+
+# Environment / secrets
+.env
+.env.*
+*.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+chatbot/venv/
+
+# Node / frontend
+node_modules/
+my-mp-journey-main/node_modules/
+dist/
+dist-ssr/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local generated stores
+chatbot/chroma_db/
+
+# Build / temp
+tmp/
+temp/
+.cache/
