@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { Send, Plus, MapPin, Phone, FileText, ExternalLink, Bot, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { gov24LocalBirthServices } from '@/data/gov24LocalBirthServices';
+import type { UserRole } from '@/types/role';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 interface Message {
     id: number;
@@ -11,34 +13,105 @@ interface Message {
     sources?: string[];
 }
 
-const INITIAL_MESSAGE: Message = {
+const getInitialMessage = (role: UserRole): Message => ({
     id: 1,
     role: 'bot',
-    content: '안녕하세요! 맘마중 HR 챗봇입니다.\n모성보호 관련 법령 질문을 편하게 물어보세요.',
-};
+    content: role === 'hr'
+        ? '안녕하세요! 맘마중 HR 법령·규정 확인 도우미입니다.\n모성보호 관련 법령 기준과 취업규칙 차이를 빠르게 확인해 드릴게요.'
+        : '안녕하세요! 맘마중 사우 상담 챗봇입니다.\n내 휴가, 급여, 회사 규정, 지역별 출산 지원 혜택을 편하게 물어보세요.',
+});
 
-const suggestedQuestions = ['출산전후휴가 기간이 얼마나 되나요?', '육아휴직 신청 조건이 뭔가요?', '임신 중 야근을 강요받고 있어요'];
+const employeeSuggestedQuestions = [
+    '나 얼마나 쉬어야함',
+    '배우자 출산휴가 며칠이야?',
+    '서울시 종로구 지원금은 얼마나 받을 수 있나요?',
+    '육아휴직 급여는 얼마나 받아?'
+];
 
-const recentChats = [
+const hrSuggestedQuestions = [
+    '배우자 출산휴가 규정 점검해줘',
+    '육아기 근로시간 단축 취업규칙과 법 차이 알려줘',
+    '난임치료휴가 유급일수 점검해줘',
+    '우리 회사 육아휴직 규정 어떻게 돼?'
+];
+
+const employeeRecentChats = [
     { id: 1, title: '출산휴가 신청 안내', date: '오늘' },
     { id: 2, title: '육아휴직 급여 계산', date: '어제' },
     { id: 3, title: '태아 검진 휴가 문의', date: '4월 7일' },
     { id: 4, title: '단축근무 시간 변경', date: '4월 3일' }
 ];
 
-const benefits = [
-    { title: '강남구 출산 축하금', detail: '첫째 50만원, 둘째 100만원' },
-    { title: '서울시 임산부 교통비', detail: '월 7만원 지원' },
-    { title: '국민행복카드 바우처', detail: '100만원 (쌍둥이 140만원)' }
+const hrRecentChecks = [
+    { id: 1, title: '배우자 출산휴가 규정 점검', date: '오늘' },
+    { id: 2, title: '육아기 단축근무 법령 비교', date: '어제' },
+    { id: 3, title: '난임치료휴가 유급 기준 확인', date: '4월 8일' },
+    { id: 4, title: '복직 조항 리스크 검토', date: '4월 3일' }
 ];
 
-const relatedDocs = ['출산휴가 신청 가이드', '육아휴직 급여 안내서', '모성보호 제도 총정리'];
+const userRegion = {
+    province: '서울특별시',
+    district: '강남구',
+};
 
-export default function ChatbotPage() {
+const benefits = gov24LocalBirthServices
+    .filter((service) => (
+        service.province === userRegion.province
+        && (service.district === userRegion.district || service.district === '전체')
+    ))
+    .sort((a, b) => {
+        const score = (service: typeof gov24LocalBirthServices[number]) => {
+            let value = 0;
+            if (service.supportType.includes('현금')) value += 3;
+            if (service.onlineApplyAvailable) value += 2;
+            if (/출산|임신|산모|신생아|양육/.test(`${service.title} ${service.summary}`)) value += 1;
+            return value;
+        };
+        return score(b) - score(a);
+    })
+    .slice(0, 3)
+    .map((service) => ({
+        title: service.title,
+        detail: `${service.supportType || '지원형태 확인'} · ${service.applicationMethod || '신청방법 확인'}`,
+    }));
+
+const employeeRelatedDocs = ['내 휴가 신청 가이드', '육아휴직 급여 안내서', '지역 출산지원금 안내'];
+const hrRelatedDocs = ['취업규칙 조항 색인', '모성보호 법령 기준표', '운영 리스크 체크리스트'];
+
+const employeeContacts = [
+    { title: '모성보호 상담센터', value: '1588-0000' },
+    { title: '근로복지공단', value: '1588-0075' },
+    { title: '건강보험공단 임산부', value: '1577-1000' }
+];
+
+const hrContacts = [
+    { title: '인사운영 담당', value: '내부 HR 채널' },
+    { title: '노무 검토 요청', value: '노무 검토 접수함' },
+    { title: '취업규칙 문서관리', value: '규정 관리함' }
+];
+
+type ChatbotPageProps = {
+    role: UserRole;
+};
+
+export default function ChatbotPage({ role }: ChatbotPageProps) {
+    const isHrMode = role === 'hr';
+    const profile = isHrMode
+        ? { name: '박서연', detail: 'HR 관리자 · 인사운영' }
+        : { name: '김지은', detail: '임신 24주차 · 서울 강남구' };
+    const suggestedQuestions = isHrMode ? hrSuggestedQuestions : employeeSuggestedQuestions;
+    const recentChats = isHrMode ? hrRecentChecks : employeeRecentChats;
+    const relatedDocs = isHrMode ? hrRelatedDocs : employeeRelatedDocs;
+    const contacts = isHrMode ? hrContacts : employeeContacts;
     const [input, setInput] = useState('');
-    const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE]);
+    const [messages, setMessages] = useState<Message[]>([getInitialMessage(role)]);
     const [loading, setLoading] = useState(false);
     const bottomRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setInput('');
+        setMessages([getInitialMessage(role)]);
+    }, [role]);
 
     useEffect(() => {
         bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -58,7 +131,7 @@ export default function ChatbotPage() {
             const res = await fetch(`${API_URL}/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text }),
+                body: JSON.stringify({ message: text, audience: role }),
                 signal: controller.signal,
             });
             const data = await res.json();
@@ -74,7 +147,7 @@ export default function ChatbotPage() {
                 id: Date.now() + 1,
                 role: 'bot',
                 content: isTimeout
-                    ? '모성보호 관련 법령 질문만 답변드릴 수 있어요. 출산휴가, 육아휴직, 임산부 보호 등에 대해 물어봐 주세요.'
+                    ? '답변 생성이 오래 걸리고 있어요. 출산휴가, 육아휴직, 지역별 출산 지원 혜택처럼 구체적으로 다시 물어봐 주세요.'
                     : '일시적인 오류가 발생했어요. 잠시 후 다시 시도해주세요.',
             }]);
         } finally {
@@ -94,15 +167,17 @@ export default function ChatbotPage() {
                             <User className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                            <p className="text-sm font-bold text-foreground">김지은</p>
-                            <p className="text-xs text-muted-foreground">임신 24주차 · 서울 강남구</p>
+                            <p className="text-sm font-bold text-foreground">{profile.name}</p>
+                            <p className="text-xs text-muted-foreground">{profile.detail}</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Recent chats */}
                 <div className="flex-1 overflow-y-auto p-4">
-                    <p className="mb-3 text-xs font-semibold text-muted-foreground">최근 대화</p>
+                    <p className="mb-3 text-xs font-semibold text-muted-foreground">
+                        {isHrMode ? '최근 점검' : '최근 대화'}
+                    </p>
                     <ul className="space-y-1">
                         {recentChats.map((chat) => (
                             <li
@@ -119,7 +194,8 @@ export default function ChatbotPage() {
                 {/* New chat button */}
                 <div className="border-t border-border p-4">
                     <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                        <Plus className="mr-2 h-4 w-4" />새 대화 시작하기
+                        <Plus className="mr-2 h-4 w-4" />
+                        {isHrMode ? '새 점검 시작하기' : '새 대화 시작하기'}
                     </Button>
                 </div>
             </div>
@@ -132,8 +208,12 @@ export default function ChatbotPage() {
                         <Bot className="h-4 w-4 text-primary-foreground" />
                     </div>
                     <div>
-                        <p className="text-sm font-bold text-foreground">MP 어시스턴트</p>
-                        <p className="text-xs text-muted-foreground">모성보호 전문 상담 챗봇</p>
+                        <p className="text-sm font-bold text-foreground">
+                            {isHrMode ? '맘마중 HR 법령·규정 확인' : '맘마중 사우 상담'}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                            {isHrMode ? '법령 기준 · 취업규칙 비교 · 실무 적용 확인' : '휴가 · 급여 · 지역 혜택 안내'}
+                        </p>
                     </div>
                 </div>
 
@@ -215,21 +295,41 @@ export default function ChatbotPage() {
             {/* Right Panel */}
             <div className="hidden w-72 flex-col border-l border-border bg-card xl:flex">
                 <div className="flex-1 overflow-y-auto p-5 space-y-5">
-                    {/* Benefits */}
-                    <div>
-                        <div className="mb-3 flex items-center gap-2">
-                            <MapPin className="h-4 w-4 text-primary" />
-                            <p className="text-sm font-bold text-foreground">내 지역 혜택 요약</p>
+                    {isHrMode ? (
+                        <div>
+                            <div className="mb-3 flex items-center gap-2">
+                                <Bot className="h-4 w-4 text-primary" />
+                                <p className="text-sm font-bold text-foreground">HR 점검 범위</p>
+                            </div>
+                            <div className="space-y-2">
+                                {[
+                                    { title: '법령 vs 취업규칙', detail: '법정 최저 기준과 사내 조항의 차이를 분리해서 확인' },
+                                    { title: '빠른 법령 확인', detail: '휴가 일수, 급여, 신청 요건을 조항 기준으로 빠르게 확인' },
+                                    { title: '운영 리스크', detail: '불리한 조항, 구버전 기준, 신청 흐름 공백을 함께 확인' }
+                                ].map((item) => (
+                                    <div key={item.title} className="rounded-lg bg-background p-3">
+                                        <p className="text-xs font-semibold text-foreground">{item.title}</p>
+                                        <p className="mt-0.5 text-[11px] text-muted-foreground">{item.detail}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="space-y-2">
-                            {benefits.map((b) => (
-                                <div key={b.title} className="rounded-lg bg-background p-3">
-                                    <p className="text-xs font-semibold text-foreground">{b.title}</p>
-                                    <p className="mt-0.5 text-[11px] text-muted-foreground">{b.detail}</p>
-                                </div>
-                            ))}
+                    ) : (
+                        <div>
+                            <div className="mb-3 flex items-center gap-2">
+                                <MapPin className="h-4 w-4 text-primary" />
+                                <p className="text-sm font-bold text-foreground">서울 강남구 혜택 요약</p>
+                            </div>
+                            <div className="space-y-2">
+                                {benefits.map((b) => (
+                                    <div key={b.title} className="rounded-lg bg-background p-3">
+                                        <p className="text-xs font-semibold text-foreground">{b.title}</p>
+                                        <p className="mt-0.5 text-[11px] text-muted-foreground">{b.detail}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                     {/* Related docs */}
                     <div>
@@ -256,21 +356,17 @@ export default function ChatbotPage() {
                     <div>
                         <div className="mb-3 flex items-center gap-2">
                             <Phone className="h-4 w-4 text-primary" />
-                            <p className="text-sm font-bold text-foreground">긴급 연락처</p>
+                            <p className="text-sm font-bold text-foreground">
+                                {isHrMode ? '운영 연락처' : '긴급 연락처'}
+                            </p>
                         </div>
                         <div className="space-y-2">
-                            <div className="rounded-lg bg-background p-3">
-                                <p className="text-xs font-semibold text-foreground">모성보호 상담센터</p>
-                                <p className="mt-0.5 text-[11px] text-primary font-medium">1588-0000</p>
-                            </div>
-                            <div className="rounded-lg bg-background p-3">
-                                <p className="text-xs font-semibold text-foreground">근로복지공단</p>
-                                <p className="mt-0.5 text-[11px] text-primary font-medium">1588-0075</p>
-                            </div>
-                            <div className="rounded-lg bg-background p-3">
-                                <p className="text-xs font-semibold text-foreground">건강보험공단 임산부</p>
-                                <p className="mt-0.5 text-[11px] text-primary font-medium">1577-1000</p>
-                            </div>
+                            {contacts.map((contact) => (
+                                <div key={contact.title} className="rounded-lg bg-background p-3">
+                                    <p className="text-xs font-semibold text-foreground">{contact.title}</p>
+                                    <p className="mt-0.5 text-[11px] text-primary font-medium">{contact.value}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

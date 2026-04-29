@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
     BarChart,
     Bar,
@@ -15,6 +17,8 @@ import {
     Scatter,
     ZAxis
 } from 'recharts';
+
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 const summaryCards = [
     { label: '분석 게시글 수', value: '12,847건', icon: '📄' },
@@ -74,12 +78,45 @@ const topPains = [
     { rank: 5, text: '인사평가 불이익 우려', pct: '8%' }
 ];
 
+const hrPrompts = [
+    '배우자 출산휴가 규정 점검해줘',
+    '육아기 근로시간 단축 취업규칙과 법 차이 알려줘',
+    '난임치료휴가 유급일수 점검해줘'
+];
+
 export default function HRInsights() {
+    const [hrQuestion, setHrQuestion] = useState('배우자 출산휴가 규정 점검해줘');
+    const [hrAnswer, setHrAnswer] = useState('');
+    const [hrSources, setHrSources] = useState<string[]>([]);
+    const [hrLoading, setHrLoading] = useState(false);
+
+    const askHrAssistant = async (question = hrQuestion) => {
+        const text = question.trim();
+        if (!text || hrLoading) return;
+        setHrQuestion(text);
+        setHrLoading(true);
+        try {
+            const res = await fetch(`${API_URL}/chat`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text, audience: 'hr' }),
+            });
+            const data = await res.json();
+            setHrAnswer(data.answer || '답변을 생성하지 못했습니다.');
+            setHrSources(data.sources || []);
+        } catch {
+            setHrAnswer('HR 점검 도우미 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+            setHrSources([]);
+        } finally {
+            setHrLoading(false);
+        }
+    };
+
     return (
         <main className="flex-1 overflow-y-auto bg-background p-6 lg:p-8">
             <div className="mb-6">
-                <h1 className="text-2xl font-bold text-foreground">HR 사각지대 분석</h1>
-                <p className="text-sm text-muted-foreground mt-1">맘카페 실제 게시글 기반 LDA 토픽모델링 결과입니다</p>
+                <h1 className="text-2xl font-bold text-foreground">HR 관리자 워크스페이스</h1>
+                <p className="text-sm text-muted-foreground mt-1">사우 고충 흐름과 취업규칙 점검 포인트를 함께 확인합니다</p>
             </div>
 
             {/* Summary Cards */}
@@ -96,6 +133,75 @@ export default function HRInsights() {
                     </Card>
                 ))}
             </div>
+
+            <Card className="mb-6 border-primary/20 bg-card">
+                <CardHeader>
+                    <div className="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+                        <div>
+                            <CardTitle className="text-lg">HR 규정 점검 도우미</CardTitle>
+                            <p className="mt-1 text-sm text-muted-foreground">
+                                법정 기준과 취업규칙 차이를 관리자 관점으로 비교하고, 운영 조치까지 확인합니다.
+                            </p>
+                        </div>
+                        <Badge variant="secondary" className="w-fit">HR 관리자 모드</Badge>
+                    </div>
+                </CardHeader>
+                <CardContent>
+                    <div className="grid gap-5 xl:grid-cols-[minmax(320px,0.85fr)_1.15fr]">
+                        <div className="space-y-3">
+                            <div className="flex flex-wrap gap-2">
+                                {hrPrompts.map((prompt) => (
+                                    <button
+                                        key={prompt}
+                                        onClick={() => askHrAssistant(prompt)}
+                                        disabled={hrLoading}
+                                        className="rounded-full border border-primary/25 bg-secondary px-3 py-1.5 text-xs font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground disabled:opacity-50"
+                                    >
+                                        {prompt}
+                                    </button>
+                                ))}
+                            </div>
+                            <textarea
+                                value={hrQuestion}
+                                onChange={(event) => setHrQuestion(event.target.value)}
+                                className="min-h-28 w-full resize-none rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+                                placeholder="점검할 HR 규정 질문을 입력하세요"
+                            />
+                            <Button
+                                onClick={() => askHrAssistant()}
+                                disabled={hrLoading}
+                                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                            >
+                                {hrLoading ? '점검 중...' : '규정 점검하기'}
+                            </Button>
+                        </div>
+
+                        <div className="min-h-56 rounded-lg border border-border bg-background p-4">
+                            {hrAnswer ? (
+                                <>
+                                    <p className="whitespace-pre-line text-sm leading-relaxed text-foreground">{hrAnswer}</p>
+                                    {hrSources.length > 0 && (
+                                        <div className="mt-4 flex flex-wrap gap-1">
+                                            {hrSources.map((source) => (
+                                                <span key={source} className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary">
+                                                    {source}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                                </>
+                            ) : (
+                                <div className="flex h-full min-h-48 items-center justify-center text-center">
+                                    <div>
+                                        <p className="text-sm font-semibold text-foreground">점검할 규정을 입력하세요</p>
+                                        <p className="mt-1 text-xs text-muted-foreground">법정 의무, 사내 규정, 차이/점검, 실무 팁이 분리되어 표시됩니다.</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
 
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
                 {/* Left 2/3 */}
@@ -183,7 +289,7 @@ export default function HRInsights() {
                 </div>
 
                 {/* Right 1/3 */}
-                <div>
+                <div className="space-y-6">
                     <Card className="sticky top-6">
                         <CardHeader>
                             <CardTitle className="text-base">💡 챗봇에 반영된 인사이트</CardTitle>
