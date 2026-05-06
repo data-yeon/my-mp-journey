@@ -18,13 +18,6 @@ import {
     ZAxis
 } from 'recharts';
 import { requestChatAnswer } from '@/lib/chatApi';
-import hrData from '../data/hr_community_dummy_v2.json';
-
-const summaryCards = [
-    { label: '분석 게시글 수', value: `${hrData.length}건`, icon: '📄' },
-    { label: '추출 토픽 수', value: `${new Set(hrData.map((item) => item.lda_topic_label)).size}개`, icon: '🔍' },
-    { label: '주요 키워드', value: '육아휴직 · 단축근무 · 복직', icon: '🏷️' }
-];
 
 const topics = [
     { id: 1, label: '복직_불이익', color: 'hsl(352, 87%, 67%)' },
@@ -32,6 +25,14 @@ const topics = [
     { id: 3, label: '직장내_눈치', color: 'hsl(350, 80%, 75%)' },
     { id: 4, label: '법령_정보_부족', color: 'hsl(350, 70%, 82%)' },
     { id: 5, label: '임신_은폐', color: 'hsl(352, 60%, 50%)' }
+];
+
+const HR_COMMUNITY_POST_COUNT = 1500;
+
+const summaryCards = [
+    { label: '분석 게시글 수', value: `${HR_COMMUNITY_POST_COUNT.toLocaleString()}건`, icon: '📄' },
+    { label: '추출 토픽 수', value: `${topics.length}개`, icon: '🔍' },
+    { label: '주요 키워드', value: '육아휴직 · 단축근무 · 복직', icon: '🏷️' }
 ];
 
 const keywordData = [
