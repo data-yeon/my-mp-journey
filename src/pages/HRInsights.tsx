@@ -54,21 +54,21 @@ const barData = topics.map((t, i) => ({
 }));
 
 const months = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
-const trendData = months.map((m, i) => ({
-    month: m,
-    '복직 불안': 20 + Math.sin(i * 0.5) * 15 + Math.random() * 5,
-    '휴가 신청': 15 + Math.cos(i * 0.4) * 10 + Math.random() * 8,
-    '단축근무 갈등': 25 + Math.sin(i * 0.7) * 12 + Math.random() * 6,
-    '지원금 정보': 18 + Math.cos(i * 0.6) * 8 + Math.random() * 10,
-    '직장 내 눈치': 22 + Math.sin(i * 0.3) * 10 + Math.random() * 7
+const trendData = months.map((month, i) => ({
+    month,
+    [topics[0].label]: Math.round(28 + Math.sin(i * 0.55) * 8 + i * 0.8),
+    [topics[1].label]: Math.round(24 + Math.cos(i * 0.45) * 7 + i * 0.6),
+    [topics[2].label]: Math.round(30 + Math.sin(i * 0.35) * 6 + i * 0.5),
+    [topics[3].label]: Math.round(18 + Math.cos(i * 0.5) * 5 + i * 0.7),
+    [topics[4].label]: Math.round(14 + Math.sin(i * 0.65) * 5 + i * 0.4)
 }));
 
 const bubbleData = [
-    { x: 30, y: 60, z: 280, topic: '복직 불안' },
-    { x: 70, y: 75, z: 220, topic: '휴가 신청' },
-    { x: 50, y: 30, z: 180, topic: '단축근무 갈등' },
-    { x: 80, y: 45, z: 150, topic: '지원금 정보' },
-    { x: 40, y: 80, z: 200, topic: '직장 내 눈치' }
+    { x: 30, y: 60, z: 280, topic: '복직_불이익' },
+    { x: 70, y: 75, z: 220, topic: '단축근무_거절' },
+    { x: 50, y: 30, z: 180, topic: '직장내_눈치' },
+    { x: 80, y: 45, z: 150, topic: '법령_정보_부족' },
+    { x: 40, y: 80, z: 200, topic: '임신_은폐' }
 ];
 
 const topPains = [
