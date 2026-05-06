@@ -17,29 +17,29 @@ import {
     Scatter,
     ZAxis
 } from 'recharts';
-
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
+import { requestChatAnswer } from '@/lib/chatApi';
+import hrData from '../data/hr_community_dummy_v2.json';
 
 const summaryCards = [
-    { label: '분석 게시글 수', value: '12,847건', icon: '📄' },
-    { label: '추출 토픽 수', value: '5개', icon: '🔍' },
+    { label: '분석 게시글 수', value: `${hrData.length}건`, icon: '📄' },
+    { label: '추출 토픽 수', value: `${new Set(hrData.map((item) => item.lda_topic_label)).size}개`, icon: '🔍' },
     { label: '주요 키워드', value: '육아휴직 · 단축근무 · 복직', icon: '🏷️' }
 ];
 
 const topics = [
-    { id: 1, label: '복직 불안', color: 'hsl(352, 87%, 67%)' },
-    { id: 2, label: '휴가 신청', color: 'hsl(352, 87%, 57%)' },
-    { id: 3, label: '단축근무 갈등', color: 'hsl(350, 80%, 75%)' },
-    { id: 4, label: '지원금 정보', color: 'hsl(350, 70%, 82%)' },
-    { id: 5, label: '직장 내 눈치', color: 'hsl(352, 60%, 50%)' }
+    { id: 1, label: '복직_불이익', color: 'hsl(352, 87%, 67%)' },
+    { id: 2, label: '단축근무_거절', color: 'hsl(352, 87%, 57%)' },
+    { id: 3, label: '직장내_눈치', color: 'hsl(350, 80%, 75%)' },
+    { id: 4, label: '법령_정보_부족', color: 'hsl(350, 70%, 82%)' },
+    { id: 5, label: '임신_은폐', color: 'hsl(352, 60%, 50%)' }
 ];
 
 const keywordData = [
-    { topic: '복직 불안', 복직: 85, 불안: 72, 경력단절: 65, 눈치: 58, 퇴사: 45 },
-    { topic: '휴가 신청', 출산휴가: 90, 신청서: 78, 서류: 62, 급여: 55, 기간: 48 },
-    { topic: '단축근무 갈등', 단축근무: 88, 갈등: 70, 상사: 63, 업무량: 57, 눈치: 50 },
-    { topic: '지원금 정보', 지원금: 92, 출산장려금: 75, 바우처: 68, 신청방법: 60, 지자체: 52 },
-    { topic: '직장 내 눈치', 눈치: 82, 분위기: 74, 승진: 60, 인사평가: 55, 차별: 48 }
+    { topic: '복직_불이익', 복직: 85, 불안: 72, 경력단절: 65, 눈치: 58, 퇴사: 45 },
+    { topic: '단축근무_거절', 단축근무: 88, 거절: 70, 상사: 63, 업무량: 57, 눈치: 50 },
+    { topic: '직장내_눈치', 눈치: 82, 분위기: 74, 승진: 60, 인사평가: 55, 차별: 48 },
+    { topic: '법령_정보_부족', 법령: 92, 정보: 75, 부족: 68, 접근성: 60, 교육: 52 },
+    { topic: '임신_은폐', 임신: 90, 은폐: 78, 스트레스: 62, 건강: 55, 지원: 48 }
 ];
 
 const barData = topics.map((t, i) => ({
@@ -96,16 +96,20 @@ export default function HRInsights() {
         setHrQuestion(text);
         setHrLoading(true);
         try {
-            const res = await fetch(`${API_URL}/chat`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text, audience: 'hr' }),
-            });
-            const data = await res.json();
-            setHrAnswer(data.answer || '답변을 생성하지 못했습니다.');
-            setHrSources(data.sources || []);
-        } catch {
-            setHrAnswer('HR 점검 도우미 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+            const data = await requestChatAnswer(text, 'hr');
+            setHrAnswer(data.answer);
+            setHrSources(data.sources);
+        } catch (err) {
+            const isTimeout =
+                (err instanceof DOMException && err.name === 'AbortError') ||
+                (err instanceof Error && err.name === 'AbortError');
+            setHrAnswer(
+                isTimeout
+                    ? '답변 생성이 오래 걸리고 있어요. 잠시 후 다시 시도하거나, 점검할 제도명을 더 구체적으로 입력해 주세요.'
+                    : err instanceof Error && err.message
+                      ? err.message
+                      : 'HR 점검 도우미 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.'
+            );
             setHrSources([]);
         } finally {
             setHrLoading(false);
@@ -116,7 +120,9 @@ export default function HRInsights() {
         <main className="flex-1 overflow-y-auto bg-background p-6 lg:p-8">
             <div className="mb-6">
                 <h1 className="text-2xl font-bold text-foreground">HR 관리자 워크스페이스</h1>
-                <p className="text-sm text-muted-foreground mt-1">사우 고충 흐름과 취업규칙 점검 포인트를 함께 확인합니다</p>
+                <p className="text-sm text-muted-foreground mt-1">
+                    구성원 고충 흐름과 취업규칙 점검 포인트를 함께 확인합니다
+                </p>
             </div>
 
             {/* Summary Cards */}
@@ -143,7 +149,9 @@ export default function HRInsights() {
                                 법정 기준과 취업규칙 차이를 관리자 관점으로 비교하고, 운영 조치까지 확인합니다.
                             </p>
                         </div>
-                        <Badge variant="secondary" className="w-fit">HR 관리자 모드</Badge>
+                        <Badge variant="secondary" className="w-fit">
+                            HR 관리자 모드
+                        </Badge>
                     </div>
                 </CardHeader>
                 <CardContent>
@@ -179,11 +187,16 @@ export default function HRInsights() {
                         <div className="min-h-56 rounded-lg border border-border bg-background p-4">
                             {hrAnswer ? (
                                 <>
-                                    <p className="whitespace-pre-line text-sm leading-relaxed text-foreground">{hrAnswer}</p>
+                                    <p className="whitespace-pre-line text-sm leading-relaxed text-foreground">
+                                        {hrAnswer}
+                                    </p>
                                     {hrSources.length > 0 && (
                                         <div className="mt-4 flex flex-wrap gap-1">
                                             {hrSources.map((source) => (
-                                                <span key={source} className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary">
+                                                <span
+                                                    key={source}
+                                                    className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary"
+                                                >
                                                     {source}
                                                 </span>
                                             ))}
@@ -193,8 +206,12 @@ export default function HRInsights() {
                             ) : (
                                 <div className="flex h-full min-h-48 items-center justify-center text-center">
                                     <div>
-                                        <p className="text-sm font-semibold text-foreground">점검할 규정을 입력하세요</p>
-                                        <p className="mt-1 text-xs text-muted-foreground">법정 의무, 사내 규정, 차이/점검, 실무 팁이 분리되어 표시됩니다.</p>
+                                        <p className="text-sm font-semibold text-foreground">
+                                            점검할 규정을 입력하세요
+                                        </p>
+                                        <p className="mt-1 text-xs text-muted-foreground">
+                                            법정 의무, 사내 규정, 차이/점검, 실무 팁이 분리되어 표시됩니다.
+                                        </p>
                                     </div>
                                 </div>
                             )}

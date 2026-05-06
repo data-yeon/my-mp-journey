@@ -17,7 +17,7 @@ import type { UserRole } from '@/types/role';
 
 const employeeNavItems = [
     { title: '대시보드', url: '/', icon: LayoutDashboard },
-    { title: '사우 챗봇', url: '/chatbot', icon: MessageCircleMore },
+    { title: '구성원 챗봇', url: '/chatbot', icon: MessageCircleMore },
     { title: '혜택 안내', url: '/benefits', icon: Gift },
     { title: '웰니스 추천', url: '/wellness', icon: Heart },
     { title: '동선 추천', url: '/route', icon: MapPin },
@@ -44,7 +44,7 @@ export function AppSidebar({ role }: AppSidebarProps) {
     const profile = isHrWorkspace
         ? { name: '박서연', detail: 'HR 관리자 · 인사운영' }
         : { name: '김지은', detail: '임신 24주차 · 서울 강남구' };
-    const roleLabel = isHrWorkspace ? 'HR 직원 모드' : '일반 사우 모드';
+    const roleLabel = isHrWorkspace ? 'HR 직원 모드' : '일반 구성원 모드';
 
     return (
         <aside className="flex h-screen w-64 flex-col border-r border-border bg-card">
@@ -84,7 +84,7 @@ export function AppSidebar({ role }: AppSidebarProps) {
                             관리자 기능
                         </div>
                         <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                            법령 확인, 취업규칙 점검, 사우 고충 토픽 분석
+                            법령 확인, 취업규칙 점검, 구성원 고충 토픽 분석
                         </p>
                     </div>
                 )}

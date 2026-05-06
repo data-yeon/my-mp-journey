@@ -2,9 +2,8 @@ import { useState, useRef, useEffect } from 'react';
 import { Send, Plus, MapPin, Phone, FileText, ExternalLink, Bot, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { gov24LocalBirthServices } from '@/data/gov24LocalBirthServices';
+import { requestChatAnswer } from '@/lib/chatApi';
 import type { UserRole } from '@/types/role';
-
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 interface Message {
     id: number;
@@ -16,9 +15,10 @@ interface Message {
 const getInitialMessage = (role: UserRole): Message => ({
     id: 1,
     role: 'bot',
-    content: role === 'hr'
-        ? '안녕하세요! 맘마중 HR 법령·규정 확인 도우미입니다.\n모성보호 관련 법령 기준과 취업규칙 차이를 빠르게 확인해 드릴게요.'
-        : '안녕하세요! 맘마중 사우 상담 챗봇입니다.\n내 휴가, 급여, 회사 규정, 지역별 출산 지원 혜택을 편하게 물어보세요.',
+    content:
+        role === 'hr'
+            ? '안녕하세요! 맘마중 HR 법령·규정 확인 도우미입니다.\n모성보호 관련 법령 기준과 취업규칙 차이를 빠르게 확인해 드릴게요.'
+            : '안녕하세요! 맘마중 구성원 상담 챗봇입니다.\n내 휴가, 급여, 회사 규정, 지역별 출산 지원 혜택을 편하게 물어보세요.'
 });
 
 const employeeSuggestedQuestions = [
@@ -51,16 +51,17 @@ const hrRecentChecks = [
 
 const userRegion = {
     province: '서울특별시',
-    district: '강남구',
+    district: '강남구'
 };
 
 const benefits = gov24LocalBirthServices
-    .filter((service) => (
-        service.province === userRegion.province
-        && (service.district === userRegion.district || service.district === '전체')
-    ))
+    .filter(
+        (service) =>
+            service.province === userRegion.province &&
+            (service.district === userRegion.district || service.district === '전체')
+    )
     .sort((a, b) => {
-        const score = (service: typeof gov24LocalBirthServices[number]) => {
+        const score = (service: (typeof gov24LocalBirthServices)[number]) => {
             let value = 0;
             if (service.supportType.includes('현금')) value += 3;
             if (service.onlineApplyAvailable) value += 2;
@@ -72,7 +73,7 @@ const benefits = gov24LocalBirthServices
     .slice(0, 3)
     .map((service) => ({
         title: service.title,
-        detail: `${service.supportType || '지원형태 확인'} · ${service.applicationMethod || '신청방법 확인'}`,
+        detail: `${service.supportType || '지원형태 확인'} · ${service.applicationMethod || '신청방법 확인'}`
     }));
 
 const employeeRelatedDocs = ['내 휴가 신청 가이드', '육아휴직 급여 안내서', '지역 출산지원금 안내'];
@@ -124,34 +125,34 @@ export default function ChatbotPage({ role }: ChatbotPageProps) {
         setInput('');
         setLoading(true);
 
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 20000);
-
         try {
-            const res = await fetch(`${API_URL}/chat`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text, audience: role }),
-                signal: controller.signal,
-            });
-            const data = await res.json();
-            setMessages((prev) => [...prev, {
-                id: Date.now() + 1,
-                role: 'bot',
-                content: data.answer,
-                sources: data.sources,
-            }]);
+            const data = await requestChatAnswer(text, role);
+            setMessages((prev) => [
+                ...prev,
+                {
+                    id: Date.now() + 1,
+                    role: 'bot',
+                    content: data.answer,
+                    sources: data.sources
+                }
+            ]);
         } catch (err) {
-            const isTimeout = err instanceof DOMException && err.name === 'AbortError';
-            setMessages((prev) => [...prev, {
-                id: Date.now() + 1,
-                role: 'bot',
-                content: isTimeout
-                    ? '답변 생성이 오래 걸리고 있어요. 출산휴가, 육아휴직, 지역별 출산 지원 혜택처럼 구체적으로 다시 물어봐 주세요.'
-                    : '일시적인 오류가 발생했어요. 잠시 후 다시 시도해주세요.',
-            }]);
+            const isTimeout =
+                (err instanceof DOMException && err.name === 'AbortError') ||
+                (err instanceof Error && err.name === 'AbortError');
+            setMessages((prev) => [
+                ...prev,
+                {
+                    id: Date.now() + 1,
+                    role: 'bot',
+                    content: isTimeout
+                        ? '답변 생성이 오래 걸리고 있어요. 잠시 후 다시 시도하거나, 출산휴가·육아휴직·지역별 출산 지원 혜택처럼 제도명을 넣어 다시 물어봐 주세요.'
+                        : err instanceof Error && err.message
+                          ? err.message
+                          : '일시적인 오류가 발생했어요. 잠시 후 다시 시도해 주세요.'
+                }
+            ]);
         } finally {
-            clearTimeout(timeout);
             setLoading(false);
         }
     };
@@ -209,7 +210,7 @@ export default function ChatbotPage({ role }: ChatbotPageProps) {
                     </div>
                     <div>
                         <p className="text-sm font-bold text-foreground">
-                            {isHrMode ? '맘마중 HR 법령·규정 확인' : '맘마중 사우 상담'}
+                            {isHrMode ? '맘마중 HR 법령·규정 확인' : '맘마중 구성원 상담'}
                         </p>
                         <p className="text-xs text-muted-foreground">
                             {isHrMode ? '법령 기준 · 취업규칙 비교 · 실무 적용 확인' : '휴가 · 급여 · 지역 혜택 안내'}
@@ -236,7 +237,10 @@ export default function ChatbotPage({ role }: ChatbotPageProps) {
                                     {msg.sources && msg.sources.length > 0 && (
                                         <div className="mt-2 flex flex-wrap gap-1">
                                             {msg.sources.map((s) => (
-                                                <span key={s} className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] text-primary font-medium">
+                                                <span
+                                                    key={s}
+                                                    className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] text-primary font-medium"
+                                                >
                                                     {s}
                                                 </span>
                                             ))}
@@ -303,9 +307,18 @@ export default function ChatbotPage({ role }: ChatbotPageProps) {
                             </div>
                             <div className="space-y-2">
                                 {[
-                                    { title: '법령 vs 취업규칙', detail: '법정 최저 기준과 사내 조항의 차이를 분리해서 확인' },
-                                    { title: '빠른 법령 확인', detail: '휴가 일수, 급여, 신청 요건을 조항 기준으로 빠르게 확인' },
-                                    { title: '운영 리스크', detail: '불리한 조항, 구버전 기준, 신청 흐름 공백을 함께 확인' }
+                                    {
+                                        title: '법령 vs 취업규칙',
+                                        detail: '법정 최저 기준과 사내 조항의 차이를 분리해서 확인'
+                                    },
+                                    {
+                                        title: '빠른 법령 확인',
+                                        detail: '휴가 일수, 급여, 신청 요건을 조항 기준으로 빠르게 확인'
+                                    },
+                                    {
+                                        title: '운영 리스크',
+                                        detail: '불리한 조항, 구버전 기준, 신청 흐름 공백을 함께 확인'
+                                    }
                                 ].map((item) => (
                                     <div key={item.title} className="rounded-lg bg-background p-3">
                                         <p className="text-xs font-semibold text-foreground">{item.title}</p>
