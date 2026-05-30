@@ -244,7 +244,7 @@ export default function Wellness() {
   return (
     <main className="flex-1 overflow-y-auto bg-background p-6 lg:p-8">
       <div className="mb-6 pr-28">
-        <h1 className="text-2xl font-bold text-foreground">임신 주수별 웰니스 추천</h1>
+        <h1 className="text-2xl font-bold text-foreground">임신 주수별 제품 추천</h1>
         <p className="mt-1 text-sm text-muted-foreground">
           합성 리뷰 1,500건을 집계한 신뢰점수, 감성점수, 안전성 리스크로 제품을 선별합니다.
         </p>

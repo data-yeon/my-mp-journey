@@ -11,10 +11,10 @@ import { NavLink } from '@/components/NavLink';
 
 const employeeNavItems = [
     { title: '대시보드', url: '/', icon: LayoutDashboard },
-    { title: '질문챗봇', url: '/chatbot', icon: MessageCircleMore },
+    { title: '질문 챗봇', url: '/chatbot', icon: MessageCircleMore },
     { title: '혜택 안내', url: '/benefits', icon: Gift },
-    { title: '제품추천', url: '/wellness', icon: Heart },
-    { title: '동선추천', url: '/route', icon: MapPin },
+    { title: '제품 추천', url: '/wellness', icon: Heart },
+    { title: '동선 추천', url: '/route', icon: MapPin },
 ];
 
 const hrNavItems = [
