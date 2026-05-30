@@ -42,6 +42,28 @@ interface RouteRecord {
 const ROUTE_COLORS: Record<string, string> = {
   A: "#22c55e", B: "#f59e0b", C: "#f97316", D: "#ef4444", E: "#8b5cf6",
 };
+
+// 임신 주수별 가중치 프로파일
+const WEEK_PROFILES = [
+  { label: "초기 (1~12주)",  range: [1, 12],  weights: { slope: 0.25, crosswalk: 0.20, distance: 0.40, barrier: 0.15 }, reason: "입덧·피로로 이동거리 부담 ↑" },
+  { label: "중기 (13~27주)", range: [13, 27], weights: { slope: 0.40, crosswalk: 0.25, distance: 0.20, barrier: 0.15 }, reason: "안정기 — 기본 가중치" },
+  { label: "후기 (28주+)",   range: [28, 42], weights: { slope: 0.55, crosswalk: 0.20, distance: 0.15, barrier: 0.10 }, reason: "골반 통증·낙상 위험 → 경사도 ↑" },
+];
+
+function getWeekProfile(week: number) {
+  return WEEK_PROFILES.find((p) => week >= p.range[0] && week <= p.range[1]) ?? WEEK_PROFILES[1];
+}
+
+function calcStress(route: RouteRecord, w: { slope: number; crosswalk: number; distance: number; barrier: number }) {
+  const s = route.summary;
+  const normInv = (val: number, worst: number, best: number) =>
+    Math.max(0, Math.min(1, (worst - val) / (worst - best)));
+  const slope     = normInv(s.slope_section_count, 8, 0);
+  const crosswalk = normInv(s.crosswalk_count, 10, 0);
+  const distance  = normInv(s.distance, 1500, 300);
+  const barrier   = s.barrier_free_ratio;
+  return w.slope * slope + w.crosswalk * crosswalk + w.distance * distance + w.barrier * barrier;
+}
 const GRADE_COLORS: Record<string, string> = {
   A: "#22c55e", B: "#f59e0b", C: "#f97316", D: "#ef4444",
 };
@@ -92,16 +114,22 @@ function toRadarData(routes: RouteRecord[]) {
 export default function RouteRecommend() {
   const [selectedHospital, setSelectedHospital] = useState(HOSPITALS[0]);
   const [search, setSearch] = useState("");
+  const [week, setWeek] = useState(24); // 사이드바 기본값: 24주차
+
+  const profile = useMemo(() => getWeekProfile(week), [week]);
 
   const hospitalRoutes = useMemo(
     () => (routeData as unknown as RouteRecord[]).filter((r) => r.hospital_name === selectedHospital.name),
     [selectedHospital]
   );
 
-  const bestRoute = useMemo(
-    () => [...hospitalRoutes].sort((a, b) => b.stress_index - a.stress_index)[0],
-    [hospitalRoutes]
+  // 임신 주수 가중치로 재계산한 순위
+  const rankedRoutes = useMemo(
+    () => [...hospitalRoutes].sort((a, b) => calcStress(b, profile.weights) - calcStress(a, profile.weights)),
+    [hospitalRoutes, profile]
   );
+
+  const bestRoute = rankedRoutes[0];
 
   const radarData = useMemo(() => toRadarData(hospitalRoutes), [hospitalRoutes]);
 
@@ -120,6 +148,52 @@ export default function RouteRecommend() {
           T-map 보행자 경로 API 기반 이동 스트레스 지수 · 경사도 40% · 횡단보도 25% · 이동거리 20% · 배리어프리 15%
         </p>
       </div>
+
+      {/* 임신 주수 선택 */}
+      <Card className="mb-4">
+        <CardContent className="p-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1 w-full">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-sm font-semibold text-foreground">임신 주수</span>
+                <span className="text-sm font-bold text-primary">{week}주차</span>
+              </div>
+              <input
+                type="range"
+                min={1}
+                max={42}
+                value={week}
+                onChange={(e) => setWeek(Number(e.target.value))}
+                className="w-full accent-primary cursor-pointer"
+              />
+              <div className="flex justify-between text-[10px] text-muted-foreground mt-0.5 px-0.5">
+                <span>1주</span>
+                <span className="text-blue-500 font-medium">▸ 초기 (12주)</span>
+                <span className="text-green-500 font-medium">▸ 중기 (27주)</span>
+                <span className="text-orange-500 font-medium">▸ 후기</span>
+                <span>42주</span>
+              </div>
+            </div>
+            <div className="shrink-0 rounded-lg bg-secondary/60 border px-4 py-2 text-center w-full sm:w-auto sm:min-w-[220px]">
+              <p className="text-xs font-bold text-primary mb-0.5">{profile.label}</p>
+              <p className="text-[11px] text-muted-foreground mb-2">{profile.reason}</p>
+              <div className="grid grid-cols-4 gap-1 text-[10px]">
+                {[
+                  { k: "경사도",    v: profile.weights.slope },
+                  { k: "횡단보도",  v: profile.weights.crosswalk },
+                  { k: "이동거리",  v: profile.weights.distance },
+                  { k: "배리어프리", v: profile.weights.barrier },
+                ].map((w) => (
+                  <div key={w.k} className="text-center">
+                    <p className="text-muted-foreground leading-tight">{w.k}</p>
+                    <p className="font-bold text-foreground">{Math.round(w.v * 100)}%</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* 병원 검색 */}
       <Card className="mb-4">
@@ -237,13 +311,14 @@ export default function RouteRecommend() {
         </Card>
       </div>
 
-      {/* 경로 카드 */}
+      {/* 경로 카드 — 임신 주수 가중치 기준 정렬 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 mb-6">
-        {hospitalRoutes.map((route) => {
+        {rankedRoutes.map((route, idx) => {
           const suffix = route.route_name.split("—")[0].replace("경로 ", "").trim();
           const color = ROUTE_COLORS[suffix] ?? "#94a3b8";
           const grade = route.accessibility_grade;
-          const isBest = route.route_id === bestRoute?.route_id;
+          const isBest = idx === 0;
+          const dynScore = calcStress(route, profile.weights);
           return (
             <Card key={route.route_id} className="border-t-4" style={{ borderTopColor: color }}>
               <CardContent className="p-4 space-y-2">
@@ -256,7 +331,7 @@ export default function RouteRecommend() {
                 </p>
                 <div className="text-center py-1">
                   <span className="text-2xl font-bold" style={{ color }}>
-                    {(route.stress_index * 100).toFixed(0)}
+                    {(dynScore * 100).toFixed(0)}
                   </span>
                   <span className="text-xs text-muted-foreground"> / 100점</span>
                 </div>
@@ -289,23 +364,26 @@ export default function RouteRecommend() {
       {/* 공식 카드 */}
       <Card>
         <CardHeader className="pb-2">
-          <CardTitle className="text-base">🧮 이동 스트레스 지수 공식</CardTitle>
+          <CardTitle className="text-base flex items-center gap-2">
+            🧮 이동 스트레스 지수 공식
+            <span className="text-xs font-normal text-muted-foreground">— {profile.label} 적용 중</span>
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="rounded-lg bg-secondary/40 p-4 mb-3">
             <p className="text-sm font-mono text-foreground">
-              스트레스 지수 = <span className="text-primary font-bold">0.40</span>×경사도 +{" "}
-              <span className="text-primary font-bold">0.25</span>×횡단보도 +{" "}
-              <span className="text-primary font-bold">0.20</span>×이동거리 +{" "}
-              <span className="text-primary font-bold">0.15</span>×배리어프리
+              스트레스 지수 = <span className="text-primary font-bold">{Math.round(profile.weights.slope * 100)}%</span>×경사도 +{" "}
+              <span className="text-primary font-bold">{Math.round(profile.weights.crosswalk * 100)}%</span>×횡단보도 +{" "}
+              <span className="text-primary font-bold">{Math.round(profile.weights.distance * 100)}%</span>×이동거리 +{" "}
+              <span className="text-primary font-bold">{Math.round(profile.weights.barrier * 100)}%</span>×배리어프리
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
             {[
-              { label: "경사도", weight: "40%", desc: "공공데이터포털 보행환경DB" },
-              { label: "횡단보도 수", weight: "25%", desc: "T-map 보행자 경로 API" },
-              { label: "이동거리", weight: "20%", desc: "T-map 보행자 경로 API" },
-              { label: "배리어프리", weight: "15%", desc: "글로벌 배리어프리 DB" },
+              { label: "경사도",    weight: Math.round(profile.weights.slope    * 100) + "%", desc: "공공데이터포털 보행환경DB" },
+              { label: "횡단보도 수", weight: Math.round(profile.weights.crosswalk * 100) + "%", desc: "T-map 보행자 경로 API" },
+              { label: "이동거리",  weight: Math.round(profile.weights.distance  * 100) + "%", desc: "T-map 보행자 경로 API" },
+              { label: "배리어프리", weight: Math.round(profile.weights.barrier  * 100) + "%", desc: "글로벌 배리어프리 DB" },
             ].map((f) => (
               <div key={f.label} className="rounded-lg bg-card border p-3">
                 <p className="text-xs text-muted-foreground">{f.label}</p>
