@@ -228,7 +228,6 @@ export default function Wellness() {
 
   const avgTrust = average(activeProducts.map((product) => product.trust_percent));
   const avgSentiment = average(activeProducts.map((product) => product.sentiment_percent));
-  const avgRisk = average(activeProducts.map((product) => product.safety_risk_percent));
   const purchaseContexts = collectSegments(
     activeProducts,
     (product) => product.review_context_segments.purchase_contexts,
@@ -298,7 +297,7 @@ export default function Wellness() {
           { label: "대상 제품", value: `${activeProducts.length}개` },
           { label: "추천 가능", value: `${recommendedProducts.length}개` },
           { label: "평균 신뢰점수", value: `${avgTrust}%` },
-          { label: "평균 안전 리스크", value: `${avgRisk}%` },
+          { label: "주의 제품", value: `${warningProducts.length}개` },
         ].map((item) => (
           <Card key={item.label}>
             <CardContent className="p-4">
