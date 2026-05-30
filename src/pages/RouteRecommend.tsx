@@ -1,157 +1,318 @@
+import { useEffect, useMemo, useState } from "react";
+import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
-import {
-  RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
-  ResponsiveContainer, Legend, Tooltip,
-} from "recharts";
+import { RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend, Tooltip } from "recharts";
+import routeData from "@/data/mobility_route_real.json";
 
-const radarData = [
-  { axis: "경사도", A: 85, B: 60, C: 30 },
-  { axis: "횡단보도", A: 90, B: 70, C: 45 },
-  { axis: "이동거리", A: 75, B: 80, C: 50 },
-  { axis: "엘리베이터", A: 95, B: 55, C: 40 },
-  { axis: "배리어프리", A: 92, B: 65, C: 35 },
-];
+// Leaflet 기본 마커 아이콘 경로 수정 (Vite 번들러 이슈)
+delete (L.Icon.Default.prototype as any)._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+  iconUrl:       "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  shadowUrl:     "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+});
 
-const routes = [
-  {
-    name: "경로 A — 엘리베이터 우선",
-    score: 88,
-    badge: "추천",
-    badgeClass: "bg-success text-success-foreground",
-    color: "hsl(152, 60%, 45%)",
-    detail: { slope: 85, crosswalk: 90, distance: 75, elevator: 95, barrier: 92 },
-  },
-  {
-    name: "경로 B — 최단 거리",
-    score: 65,
-    badge: "보통",
-    badgeClass: "bg-warning text-warning-foreground",
-    color: "hsl(38, 92%, 50%)",
-    detail: { slope: 60, crosswalk: 70, distance: 80, elevator: 55, barrier: 65 },
-  },
-  {
-    name: "경로 C — 일반 도보",
-    score: 38,
-    badge: "위험",
-    badgeClass: "bg-destructive text-destructive-foreground",
-    color: "hsl(0, 84%, 60%)",
-    detail: { slope: 30, crosswalk: 45, distance: 50, elevator: 40, barrier: 35 },
-  },
-];
+// ── 타입 ─────────────────────────────────────────────────────────────────────
+interface RouteRecord {
+  route_id: string;
+  hospital_name: string;
+  hospital_district: string;
+  route_name: string;
+  origin: { name: string; lat: number; lng: number };
+  destination: { name: string; lat: number; lng: number };
+  summary: {
+    distance: number;
+    duration: number;
+    crosswalk_count: number;
+    slope_section_count: number;
+    elevator_count: number;
+    barrier_free_ratio: number;
+  };
+  stress_index: number;
+  accessibility_grade: string;
+  path: number[][];
+  data_source: string;
+}
 
-const formula = [
-  { factor: "경사도", weight: "40%" },
-  { factor: "횡단보도 수", weight: "25%" },
-  { factor: "이동거리", weight: "20%" },
-  { factor: "기타 (엘리베이터·배리어프리 등)", weight: "15%" },
-];
+// ── 상수 ─────────────────────────────────────────────────────────────────────
+const ROUTE_COLORS: Record<string, string> = {
+  A: "#22c55e", B: "#f59e0b", C: "#f97316", D: "#ef4444", E: "#8b5cf6",
+};
+const GRADE_COLORS: Record<string, string> = {
+  A: "#22c55e", B: "#f59e0b", C: "#f97316", D: "#ef4444",
+};
+const GRADE_LABELS: Record<string, string> = {
+  A: "매우 편함", B: "보통", C: "주의", D: "어려움",
+};
 
+const HOSPITALS = [...new Map(
+  (routeData as unknown as RouteRecord[]).map((r) => [r.hospital_name, {
+    name: r.hospital_name,
+    district: r.hospital_district,
+    lat: r.destination.lat,
+    lng: r.destination.lng,
+  }])
+).values()];
+
+// ── 지도 뷰 이동 헬퍼 ────────────────────────────────────────────────────────
+function FlyTo({ lat, lng }: { lat: number; lng: number }) {
+  const map = useMap();
+  useEffect(() => { map.flyTo([lat, lng], 15, { duration: 1 }); }, [lat, lng, map]);
+  return null;
+}
+
+// ── 스트레스 지수 → 레이더 데이터 변환 ───────────────────────────────────────
+function toRadarData(routes: RouteRecord[]) {
+  const dims = [
+    { key: "slope_section_count",  label: "경사도",    inverted: true,  max: 8   },
+    { key: "crosswalk_count",      label: "횡단보도",   inverted: true,  max: 10  },
+    { key: "distance",             label: "이동거리",   inverted: true,  max: 1500},
+    { key: "elevator_count",       label: "엘리베이터", inverted: false, max: 2   },
+    { key: "barrier_free_ratio",   label: "배리어프리", inverted: false, max: 1   },
+  ];
+
+  return dims.map(({ key, label, inverted, max }) => {
+    const entry: Record<string, string | number> = { axis: label };
+    routes.forEach((r) => {
+      const raw = r.summary[key as keyof typeof r.summary] as number;
+      const norm = inverted
+        ? Math.round(Math.max(0, (max - raw) / max) * 100)
+        : Math.round(Math.min(1, raw / max) * 100);
+      entry[r.route_name.split("—")[0].trim()] = norm;
+    });
+    return entry;
+  });
+}
+
+// ── 메인 컴포넌트 ─────────────────────────────────────────────────────────────
 export default function RouteRecommend() {
+  const [selectedHospital, setSelectedHospital] = useState(HOSPITALS[0]);
+  const [search, setSearch] = useState("");
+
+  const hospitalRoutes = useMemo(
+    () => (routeData as unknown as RouteRecord[]).filter((r) => r.hospital_name === selectedHospital.name),
+    [selectedHospital]
+  );
+
+  const bestRoute = useMemo(
+    () => [...hospitalRoutes].sort((a, b) => b.stress_index - a.stress_index)[0],
+    [hospitalRoutes]
+  );
+
+  const radarData = useMemo(() => toRadarData(hospitalRoutes), [hospitalRoutes]);
+
+  const filtered = useMemo(
+    () => HOSPITALS.filter((h) =>
+      h.name.includes(search) || h.district.includes(search)
+    ),
+    [search]
+  );
+
   return (
     <main className="flex-1 overflow-y-auto bg-background p-6 lg:p-8">
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-foreground">임산부 맞춤 동선 추천</h1>
-        <p className="text-sm text-muted-foreground mt-1">경사도·횡단보도·배리어프리 데이터 기반 이동 스트레스 지수를 계산했어요</p>
+        <p className="text-sm text-muted-foreground mt-1">
+          T-map 보행자 경로 API 기반 이동 스트레스 지수 · 경사도 40% · 횡단보도 25% · 이동거리 20% · 배리어프리 15%
+        </p>
       </div>
 
-      {/* Search */}
-      <Card className="mb-6">
-        <CardContent className="p-4 flex gap-3">
-          <Input placeholder="산부인과 이름 또는 주소를 입력하세요" className="flex-1" />
-          <Button><Search className="h-4 w-4 mr-2" />검색</Button>
+      {/* 병원 검색 */}
+      <Card className="mb-4">
+        <CardContent className="p-4">
+          <div className="flex gap-2 mb-3">
+            <input
+              className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              placeholder="산부인과 이름 또는 구 이름 검색"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {filtered.map((h) => (
+              <Button
+                key={h.name}
+                size="sm"
+                variant={selectedHospital.name === h.name ? "default" : "outline"}
+                onClick={() => { setSelectedHospital(h); setSearch(""); }}
+                className="text-xs"
+              >
+                {h.name} <span className="ml-1 opacity-60">{h.district}</span>
+              </Button>
+            ))}
+          </div>
         </CardContent>
       </Card>
 
-      {/* Map placeholder + Radar */}
+      {/* 지도 + 레이더 */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-6">
         <Card>
-          <CardHeader><CardTitle className="text-base">🗺️ 경로 지도</CardTitle></CardHeader>
-          <CardContent>
-            <div className="relative w-full h-[300px] rounded-lg bg-secondary/50 flex items-center justify-center overflow-hidden">
-              {/* Dummy map */}
-              <div className="absolute inset-0 opacity-10 bg-[linear-gradient(45deg,hsl(var(--border))_25%,transparent_25%,transparent_75%,hsl(var(--border))_75%)] bg-[length:20px_20px]" />
-              <div className="z-10 text-center space-y-2">
-                <p className="text-sm font-medium text-muted-foreground">강남세브란스 산부인과 주변 경로</p>
-                <div className="flex gap-3 justify-center">
-                  {routes.map((r) => (
-                    <Badge key={r.name} style={{ backgroundColor: r.color, color: "#fff" }} className="text-xs">
-                      {r.name.split("—")[0].trim()}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base flex items-center justify-between">
+              <span>🗺️ 경로 지도 — {selectedHospital.name}</span>
+              <Badge style={{ backgroundColor: GRADE_COLORS[bestRoute?.accessibility_grade ?? "B"], color: "#fff" }}>
+                추천: {bestRoute?.route_name.split("—")[0].trim()}
+              </Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="p-0 overflow-hidden rounded-b-lg">
+            <div style={{ height: 320 }}>
+              <MapContainer
+                center={[selectedHospital.lat, selectedHospital.lng]}
+                zoom={15}
+                style={{ height: "100%", width: "100%" }}
+                zoomControl={true}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/">OSM</a>'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <FlyTo lat={selectedHospital.lat} lng={selectedHospital.lng} />
+
+                {/* 목적지 마커 */}
+                <Marker position={[selectedHospital.lat, selectedHospital.lng]}>
+                  <Popup>{selectedHospital.name}</Popup>
+                </Marker>
+
+                {/* 경로 폴리라인 */}
+                {hospitalRoutes.map((route) => {
+                  const suffix = route.route_name.split("—")[0].replace("경로 ", "").trim();
+                  const color = ROUTE_COLORS[suffix] ?? "#94a3b8";
+                  const positions = route.path.map((c) => [c[1], c[0]] as [number, number]);
+                  return (
+                    <Polyline
+                      key={route.route_id}
+                      positions={positions}
+                      color={color}
+                      weight={suffix === bestRoute?.route_name.split("—")[0].replace("경로 ", "").trim() ? 5 : 3}
+                      opacity={suffix === bestRoute?.route_name.split("—")[0].replace("경로 ", "").trim() ? 1 : 0.55}
+                    >
+                      <Popup>
+                        {route.route_name}<br />
+                        스트레스 지수: {(route.stress_index * 100).toFixed(0)}점<br />
+                        거리: {route.summary.distance}m · 횡단보도: {route.summary.crosswalk_count}개
+                      </Popup>
+                    </Polyline>
+                  );
+                })}
+              </MapContainer>
             </div>
           </CardContent>
         </Card>
 
         <Card>
-          <CardHeader><CardTitle className="text-base">📊 경로 비교 레이더 차트</CardTitle></CardHeader>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base">📊 경로별 편의성 비교</CardTitle>
+          </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
-              <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="70%">
+            <ResponsiveContainer width="100%" height={280}>
+              <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="65%">
                 <PolarGrid stroke="hsl(var(--border))" />
                 <PolarAngleAxis dataKey="axis" tick={{ fontSize: 11 }} />
-                <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fontSize: 10 }} />
+                <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fontSize: 9 }} />
                 <Tooltip />
-                <Legend />
-                <Radar name="경로 A" dataKey="A" stroke={routes[0].color} fill={routes[0].color} fillOpacity={0.15} strokeWidth={2} />
-                <Radar name="경로 B" dataKey="B" stroke={routes[1].color} fill={routes[1].color} fillOpacity={0.15} strokeWidth={2} />
-                <Radar name="경로 C" dataKey="C" stroke={routes[2].color} fill={routes[2].color} fillOpacity={0.15} strokeWidth={2} />
+                <Legend iconSize={10} wrapperStyle={{ fontSize: 11 }} />
+                {hospitalRoutes.map((r) => {
+                  const suffix = r.route_name.split("—")[0].replace("경로 ", "").trim();
+                  const name = r.route_name.split("—")[0].trim();
+                  return (
+                    <Radar
+                      key={r.route_id}
+                      name={name}
+                      dataKey={name}
+                      stroke={ROUTE_COLORS[suffix] ?? "#94a3b8"}
+                      fill={ROUTE_COLORS[suffix] ?? "#94a3b8"}
+                      fillOpacity={0.12}
+                      strokeWidth={2}
+                    />
+                  );
+                })}
               </RadarChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
       </div>
 
-      {/* Route Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        {routes.map((r) => (
-          <Card key={r.name} className="border-l-4" style={{ borderLeftColor: r.color }}>
-            <CardContent className="p-5 space-y-3">
-              <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold text-foreground">{r.name}</p>
-                <Badge className={r.badgeClass}>{r.badge}</Badge>
-              </div>
-              <div className="text-center py-2">
-                <span className="text-3xl font-bold text-foreground">{r.score}</span>
-                <span className="text-sm text-muted-foreground"> / 100점</span>
-              </div>
-              <div className="space-y-1.5 text-xs">
-                {Object.entries(r.detail).map(([k, v]) => {
-                  const labels: Record<string, string> = { slope: "경사도", crosswalk: "횡단보도", distance: "이동거리", elevator: "엘리베이터", barrier: "배리어프리" };
-                  return (
-                    <div key={k} className="flex justify-between">
-                      <span className="text-muted-foreground">{labels[k]}</span>
-                      <span className="font-medium text-foreground">{v}점</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+      {/* 경로 카드 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 mb-6">
+        {hospitalRoutes.map((route) => {
+          const suffix = route.route_name.split("—")[0].replace("경로 ", "").trim();
+          const color = ROUTE_COLORS[suffix] ?? "#94a3b8";
+          const grade = route.accessibility_grade;
+          const isBest = route.route_id === bestRoute?.route_id;
+          return (
+            <Card key={route.route_id} className="border-t-4" style={{ borderTopColor: color }}>
+              <CardContent className="p-4 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold text-foreground">{route.route_name.split("—")[0].trim()}</span>
+                  {isBest && <Badge className="text-[10px] bg-primary text-primary-foreground">추천</Badge>}
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-tight">
+                  {route.route_name.split("—")[1]?.trim()}
+                </p>
+                <div className="text-center py-1">
+                  <span className="text-2xl font-bold" style={{ color }}>
+                    {(route.stress_index * 100).toFixed(0)}
+                  </span>
+                  <span className="text-xs text-muted-foreground"> / 100점</span>
+                </div>
+                <div
+                  className="text-center text-xs font-medium rounded-full py-0.5"
+                  style={{ backgroundColor: GRADE_COLORS[grade] + "22", color: GRADE_COLORS[grade] }}
+                >
+                  {grade}등급 · {GRADE_LABELS[grade]}
+                </div>
+                <div className="space-y-1 text-[11px] pt-1">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">이동거리</span>
+                    <span>{route.summary.distance}m</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">횡단보도</span>
+                    <span>{route.summary.crosswalk_count}개</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">배리어프리</span>
+                    <span>{Math.round(route.summary.barrier_free_ratio * 100)}%</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
 
-      {/* Formula */}
+      {/* 공식 카드 */}
       <Card>
-        <CardHeader><CardTitle className="text-base">🧮 이동 스트레스 지수 계산 공식</CardTitle></CardHeader>
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base">🧮 이동 스트레스 지수 공식</CardTitle>
+        </CardHeader>
         <CardContent>
-          <div className="rounded-lg bg-secondary/50 p-4">
-            <p className="text-sm text-foreground font-medium mb-3">
-              스트레스 지수 = Σ (항목별 점수 × 가중치)
+          <div className="rounded-lg bg-secondary/40 p-4 mb-3">
+            <p className="text-sm font-mono text-foreground">
+              스트레스 지수 = <span className="text-primary font-bold">0.40</span>×경사도 +{" "}
+              <span className="text-primary font-bold">0.25</span>×횡단보도 +{" "}
+              <span className="text-primary font-bold">0.20</span>×이동거리 +{" "}
+              <span className="text-primary font-bold">0.15</span>×배리어프리
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {formula.map((f) => (
-                <div key={f.factor} className="rounded-lg bg-card p-3 text-center border">
-                  <p className="text-xs text-muted-foreground">{f.factor}</p>
-                  <p className="text-lg font-bold text-primary">{f.weight}</p>
-                </div>
-              ))}
-            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+            {[
+              { label: "경사도", weight: "40%", desc: "공공데이터포털 보행환경DB" },
+              { label: "횡단보도 수", weight: "25%", desc: "T-map 보행자 경로 API" },
+              { label: "이동거리", weight: "20%", desc: "T-map 보행자 경로 API" },
+              { label: "배리어프리", weight: "15%", desc: "글로벌 배리어프리 DB" },
+            ].map((f) => (
+              <div key={f.label} className="rounded-lg bg-card border p-3">
+                <p className="text-xs text-muted-foreground">{f.label}</p>
+                <p className="text-xl font-bold text-primary">{f.weight}</p>
+                <p className="text-[10px] text-muted-foreground mt-1 leading-tight">{f.desc}</p>
+              </div>
+            ))}
           </div>
         </CardContent>
       </Card>
