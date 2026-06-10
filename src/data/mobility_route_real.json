@@ -1,7 +1,6 @@
 [
   {
-    "route_id": "49a23b8c-2b5c-4f2f-a57d-af99ecc20491",
-    "data_source": "formula_simulation",
+    "route_id": "이화여대목동병원_A",
     "hospital_name": "이화여대목동병원",
     "hospital_district": "양천구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -16,14 +15,14 @@
       "lng": 126.8746
     },
     "summary": {
-      "distance": 342,
-      "duration": 410,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 800,
+      "duration": 727,
+      "crosswalk_count": 3,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.91
     },
-    "stress_index": 0.888,
+    "stress_index": 0.8282,
     "accessibility_grade": "A",
     "path": [
       [
@@ -55,19 +54,17 @@
         37.5279
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "0d76ee25-f4a2-45b7-92bb-7570086c7023",
-    "data_source": "formula_simulation",
+    "route_id": "이화여대목동병원_B",
     "hospital_name": "이화여대목동병원",
     "hospital_district": "양천구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "양천구 출발지",
-      "lat": 37.5323,
-      "lng": 126.878
+      "lat": 37.5313,
+      "lng": 126.8775
     },
     "destination": {
       "name": "이화여대목동병원",
@@ -75,15 +72,15 @@
       "lng": 126.8746
     },
     "summary": {
-      "distance": 210,
-      "duration": 252,
+      "distance": 227,
+      "duration": 206,
       "crosswalk_count": 4,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.62
+      "slope_section_count": 0,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.55
     },
-    "stress_index": 0.693,
-    "accessibility_grade": "B",
+    "stress_index": 0.8325,
+    "accessibility_grade": "A",
     "path": [
       [
         126.878,
@@ -114,19 +111,17 @@
         37.5279
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "9db0d3f3-b0ec-463b-ae75-82a98d5f2d67",
-    "data_source": "formula_simulation",
+    "route_id": "이화여대목동병원_C",
     "hospital_name": "이화여대목동병원",
     "hospital_district": "양천구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "양천구 출발지",
-      "lat": 37.531800000000004,
-      "lng": 126.8765
+      "lat": 37.5313,
+      "lng": 126.8775
     },
     "destination": {
       "name": "이화여대목동병원",
@@ -134,14 +129,14 @@
       "lng": 126.8746
     },
     "summary": {
-      "distance": 442,
-      "duration": 530,
-      "crosswalk_count": 4,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "distance": 482,
+      "duration": 438,
+      "crosswalk_count": 5,
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.4
     },
-    "stress_index": 0.5773,
+    "stress_index": 0.6047,
     "accessibility_grade": "B",
     "path": [
       [
@@ -173,19 +168,17 @@
         37.5279
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "90e7f739-4c6f-4911-a99b-ae4e62b2f89d",
-    "data_source": "formula_simulation",
+    "route_id": "이화여대목동병원_D",
     "hospital_name": "이화여대목동병원",
     "hospital_district": "양천구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "양천구 출발지",
-      "lat": 37.5305,
-      "lng": 126.8787
+      "lat": 37.5313,
+      "lng": 126.8775
     },
     "destination": {
       "name": "이화여대목동병원",
@@ -193,15 +186,15 @@
       "lng": 126.8746
     },
     "summary": {
-      "distance": 695,
-      "duration": 834,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.65
+      "distance": 624,
+      "duration": 567,
+      "crosswalk_count": 2,
+      "slope_section_count": 0,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.58
     },
-    "stress_index": 0.6817,
-    "accessibility_grade": "B",
+    "stress_index": 0.833,
+    "accessibility_grade": "A",
     "path": [
       [
         126.8787,
@@ -232,19 +225,17 @@
         37.5279
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "bb362368-ec90-47f6-80fe-da4a53758bb0",
-    "data_source": "formula_simulation",
+    "route_id": "이화여대목동병원_E",
     "hospital_name": "이화여대목동병원",
     "hospital_district": "양천구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "양천구 출발지",
-      "lat": 37.5308,
-      "lng": 126.8767
+      "lat": 37.5313,
+      "lng": 126.8775
     },
     "destination": {
       "name": "이화여대목동병원",
@@ -252,14 +243,14 @@
       "lng": 126.8746
     },
     "summary": {
-      "distance": 560,
-      "duration": 672,
-      "crosswalk_count": 6,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.33
+      "distance": 647,
+      "duration": 588,
+      "crosswalk_count": 8,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.77
     },
-    "stress_index": 0.6062,
+    "stress_index": 0.7077,
     "accessibility_grade": "B",
     "path": [
       [
@@ -291,12 +282,10 @@
         37.5279
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d2dd8b16-35e4-44c6-90f9-f9d3f3d836e2",
-    "data_source": "formula_simulation",
+    "route_id": "강남차병원_A",
     "hospital_name": "강남차병원",
     "hospital_district": "강남구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -311,14 +300,14 @@
       "lng": 127.0245
     },
     "summary": {
-      "distance": 425,
-      "duration": 510,
+      "distance": 767,
+      "duration": 697,
       "crosswalk_count": 2,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.96
     },
-    "stress_index": 0.8492,
+    "stress_index": 0.8662,
     "accessibility_grade": "A",
     "path": [
       [
@@ -350,19 +339,17 @@
         37.5043
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "2933c405-c3bf-439e-9a12-78e08ce6eb0c",
-    "data_source": "formula_simulation",
+    "route_id": "강남차병원_B",
     "hospital_name": "강남차병원",
     "hospital_district": "강남구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.507999999999996,
-      "lng": 127.0205
+      "lat": 37.507,
+      "lng": 127.02
     },
     "destination": {
       "name": "강남차병원",
@@ -370,15 +357,15 @@
       "lng": 127.0245
     },
     "summary": {
-      "distance": 302,
-      "duration": 362,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
+      "distance": 236,
+      "duration": 215,
+      "crosswalk_count": 4,
+      "slope_section_count": 0,
+      "elevator_count": 1,
       "barrier_free_ratio": 0.68
     },
-    "stress_index": 0.6517,
-    "accessibility_grade": "B",
+    "stress_index": 0.852,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0205,
@@ -409,19 +396,17 @@
         37.5043
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d000cbfa-2122-4ca8-98c9-72dee55b6d23",
-    "data_source": "formula_simulation",
+    "route_id": "강남차병원_C",
     "hospital_name": "강남차병원",
     "hospital_district": "강남구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5075,
-      "lng": 127.01899999999999
+      "lat": 37.507,
+      "lng": 127.02
     },
     "destination": {
       "name": "강남차병원",
@@ -429,15 +414,15 @@
       "lng": 127.0245
     },
     "summary": {
-      "distance": 449,
-      "duration": 538,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
+      "distance": 503,
+      "duration": 457,
+      "crosswalk_count": 5,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "barrier_free_ratio": 0.5
     },
-    "stress_index": 0.4852,
-    "accessibility_grade": "C",
+    "stress_index": 0.6662,
+    "accessibility_grade": "B",
     "path": [
       [
         127.01899999999999,
@@ -468,19 +453,17 @@
         37.5043
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "ac70b36e-06c1-4c8c-b44c-c0b9420edd86",
-    "data_source": "formula_simulation",
+    "route_id": "강남차병원_D",
     "hospital_name": "강남차병원",
     "hospital_district": "강남구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5062,
-      "lng": 127.0212
+      "lat": 37.507,
+      "lng": 127.02
     },
     "destination": {
       "name": "강남차병원",
@@ -488,15 +471,15 @@
       "lng": 127.0245
     },
     "summary": {
-      "distance": 644,
-      "duration": 772,
+      "distance": 694,
+      "duration": 631,
       "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.61
+      "slope_section_count": 0,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.74
     },
-    "stress_index": 0.6842,
-    "accessibility_grade": "B",
+    "stress_index": 0.7953,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0212,
@@ -527,19 +510,17 @@
         37.5043
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "b3fb60dd-7f67-4ce7-a987-36e7dffc5532",
-    "data_source": "formula_simulation",
+    "route_id": "강남차병원_E",
     "hospital_name": "강남차병원",
     "hospital_district": "강남구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.506499999999996,
-      "lng": 127.0192
+      "lat": 37.507,
+      "lng": 127.02
     },
     "destination": {
       "name": "강남차병원",
@@ -547,15 +528,15 @@
       "lng": 127.0245
     },
     "summary": {
-      "distance": 526,
-      "duration": 631,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.63
+      "distance": 535,
+      "duration": 486,
+      "crosswalk_count": 7,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.87
     },
-    "stress_index": 0.7318,
-    "accessibility_grade": "B",
+    "stress_index": 0.7663,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0192,
@@ -586,12 +567,10 @@
         37.5043
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "49d64f4c-9261-4a1e-a5ef-2159057e0154",
-    "data_source": "formula_simulation",
+    "route_id": "제일병원_A",
     "hospital_name": "제일병원",
     "hospital_district": "중구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -606,15 +585,15 @@
       "lng": 126.9888
     },
     "summary": {
-      "distance": 402,
-      "duration": 482,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 711,
+      "duration": 646,
+      "crosswalk_count": 4,
+      "slope_section_count": 2,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.87
     },
-    "stress_index": 0.878,
-    "accessibility_grade": "A",
+    "stress_index": 0.712,
+    "accessibility_grade": "B",
     "path": [
       [
         126.984,
@@ -645,19 +624,17 @@
         37.5639
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8c82fa24-f540-4167-8878-7dafab5283ec",
-    "data_source": "formula_simulation",
+    "route_id": "제일병원_B",
     "hospital_name": "제일병원",
     "hospital_district": "중구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.568,
-      "lng": 126.9845
+      "lat": 37.567,
+      "lng": 126.984
     },
     "destination": {
       "name": "제일병원",
@@ -665,14 +642,14 @@
       "lng": 126.9888
     },
     "summary": {
-      "distance": 231,
-      "duration": 277,
-      "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "distance": 260,
+      "duration": 236,
+      "crosswalk_count": 5,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.44
+      "barrier_free_ratio": 0.66
     },
-    "stress_index": 0.666,
+    "stress_index": 0.724,
     "accessibility_grade": "B",
     "path": [
       [
@@ -704,19 +681,17 @@
         37.5639
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "fc9c043e-4b9e-40cd-9dc4-cd5a2dfbfd08",
-    "data_source": "formula_simulation",
+    "route_id": "제일병원_C",
     "hospital_name": "제일병원",
     "hospital_district": "중구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5675,
-      "lng": 126.98299999999999
+      "lat": 37.567,
+      "lng": 126.984
     },
     "destination": {
       "name": "제일병원",
@@ -724,14 +699,14 @@
       "lng": 126.9888
     },
     "summary": {
-      "distance": 562,
-      "duration": 674,
-      "crosswalk_count": 4,
+      "distance": 503,
+      "duration": 457,
+      "crosswalk_count": 5,
       "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.58
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.48
     },
-    "stress_index": 0.5933,
+    "stress_index": 0.5632,
     "accessibility_grade": "B",
     "path": [
       [
@@ -763,19 +738,17 @@
         37.5639
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "31fd61fe-7153-4296-af39-6938f3b5e2d6",
-    "data_source": "formula_simulation",
+    "route_id": "제일병원_D",
     "hospital_name": "제일병원",
     "hospital_district": "중구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5662,
-      "lng": 126.98519999999999
+      "lat": 37.567,
+      "lng": 126.984
     },
     "destination": {
       "name": "제일병원",
@@ -783,14 +756,14 @@
       "lng": 126.9888
     },
     "summary": {
-      "distance": 627,
-      "duration": 752,
-      "crosswalk_count": 5,
+      "distance": 659,
+      "duration": 599,
+      "crosswalk_count": 2,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.51
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.64
     },
-    "stress_index": 0.647,
+    "stress_index": 0.7362,
     "accessibility_grade": "B",
     "path": [
       [
@@ -822,19 +795,17 @@
         37.5639
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "75c89c74-c65f-4186-824a-b6b5477d3b49",
-    "data_source": "formula_simulation",
+    "route_id": "제일병원_E",
     "hospital_name": "제일병원",
     "hospital_district": "중구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5665,
-      "lng": 126.9832
+      "lat": 37.567,
+      "lng": 126.984
     },
     "destination": {
       "name": "제일병원",
@@ -842,14 +813,14 @@
       "lng": 126.9888
     },
     "summary": {
-      "distance": 450,
-      "duration": 540,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.64
+      "distance": 509,
+      "duration": 463,
+      "crosswalk_count": 8,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.8
     },
-    "stress_index": 0.696,
+    "stress_index": 0.5852,
     "accessibility_grade": "B",
     "path": [
       [
@@ -881,12 +852,10 @@
         37.5639
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "03700923-499f-4bba-a583-161abe361387",
-    "data_source": "formula_simulation",
+    "route_id": "서울아산병원_산부인과_A",
     "hospital_name": "서울아산병원 산부인과",
     "hospital_district": "송파구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -901,14 +870,14 @@
       "lng": 127.1081
     },
     "summary": {
-      "distance": 465,
-      "duration": 558,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 770,
+      "duration": 700,
+      "crosswalk_count": 3,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.95
     },
-    "stress_index": 0.8675,
+    "stress_index": 0.8392,
     "accessibility_grade": "A",
     "path": [
       [
@@ -940,19 +909,17 @@
         37.527
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "36db3eb6-b58a-4e51-93b6-5ff0a191a3ed",
-    "data_source": "formula_simulation",
+    "route_id": "서울아산병원_산부인과_B",
     "hospital_name": "서울아산병원 산부인과",
     "hospital_district": "송파구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "송파구 출발지",
-      "lat": 37.531,
-      "lng": 127.1025
+      "lat": 37.53,
+      "lng": 127.102
     },
     "destination": {
       "name": "서울아산병원 산부인과",
@@ -960,15 +927,15 @@
       "lng": 127.1081
     },
     "summary": {
-      "distance": 360,
-      "duration": 432,
+      "distance": 292,
+      "duration": 265,
       "crosswalk_count": 6,
-      "slope_section_count": 3,
+      "slope_section_count": 0,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.33
+      "barrier_free_ratio": 0.58
     },
-    "stress_index": 0.5895,
-    "accessibility_grade": "B",
+    "stress_index": 0.787,
+    "accessibility_grade": "A",
     "path": [
       [
         127.1025,
@@ -999,19 +966,17 @@
         37.527
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "26e4a58b-1073-4e49-8c24-440367b61f97",
-    "data_source": "formula_simulation",
+    "route_id": "서울아산병원_산부인과_C",
     "hospital_name": "서울아산병원 산부인과",
     "hospital_district": "송파구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "송파구 출발지",
-      "lat": 37.5305,
-      "lng": 127.101
+      "lat": 37.53,
+      "lng": 127.102
     },
     "destination": {
       "name": "서울아산병원 산부인과",
@@ -1019,15 +984,15 @@
       "lng": 127.1081
     },
     "summary": {
-      "distance": 509,
-      "duration": 610,
+      "distance": 532,
+      "duration": 484,
       "crosswalk_count": 6,
-      "slope_section_count": 4,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.52
+      "barrier_free_ratio": 0.55
     },
-    "stress_index": 0.5432,
-    "accessibility_grade": "C",
+    "stress_index": 0.6438,
+    "accessibility_grade": "B",
     "path": [
       [
         127.101,
@@ -1058,19 +1023,17 @@
         37.527
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "69d3faeb-2390-4f02-93a2-9a1c6e3b32c2",
-    "data_source": "formula_simulation",
+    "route_id": "서울아산병원_산부인과_D",
     "hospital_name": "서울아산병원 산부인과",
     "hospital_district": "송파구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "송파구 출발지",
-      "lat": 37.5292,
-      "lng": 127.1032
+      "lat": 37.53,
+      "lng": 127.102
     },
     "destination": {
       "name": "서울아산병원 산부인과",
@@ -1078,15 +1041,15 @@
       "lng": 127.1081
     },
     "summary": {
-      "distance": 584,
-      "duration": 700,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "distance": 711,
+      "duration": 646,
+      "crosswalk_count": 2,
+      "slope_section_count": 1,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.77
     },
-    "stress_index": 0.6287,
-    "accessibility_grade": "B",
+    "stress_index": 0.797,
+    "accessibility_grade": "A",
     "path": [
       [
         127.1032,
@@ -1117,19 +1080,17 @@
         37.527
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e0c79ff1-8796-4e43-a8e3-2244fd386d54",
-    "data_source": "formula_simulation",
+    "route_id": "서울아산병원_산부인과_E",
     "hospital_name": "서울아산병원 산부인과",
     "hospital_district": "송파구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "송파구 출발지",
-      "lat": 37.5295,
-      "lng": 127.1012
+      "lat": 37.53,
+      "lng": 127.102
     },
     "destination": {
       "name": "서울아산병원 산부인과",
@@ -1137,15 +1098,15 @@
       "lng": 127.1081
     },
     "summary": {
-      "distance": 523,
-      "duration": 627,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.42
+      "distance": 544,
+      "duration": 495,
+      "crosswalk_count": 7,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.85
     },
-    "stress_index": 0.6508,
-    "accessibility_grade": "B",
+    "stress_index": 0.7618,
+    "accessibility_grade": "A",
     "path": [
       [
         127.1012,
@@ -1176,12 +1137,10 @@
         37.527
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "66708d55-665e-408e-b970-5f13830c376f",
-    "data_source": "formula_simulation",
+    "route_id": "마포미즈메디병원_A",
     "hospital_name": "마포미즈메디병원",
     "hospital_district": "마포구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -1196,15 +1155,15 @@
       "lng": 126.913
     },
     "summary": {
-      "distance": 503,
-      "duration": 603,
+      "distance": 797,
+      "duration": 725,
       "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 2,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.84
     },
-    "stress_index": 0.8112,
-    "accessibility_grade": "A",
+    "stress_index": 0.7182,
+    "accessibility_grade": "B",
     "path": [
       [
         126.908,
@@ -1235,19 +1194,17 @@
         37.5497
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "01d353b0-7381-429b-8a53-2ec8347b1a2b",
-    "data_source": "formula_simulation",
+    "route_id": "마포미즈메디병원_B",
     "hospital_name": "마포미즈메디병원",
     "hospital_district": "마포구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "마포구 출발지",
-      "lat": 37.553999999999995,
-      "lng": 126.9085
+      "lat": 37.553,
+      "lng": 126.908
     },
     "destination": {
       "name": "마포미즈메디병원",
@@ -1255,14 +1212,14 @@
       "lng": 126.913
     },
     "summary": {
-      "distance": 349,
-      "duration": 418,
+      "distance": 298,
+      "duration": 271,
       "crosswalk_count": 3,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.32
+      "barrier_free_ratio": 0.49
     },
-    "stress_index": 0.6648,
+    "stress_index": 0.6985,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1294,19 +1251,17 @@
         37.5497
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a7f5c388-18e2-45a0-b2a1-acc9dcdac7e2",
-    "data_source": "formula_simulation",
+    "route_id": "마포미즈메디병원_C",
     "hospital_name": "마포미즈메디병원",
     "hospital_district": "마포구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "마포구 출발지",
-      "lat": 37.5535,
-      "lng": 126.907
+      "lat": 37.553,
+      "lng": 126.908
     },
     "destination": {
       "name": "마포미즈메디병원",
@@ -1314,14 +1269,14 @@
       "lng": 126.913
     },
     "summary": {
-      "distance": 748,
-      "duration": 897,
-      "crosswalk_count": 6,
-      "slope_section_count": 4,
+      "distance": 456,
+      "duration": 415,
+      "crosswalk_count": 5,
+      "slope_section_count": 6,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.47
+      "barrier_free_ratio": 0.34
     },
-    "stress_index": 0.4958,
+    "stress_index": 0.45,
     "accessibility_grade": "C",
     "path": [
       [
@@ -1353,19 +1308,17 @@
         37.5497
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "7038ae0b-03c9-413d-8152-0831bb483e38",
-    "data_source": "formula_simulation",
+    "route_id": "마포미즈메디병원_D",
     "hospital_name": "마포미즈메디병원",
     "hospital_district": "마포구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "마포구 출발지",
-      "lat": 37.5522,
-      "lng": 126.9092
+      "lat": 37.553,
+      "lng": 126.908
     },
     "destination": {
       "name": "마포미즈메디병원",
@@ -1373,14 +1326,14 @@
       "lng": 126.913
     },
     "summary": {
-      "distance": 632,
-      "duration": 758,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.63
+      "distance": 662,
+      "duration": 602,
+      "crosswalk_count": 1,
+      "slope_section_count": 4,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.56
     },
-    "stress_index": 0.6642,
+    "stress_index": 0.6487,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1412,19 +1365,17 @@
         37.5497
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "32c4af02-2536-4b89-ae5c-4b534cc47776",
-    "data_source": "formula_simulation",
+    "route_id": "마포미즈메디병원_E",
     "hospital_name": "마포미즈메디병원",
     "hospital_district": "마포구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "마포구 출발지",
-      "lat": 37.552499999999995,
-      "lng": 126.9072
+      "lat": 37.553,
+      "lng": 126.908
     },
     "destination": {
       "name": "마포미즈메디병원",
@@ -1432,14 +1383,14 @@
       "lng": 126.913
     },
     "summary": {
-      "distance": 641,
-      "duration": 769,
-      "crosswalk_count": 6,
+      "distance": 601,
+      "duration": 546,
+      "crosswalk_count": 8,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.67
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.73
     },
-    "stress_index": 0.6437,
+    "stress_index": 0.6093,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1471,12 +1422,10 @@
         37.5497
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8e6261a4-2873-454b-bcde-c57286831e3a",
-    "data_source": "formula_simulation",
+    "route_id": "한림대강남성심병원_A",
     "hospital_name": "한림대강남성심병원",
     "hospital_district": "영등포구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -1491,14 +1440,14 @@
       "lng": 126.9008
     },
     "summary": {
-      "distance": 482,
-      "duration": 578,
+      "distance": 706,
+      "duration": 642,
       "crosswalk_count": 2,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.92
     },
-    "stress_index": 0.8397,
+    "stress_index": 0.8203,
     "accessibility_grade": "A",
     "path": [
       [
@@ -1530,19 +1479,17 @@
         37.5255
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "7f0e3018-65dd-4623-a27c-6abccc19b5d1",
-    "data_source": "formula_simulation",
+    "route_id": "한림대강남성심병원_B",
     "hospital_name": "한림대강남성심병원",
     "hospital_district": "영등포구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "영등포구 출발지",
-      "lat": 37.528999999999996,
-      "lng": 126.8965
+      "lat": 37.528,
+      "lng": 126.896
     },
     "destination": {
       "name": "한림대강남성심병원",
@@ -1550,14 +1497,14 @@
       "lng": 126.9008
     },
     "summary": {
-      "distance": 320,
-      "duration": 384,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.42
+      "distance": 219,
+      "duration": 199,
+      "crosswalk_count": 4,
+      "slope_section_count": 2,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.59
     },
-    "stress_index": 0.6097,
+    "stress_index": 0.7385,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1589,19 +1536,17 @@
         37.5255
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "dd7fffc3-ea34-4207-9fd1-a230d759ca5e",
-    "data_source": "formula_simulation",
+    "route_id": "한림대강남성심병원_C",
     "hospital_name": "한림대강남성심병원",
     "hospital_district": "영등포구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "영등포구 출발지",
-      "lat": 37.5285,
-      "lng": 126.895
+      "lat": 37.528,
+      "lng": 126.896
     },
     "destination": {
       "name": "한림대강남성심병원",
@@ -1609,15 +1554,15 @@
       "lng": 126.9008
     },
     "summary": {
-      "distance": 504,
-      "duration": 604,
-      "crosswalk_count": 4,
-      "slope_section_count": 4,
+      "distance": 447,
+      "duration": 406,
+      "crosswalk_count": 5,
+      "slope_section_count": 5,
       "elevator_count": 0,
       "barrier_free_ratio": 0.45
     },
-    "stress_index": 0.5835,
-    "accessibility_grade": "B",
+    "stress_index": 0.518,
+    "accessibility_grade": "C",
     "path": [
       [
         126.895,
@@ -1648,19 +1593,17 @@
         37.5255
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d52f199b-4b6c-4f25-b701-1dbc4837698a",
-    "data_source": "formula_simulation",
+    "route_id": "한림대강남성심병원_D",
     "hospital_name": "한림대강남성심병원",
     "hospital_district": "영등포구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "영등포구 출발지",
-      "lat": 37.5272,
-      "lng": 126.8972
+      "lat": 37.528,
+      "lng": 126.896
     },
     "destination": {
       "name": "한림대강남성심병원",
@@ -1668,14 +1611,14 @@
       "lng": 126.9008
     },
     "summary": {
-      "distance": 739,
-      "duration": 886,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.52
+      "distance": 696,
+      "duration": 633,
+      "crosswalk_count": 4,
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.67
     },
-    "stress_index": 0.6798,
+    "stress_index": 0.6345,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1707,19 +1650,17 @@
         37.5255
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "db91c94b-d751-4655-a3b4-65b4344a1946",
-    "data_source": "formula_simulation",
+    "route_id": "한림대강남성심병원_E",
     "hospital_name": "한림대강남성심병원",
     "hospital_district": "영등포구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "영등포구 출발지",
-      "lat": 37.527499999999996,
-      "lng": 126.8952
+      "lat": 37.528,
+      "lng": 126.896
     },
     "destination": {
       "name": "한림대강남성심병원",
@@ -1727,14 +1668,14 @@
       "lng": 126.9008
     },
     "summary": {
-      "distance": 629,
-      "duration": 754,
-      "crosswalk_count": 5,
+      "distance": 499,
+      "duration": 454,
+      "crosswalk_count": 8,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.49
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.8
     },
-    "stress_index": 0.6437,
+    "stress_index": 0.6368,
     "accessibility_grade": "B",
     "path": [
       [
@@ -1766,12 +1707,10 @@
         37.5255
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "57d0f3e2-d53b-4ef8-a8c8-7579da826a73",
-    "data_source": "formula_simulation",
+    "route_id": "삼성서울병원_산부인과_A",
     "hospital_name": "삼성서울병원 산부인과",
     "hospital_district": "강남구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -1786,14 +1725,14 @@
       "lng": 127.0855
     },
     "summary": {
-      "distance": 451,
-      "duration": 541,
-      "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 684,
+      "duration": 622,
+      "crosswalk_count": 4,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.97
     },
-    "stress_index": 0.8198,
+    "stress_index": 0.8315,
     "accessibility_grade": "A",
     "path": [
       [
@@ -1825,19 +1764,17 @@
         37.4884
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8a905c49-2234-4c08-99ef-ffc11d7c87b2",
-    "data_source": "formula_simulation",
+    "route_id": "삼성서울병원_산부인과_B",
     "hospital_name": "삼성서울병원 산부인과",
     "hospital_district": "강남구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.492,
-      "lng": 127.0805
+      "lat": 37.491,
+      "lng": 127.08
     },
     "destination": {
       "name": "삼성서울병원 산부인과",
@@ -1845,15 +1782,15 @@
       "lng": 127.0855
     },
     "summary": {
-      "distance": 303,
-      "duration": 363,
+      "distance": 200,
+      "duration": 182,
       "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "slope_section_count": 0,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.38
+      "barrier_free_ratio": 0.7
     },
-    "stress_index": 0.6565,
-    "accessibility_grade": "B",
+    "stress_index": 0.855,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0805,
@@ -1884,19 +1821,17 @@
         37.4884
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "6e78a582-afec-4ffa-84be-908210a4b1c0",
-    "data_source": "formula_simulation",
+    "route_id": "삼성서울병원_산부인과_C",
     "hospital_name": "삼성서울병원 산부인과",
     "hospital_district": "강남구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.4915,
-      "lng": 127.079
+      "lat": 37.491,
+      "lng": 127.08
     },
     "destination": {
       "name": "삼성서울병원 산부인과",
@@ -1904,15 +1839,15 @@
       "lng": 127.0855
     },
     "summary": {
-      "distance": 632,
-      "duration": 758,
+      "distance": 418,
+      "duration": 380,
       "crosswalk_count": 6,
-      "slope_section_count": 4,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.48
+      "barrier_free_ratio": 0.52
     },
-    "stress_index": 0.5167,
-    "accessibility_grade": "C",
+    "stress_index": 0.6583,
+    "accessibility_grade": "B",
     "path": [
       [
         127.079,
@@ -1943,19 +1878,17 @@
         37.4884
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "1f6cf9c7-a844-473a-906f-452c44dd2722",
-    "data_source": "formula_simulation",
+    "route_id": "삼성서울병원_산부인과_D",
     "hospital_name": "삼성서울병원 산부인과",
     "hospital_district": "강남구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.4902,
-      "lng": 127.0812
+      "lat": 37.491,
+      "lng": 127.08
     },
     "destination": {
       "name": "삼성서울병원 산부인과",
@@ -1963,14 +1896,14 @@
       "lng": 127.0855
     },
     "summary": {
-      "distance": 552,
-      "duration": 662,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.43
+      "distance": 667,
+      "duration": 606,
+      "crosswalk_count": 4,
+      "slope_section_count": 1,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.67
     },
-    "stress_index": 0.6475,
+    "stress_index": 0.7393,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2002,19 +1935,17 @@
         37.4884
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "18e9a6bf-3090-41ee-9089-10a0597ac005",
-    "data_source": "formula_simulation",
+    "route_id": "삼성서울병원_산부인과_E",
     "hospital_name": "삼성서울병원 산부인과",
     "hospital_district": "강남구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.4905,
-      "lng": 127.0792
+      "lat": 37.491,
+      "lng": 127.08
     },
     "destination": {
       "name": "삼성서울병원 산부인과",
@@ -2022,14 +1953,14 @@
       "lng": 127.0855
     },
     "summary": {
-      "distance": 477,
-      "duration": 572,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.63
+      "distance": 522,
+      "duration": 475,
+      "crosswalk_count": 9,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.88
     },
-    "stress_index": 0.74,
+    "stress_index": 0.67,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2061,12 +1992,10 @@
         37.4884
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a380b538-dc74-4b74-96fe-229b3237a25a",
-    "data_source": "formula_simulation",
+    "route_id": "건국대병원_산부인과_A",
     "hospital_name": "건국대병원 산부인과",
     "hospital_district": "광진구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -2081,14 +2010,14 @@
       "lng": 127.0813
     },
     "summary": {
-      "distance": 386,
-      "duration": 463,
-      "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 803,
+      "duration": 730,
+      "crosswalk_count": 1,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.89
     },
-    "stress_index": 0.8307,
+    "stress_index": 0.8747,
     "accessibility_grade": "A",
     "path": [
       [
@@ -2120,19 +2049,17 @@
         37.5409
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "2ea61b13-7b08-4663-9f25-e8a16abff0c7",
-    "data_source": "formula_simulation",
+    "route_id": "건국대병원_산부인과_B",
     "hospital_name": "건국대병원 산부인과",
     "hospital_district": "광진구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "광진구 출발지",
-      "lat": 37.544999999999995,
-      "lng": 127.0765
+      "lat": 37.544,
+      "lng": 127.076
     },
     "destination": {
       "name": "건국대병원 산부인과",
@@ -2140,14 +2067,14 @@
       "lng": 127.0813
     },
     "summary": {
-      "distance": 318,
-      "duration": 381,
+      "distance": 294,
+      "duration": 267,
       "crosswalk_count": 3,
-      "slope_section_count": 3,
+      "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.36
+      "barrier_free_ratio": 0.58
     },
-    "stress_index": 0.676,
+    "stress_index": 0.662,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2179,19 +2106,17 @@
         37.5409
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "248f2851-77f6-42b1-8d06-d7cf9692fb1d",
-    "data_source": "formula_simulation",
+    "route_id": "건국대병원_산부인과_C",
     "hospital_name": "건국대병원 산부인과",
     "hospital_district": "광진구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "광진구 출발지",
-      "lat": 37.5445,
-      "lng": 127.07499999999999
+      "lat": 37.544,
+      "lng": 127.076
     },
     "destination": {
       "name": "건국대병원 산부인과",
@@ -2199,14 +2124,14 @@
       "lng": 127.0813
     },
     "summary": {
-      "distance": 493,
-      "duration": 591,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.46
+      "distance": 531,
+      "duration": 483,
+      "crosswalk_count": 4,
+      "slope_section_count": 6,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.38
     },
-    "stress_index": 0.4868,
+    "stress_index": 0.4685,
     "accessibility_grade": "C",
     "path": [
       [
@@ -2238,19 +2163,17 @@
         37.5409
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "972536ca-9c88-4670-adb5-ba57d63e1cd6",
-    "data_source": "formula_simulation",
+    "route_id": "건국대병원_산부인과_D",
     "hospital_name": "건국대병원 산부인과",
     "hospital_district": "광진구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "광진구 출발지",
-      "lat": 37.5432,
-      "lng": 127.07719999999999
+      "lat": 37.544,
+      "lng": 127.076
     },
     "destination": {
       "name": "건국대병원 산부인과",
@@ -2258,14 +2181,14 @@
       "lng": 127.0813
     },
     "summary": {
-      "distance": 777,
-      "duration": 932,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.46
+      "distance": 642,
+      "duration": 584,
+      "crosswalk_count": 3,
+      "slope_section_count": 4,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.6395,
+    "stress_index": 0.608,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2297,19 +2220,17 @@
         37.5409
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "92e93843-db99-4766-acea-957b15bac4d2",
-    "data_source": "formula_simulation",
+    "route_id": "건국대병원_산부인과_E",
     "hospital_name": "건국대병원 산부인과",
     "hospital_district": "광진구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "광진구 출발지",
-      "lat": 37.543499999999995,
-      "lng": 127.0752
+      "lat": 37.544,
+      "lng": 127.076
     },
     "destination": {
       "name": "건국대병원 산부인과",
@@ -2317,14 +2238,14 @@
       "lng": 127.0813
     },
     "summary": {
-      "distance": 693,
-      "duration": 831,
-      "crosswalk_count": 5,
+      "distance": 645,
+      "duration": 586,
+      "crosswalk_count": 7,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.64
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.79
     },
-    "stress_index": 0.6555,
+    "stress_index": 0.636,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2356,12 +2277,10 @@
         37.5409
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "ad8d1f45-7a39-41e5-b76f-996b63f0f8c8",
-    "data_source": "formula_simulation",
+    "route_id": "고려대안암병원_산부인과_A",
     "hospital_name": "고려대안암병원 산부인과",
     "hospital_district": "성북구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -2376,15 +2295,15 @@
       "lng": 127.0261
     },
     "summary": {
-      "distance": 358,
-      "duration": 429,
-      "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 784,
+      "duration": 713,
+      "crosswalk_count": 2,
+      "slope_section_count": 4,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.74
     },
-    "stress_index": 0.8353,
-    "accessibility_grade": "A",
+    "stress_index": 0.6303,
+    "accessibility_grade": "B",
     "path": [
       [
         127.021,
@@ -2415,19 +2334,17 @@
         37.5897
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "be9b083b-7e01-4bd8-8edf-438764d2430e",
-    "data_source": "formula_simulation",
+    "route_id": "고려대안암병원_산부인과_B",
     "hospital_name": "고려대안암병원 산부인과",
     "hospital_district": "성북구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "성북구 출발지",
-      "lat": 37.594,
-      "lng": 127.0215
+      "lat": 37.593,
+      "lng": 127.021
     },
     "destination": {
       "name": "고려대안암병원 산부인과",
@@ -2435,14 +2352,14 @@
       "lng": 127.0261
     },
     "summary": {
-      "distance": 229,
-      "duration": 274,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "distance": 265,
+      "duration": 241,
+      "crosswalk_count": 4,
+      "slope_section_count": 4,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.41
     },
-    "stress_index": 0.61,
+    "stress_index": 0.6115,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2474,19 +2391,17 @@
         37.5897
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e2532372-12d8-476c-b9f0-9de425c86c4e",
-    "data_source": "formula_simulation",
+    "route_id": "고려대안암병원_산부인과_C",
     "hospital_name": "고려대안암병원 산부인과",
     "hospital_district": "성북구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "성북구 출발지",
-      "lat": 37.593500000000006,
-      "lng": 127.02
+      "lat": 37.593,
+      "lng": 127.021
     },
     "destination": {
       "name": "고려대안암병원 산부인과",
@@ -2494,14 +2409,14 @@
       "lng": 127.0261
     },
     "summary": {
-      "distance": 467,
-      "duration": 560,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
+      "distance": 465,
+      "duration": 423,
+      "crosswalk_count": 4,
+      "slope_section_count": 6,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "barrier_free_ratio": 0.28
     },
-    "stress_index": 0.4982,
+    "stress_index": 0.4645,
     "accessibility_grade": "C",
     "path": [
       [
@@ -2533,19 +2448,17 @@
         37.5897
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c70fead5-b169-4654-bbe9-3d10e81742a1",
-    "data_source": "formula_simulation",
+    "route_id": "고려대안암병원_산부인과_D",
     "hospital_name": "고려대안암병원 산부인과",
     "hospital_district": "성북구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "성북구 출발지",
-      "lat": 37.592200000000005,
-      "lng": 127.0222
+      "lat": 37.593,
+      "lng": 127.021
     },
     "destination": {
       "name": "고려대안암병원 산부인과",
@@ -2553,14 +2466,14 @@
       "lng": 127.0261
     },
     "summary": {
-      "distance": 763,
-      "duration": 915,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.56
+      "distance": 667,
+      "duration": 606,
+      "crosswalk_count": 0,
+      "slope_section_count": 4,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.58
     },
-    "stress_index": 0.6818,
+    "stress_index": 0.6758,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2592,19 +2505,17 @@
         37.5897
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "0abdced0-5860-4135-8b71-899573effdb3",
-    "data_source": "formula_simulation",
+    "route_id": "고려대안암병원_산부인과_E",
     "hospital_name": "고려대안암병원 산부인과",
     "hospital_district": "성북구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "성북구 출발지",
-      "lat": 37.5925,
-      "lng": 127.0202
+      "lat": 37.593,
+      "lng": 127.021
     },
     "destination": {
       "name": "고려대안암병원 산부인과",
@@ -2612,15 +2523,15 @@
       "lng": 127.0261
     },
     "summary": {
-      "distance": 486,
-      "duration": 583,
+      "distance": 569,
+      "duration": 517,
       "crosswalk_count": 7,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.31
+      "slope_section_count": 4,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.66
     },
-    "stress_index": 0.5905,
-    "accessibility_grade": "B",
+    "stress_index": 0.5292,
+    "accessibility_grade": "C",
     "path": [
       [
         127.0202,
@@ -2651,12 +2562,10 @@
         37.5897
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "461d8049-a294-4287-8eea-4ed0bcca9014",
-    "data_source": "formula_simulation",
+    "route_id": "서울성모병원_산부인과_A",
     "hospital_name": "서울성모병원 산부인과",
     "hospital_district": "서초구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -2671,14 +2580,14 @@
       "lng": 127.0057
     },
     "summary": {
-      "distance": 538,
-      "duration": 645,
-      "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 680,
+      "duration": 618,
+      "crosswalk_count": 4,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.94
     },
-    "stress_index": 0.8053,
+    "stress_index": 0.8277,
     "accessibility_grade": "A",
     "path": [
       [
@@ -2710,19 +2619,17 @@
         37.5013
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f0013228-d4f4-46f2-a436-92fc307d0323",
-    "data_source": "formula_simulation",
+    "route_id": "서울성모병원_산부인과_B",
     "hospital_name": "서울성모병원 산부인과",
     "hospital_district": "서초구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "서초구 출발지",
-      "lat": 37.5055,
-      "lng": 127.00150000000001
+      "lat": 37.5045,
+      "lng": 127.001
     },
     "destination": {
       "name": "서울성모병원 산부인과",
@@ -2730,14 +2637,14 @@
       "lng": 127.0057
     },
     "summary": {
-      "distance": 290,
-      "duration": 348,
+      "distance": 215,
+      "duration": 195,
       "crosswalk_count": 4,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.61
+      "slope_section_count": 2,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.6915,
+    "stress_index": 0.74,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2769,19 +2676,17 @@
         37.5013
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "81bf4733-6eba-4100-b439-e7ed4c76170f",
-    "data_source": "formula_simulation",
+    "route_id": "서울성모병원_산부인과_C",
     "hospital_name": "서울성모병원 산부인과",
     "hospital_district": "서초구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "서초구 출발지",
-      "lat": 37.505,
-      "lng": 127.0
+      "lat": 37.5045,
+      "lng": 127.001
     },
     "destination": {
       "name": "서울성모병원 산부인과",
@@ -2789,14 +2694,14 @@
       "lng": 127.0057
     },
     "summary": {
-      "distance": 551,
-      "duration": 661,
-      "crosswalk_count": 5,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.69
+      "distance": 412,
+      "duration": 375,
+      "crosswalk_count": 6,
+      "slope_section_count": 2,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.53
     },
-    "stress_index": 0.5867,
+    "stress_index": 0.6608,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2828,19 +2733,17 @@
         37.5013
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e9dcf349-54ca-4237-b0c5-d3c91ac44d4e",
-    "data_source": "formula_simulation",
+    "route_id": "서울성모병원_산부인과_D",
     "hospital_name": "서울성모병원 산부인과",
     "hospital_district": "서초구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "서초구 출발지",
-      "lat": 37.5037,
-      "lng": 127.0022
+      "lat": 37.5045,
+      "lng": 127.001
     },
     "destination": {
       "name": "서울성모병원 산부인과",
@@ -2848,14 +2751,14 @@
       "lng": 127.0057
     },
     "summary": {
-      "distance": 681,
-      "duration": 817,
-      "crosswalk_count": 5,
+      "distance": 735,
+      "duration": 668,
+      "crosswalk_count": 2,
       "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.36
+      "barrier_free_ratio": 0.71
     },
-    "stress_index": 0.6155,
+    "stress_index": 0.734,
     "accessibility_grade": "B",
     "path": [
       [
@@ -2887,19 +2790,17 @@
         37.5013
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c8c17885-3436-43d2-9bd3-5f5873a35c4d",
-    "data_source": "formula_simulation",
+    "route_id": "서울성모병원_산부인과_E",
     "hospital_name": "서울성모병원 산부인과",
     "hospital_district": "서초구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "서초구 출발지",
-      "lat": 37.504,
-      "lng": 127.0002
+      "lat": 37.5045,
+      "lng": 127.001
     },
     "destination": {
       "name": "서울성모병원 산부인과",
@@ -2907,15 +2808,15 @@
       "lng": 127.0057
     },
     "summary": {
-      "distance": 558,
-      "duration": 669,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.33
+      "distance": 488,
+      "duration": 444,
+      "crosswalk_count": 8,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.92
     },
-    "stress_index": 0.6565,
-    "accessibility_grade": "B",
+    "stress_index": 0.7567,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0002,
@@ -2946,12 +2847,10 @@
         37.5013
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c64b3038-091f-44d9-a3ce-05ffac09db8c",
-    "data_source": "formula_simulation",
+    "route_id": "세브란스병원_산부인과_A",
     "hospital_name": "세브란스병원 산부인과",
     "hospital_district": "서대문구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -2966,14 +2865,14 @@
       "lng": 126.9406
     },
     "summary": {
-      "distance": 316,
-      "duration": 379,
+      "distance": 730,
+      "duration": 664,
       "crosswalk_count": 3,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.85
     },
-    "stress_index": 0.8423,
+    "stress_index": 0.7808,
     "accessibility_grade": "A",
     "path": [
       [
@@ -3005,19 +2904,17 @@
         37.5625
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "efcf5f32-8e08-4d71-9dbc-b77ee904243a",
-    "data_source": "formula_simulation",
+    "route_id": "세브란스병원_산부인과_B",
     "hospital_name": "세브란스병원 산부인과",
     "hospital_district": "서대문구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "서대문구 출발지",
-      "lat": 37.5665,
-      "lng": 126.93650000000001
+      "lat": 37.5655,
+      "lng": 126.936
     },
     "destination": {
       "name": "세브란스병원 산부인과",
@@ -3025,14 +2922,14 @@
       "lng": 126.9406
     },
     "summary": {
-      "distance": 212,
-      "duration": 254,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.47
+      "distance": 267,
+      "duration": 243,
+      "crosswalk_count": 5,
+      "slope_section_count": 2,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.56
     },
-    "stress_index": 0.6205,
+    "stress_index": 0.709,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3064,19 +2961,17 @@
         37.5625
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "cb929076-cce8-426c-ac83-0f1e95702957",
-    "data_source": "formula_simulation",
+    "route_id": "세브란스병원_산부인과_C",
     "hospital_name": "세브란스병원 산부인과",
     "hospital_district": "서대문구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "서대문구 출발지",
-      "lat": 37.566,
-      "lng": 126.935
+      "lat": 37.5655,
+      "lng": 126.936
     },
     "destination": {
       "name": "세브란스병원 산부인과",
@@ -3084,14 +2979,14 @@
       "lng": 126.9406
     },
     "summary": {
-      "distance": 789,
-      "duration": 946,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
+      "distance": 433,
+      "duration": 394,
+      "crosswalk_count": 4,
+      "slope_section_count": 5,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.35
+      "barrier_free_ratio": 0.33
     },
-    "stress_index": 0.446,
+    "stress_index": 0.5273,
     "accessibility_grade": "C",
     "path": [
       [
@@ -3123,19 +3018,17 @@
         37.5625
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "9798d577-485a-4e56-8d16-7d583ca4b456",
-    "data_source": "formula_simulation",
+    "route_id": "세브란스병원_산부인과_D",
     "hospital_name": "세브란스병원 산부인과",
     "hospital_district": "서대문구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "서대문구 출발지",
-      "lat": 37.5647,
-      "lng": 126.9372
+      "lat": 37.5655,
+      "lng": 126.936
     },
     "destination": {
       "name": "세브란스병원 산부인과",
@@ -3143,15 +3036,15 @@
       "lng": 126.9406
     },
     "summary": {
-      "distance": 532,
-      "duration": 638,
-      "crosswalk_count": 5,
+      "distance": 661,
+      "duration": 601,
+      "crosswalk_count": 1,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.32
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.61
     },
-    "stress_index": 0.6343,
-    "accessibility_grade": "B",
+    "stress_index": 0.7563,
+    "accessibility_grade": "A",
     "path": [
       [
         126.9372,
@@ -3182,19 +3075,17 @@
         37.5625
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "7cb7ecf9-a181-4b74-a912-a68f10dbf62a",
-    "data_source": "formula_simulation",
+    "route_id": "세브란스병원_산부인과_E",
     "hospital_name": "세브란스병원 산부인과",
     "hospital_district": "서대문구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "서대문구 출발지",
-      "lat": 37.565,
-      "lng": 126.93520000000001
+      "lat": 37.5655,
+      "lng": 126.936
     },
     "destination": {
       "name": "세브란스병원 산부인과",
@@ -3202,14 +3093,14 @@
       "lng": 126.9406
     },
     "summary": {
-      "distance": 460,
-      "duration": 552,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.52
+      "distance": 574,
+      "duration": 522,
+      "crosswalk_count": 8,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.73
     },
-    "stress_index": 0.7013,
+    "stress_index": 0.6638,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3241,12 +3132,10 @@
         37.5625
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "fc331d31-b814-461f-95e2-a88d9487f4dc",
-    "data_source": "formula_simulation",
+    "route_id": "서울대학교병원_산부인과_A",
     "hospital_name": "서울대학교병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -3261,15 +3150,15 @@
       "lng": 126.9991
     },
     "summary": {
-      "distance": 525,
-      "duration": 630,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 716,
+      "duration": 651,
+      "crosswalk_count": 2,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.82
     },
-    "stress_index": 0.8575,
-    "accessibility_grade": "A",
+    "stress_index": 0.7037,
+    "accessibility_grade": "B",
     "path": [
       [
         126.995,
@@ -3300,19 +3189,17 @@
         37.5797
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "1a1c3fd8-15d1-4410-9efe-72bdfd5e9a92",
-    "data_source": "formula_simulation",
+    "route_id": "서울대학교병원_산부인과_B",
     "hospital_name": "서울대학교병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.5835,
-      "lng": 126.9955
+      "lat": 37.5825,
+      "lng": 126.995
     },
     "destination": {
       "name": "서울대학교병원 산부인과",
@@ -3320,14 +3207,14 @@
       "lng": 126.9991
     },
     "summary": {
-      "distance": 320,
-      "duration": 384,
-      "crosswalk_count": 6,
+      "distance": 208,
+      "duration": 189,
+      "crosswalk_count": 5,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.51
+      "barrier_free_ratio": 0.48
     },
-    "stress_index": 0.6232,
+    "stress_index": 0.647,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3359,19 +3246,17 @@
         37.5797
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3eaa4c5a-7c4f-4b75-b6d6-13be2eb92d00",
-    "data_source": "formula_simulation",
+    "route_id": "서울대학교병원_산부인과_C",
     "hospital_name": "서울대학교병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.583000000000006,
-      "lng": 126.994
+      "lat": 37.5825,
+      "lng": 126.995
     },
     "destination": {
       "name": "서울대학교병원 산부인과",
@@ -3379,15 +3264,15 @@
       "lng": 126.9991
     },
     "summary": {
-      "distance": 424,
-      "duration": 508,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
+      "distance": 486,
+      "duration": 442,
+      "crosswalk_count": 6,
+      "slope_section_count": 7,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.55
+      "barrier_free_ratio": 0.37
     },
-    "stress_index": 0.5118,
-    "accessibility_grade": "C",
+    "stress_index": 0.3745,
+    "accessibility_grade": "D",
     "path": [
       [
         126.994,
@@ -3418,19 +3303,17 @@
         37.5797
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "ffd163ff-691c-48ad-badc-d5d9dfba24bf",
-    "data_source": "formula_simulation",
+    "route_id": "서울대학교병원_산부인과_D",
     "hospital_name": "서울대학교병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.581700000000005,
-      "lng": 126.9962
+      "lat": 37.5825,
+      "lng": 126.995
     },
     "destination": {
       "name": "서울대학교병원 산부인과",
@@ -3438,15 +3321,15 @@
       "lng": 126.9991
     },
     "summary": {
-      "distance": 690,
-      "duration": 828,
-      "crosswalk_count": 2,
-      "slope_section_count": 2,
+      "distance": 686,
+      "duration": 624,
+      "crosswalk_count": 3,
+      "slope_section_count": 5,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.61
+      "barrier_free_ratio": 0.51
     },
-    "stress_index": 0.7265,
-    "accessibility_grade": "B",
+    "stress_index": 0.5372,
+    "accessibility_grade": "C",
     "path": [
       [
         126.9962,
@@ -3477,19 +3360,17 @@
         37.5797
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "ff7ea517-a381-402e-9a0a-fc321924b775",
-    "data_source": "formula_simulation",
+    "route_id": "서울대학교병원_산부인과_E",
     "hospital_name": "서울대학교병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.582,
-      "lng": 126.9942
+      "lat": 37.5825,
+      "lng": 126.995
     },
     "destination": {
       "name": "서울대학교병원 산부인과",
@@ -3497,14 +3378,14 @@
       "lng": 126.9991
     },
     "summary": {
-      "distance": 536,
-      "duration": 643,
-      "crosswalk_count": 6,
+      "distance": 522,
+      "duration": 475,
+      "crosswalk_count": 9,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.48
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.64
     },
-    "stress_index": 0.6327,
+    "stress_index": 0.584,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3536,12 +3417,10 @@
         37.5797
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "46f16c75-b9dc-4647-95b6-d17ccb8a20dd",
-    "data_source": "formula_simulation",
+    "route_id": "강북삼성병원_산부인과_A",
     "hospital_name": "강북삼성병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -3556,15 +3435,15 @@
       "lng": 126.9632
     },
     "summary": {
-      "distance": 302,
-      "duration": 362,
-      "crosswalk_count": 2,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 699,
+      "duration": 635,
+      "crosswalk_count": 4,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.78
     },
-    "stress_index": 0.8697,
-    "accessibility_grade": "A",
+    "stress_index": 0.6505,
+    "accessibility_grade": "B",
     "path": [
       [
         126.959,
@@ -3595,19 +3474,17 @@
         37.573
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "58e00795-fcb9-4322-82bd-380f1dfce6dd",
-    "data_source": "formula_simulation",
+    "route_id": "강북삼성병원_산부인과_B",
     "hospital_name": "강북삼성병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.577,
-      "lng": 126.9595
+      "lat": 37.576,
+      "lng": 126.959
     },
     "destination": {
       "name": "강북삼성병원 산부인과",
@@ -3615,14 +3492,14 @@
       "lng": 126.9632
     },
     "summary": {
-      "distance": 357,
-      "duration": 428,
-      "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "distance": 231,
+      "duration": 210,
+      "crosswalk_count": 5,
+      "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.46
+      "barrier_free_ratio": 0.45
     },
-    "stress_index": 0.6595,
+    "stress_index": 0.5925,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3654,19 +3531,17 @@
         37.573
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "aca195c2-dd56-466f-ae34-88a1c17f2995",
-    "data_source": "formula_simulation",
+    "route_id": "강북삼성병원_산부인과_C",
     "hospital_name": "강북삼성병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.5765,
-      "lng": 126.958
+      "lat": 37.576,
+      "lng": 126.959
     },
     "destination": {
       "name": "강북삼성병원 산부인과",
@@ -3674,15 +3549,15 @@
       "lng": 126.9632
     },
     "summary": {
-      "distance": 492,
-      "duration": 590,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
+      "distance": 418,
+      "duration": 380,
+      "crosswalk_count": 6,
+      "slope_section_count": 7,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.65
+      "barrier_free_ratio": 0.36
     },
-    "stress_index": 0.5155,
-    "accessibility_grade": "C",
+    "stress_index": 0.3843,
+    "accessibility_grade": "D",
     "path": [
       [
         126.958,
@@ -3713,19 +3588,17 @@
         37.573
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e0c10760-c6e3-4972-9f32-ad26745cd81c",
-    "data_source": "formula_simulation",
+    "route_id": "강북삼성병원_산부인과_D",
     "hospital_name": "강북삼성병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.5752,
-      "lng": 126.9602
+      "lat": 37.576,
+      "lng": 126.959
     },
     "destination": {
       "name": "강북삼성병원 산부인과",
@@ -3733,14 +3606,14 @@
       "lng": 126.9632
     },
     "summary": {
-      "distance": 792,
-      "duration": 950,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "distance": 654,
+      "duration": 595,
+      "crosswalk_count": 2,
+      "slope_section_count": 3,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.603,
+    "stress_index": 0.681,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3772,19 +3645,17 @@
         37.573
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "5edf00fc-a640-49f5-b50b-e8390edbc26f",
-    "data_source": "formula_simulation",
+    "route_id": "강북삼성병원_산부인과_E",
     "hospital_name": "강북삼성병원 산부인과",
     "hospital_district": "종로구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "종로구 출발지",
-      "lat": 37.5755,
-      "lng": 126.9582
+      "lat": 37.576,
+      "lng": 126.959
     },
     "destination": {
       "name": "강북삼성병원 산부인과",
@@ -3792,15 +3663,15 @@
       "lng": 126.9632
     },
     "summary": {
-      "distance": 657,
-      "duration": 788,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.32
+      "distance": 558,
+      "duration": 507,
+      "crosswalk_count": 9,
+      "slope_section_count": 4,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.74
     },
-    "stress_index": 0.6385,
-    "accessibility_grade": "B",
+    "stress_index": 0.493,
+    "accessibility_grade": "C",
     "path": [
       [
         126.9582,
@@ -3831,12 +3702,10 @@
         37.573
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "be0f0b60-89be-4c5d-b801-2bd24eef7ac6",
-    "data_source": "formula_simulation",
+    "route_id": "한양대병원_산부인과_A",
     "hospital_name": "한양대병원 산부인과",
     "hospital_district": "성동구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -3851,14 +3720,14 @@
       "lng": 127.0445
     },
     "summary": {
-      "distance": 457,
-      "duration": 548,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 727,
+      "duration": 661,
+      "crosswalk_count": 4,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.86
     },
-    "stress_index": 0.8688,
+    "stress_index": 0.8078,
     "accessibility_grade": "A",
     "path": [
       [
@@ -3890,19 +3759,17 @@
         37.5556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "0d90ab9f-84d4-4726-b658-6bf501d1c1d5",
-    "data_source": "formula_simulation",
+    "route_id": "한양대병원_산부인과_B",
     "hospital_name": "한양대병원 산부인과",
     "hospital_district": "성동구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "성동구 출발지",
-      "lat": 37.5595,
-      "lng": 127.04050000000001
+      "lat": 37.5585,
+      "lng": 127.04
     },
     "destination": {
       "name": "한양대병원 산부인과",
@@ -3910,14 +3777,14 @@
       "lng": 127.0445
     },
     "summary": {
-      "distance": 281,
-      "duration": 337,
+      "distance": 228,
+      "duration": 207,
       "crosswalk_count": 6,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.56
+      "barrier_free_ratio": 0.62
     },
-    "stress_index": 0.634,
+    "stress_index": 0.643,
     "accessibility_grade": "B",
     "path": [
       [
@@ -3949,19 +3816,17 @@
         37.5556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8710086c-d795-457f-b392-cd57651f676a",
-    "data_source": "formula_simulation",
+    "route_id": "한양대병원_산부인과_C",
     "hospital_name": "한양대병원 산부인과",
     "hospital_district": "성동구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "성동구 출발지",
-      "lat": 37.559000000000005,
-      "lng": 127.039
+      "lat": 37.5585,
+      "lng": 127.04
     },
     "destination": {
       "name": "한양대병원 산부인과",
@@ -3969,14 +3834,14 @@
       "lng": 127.0445
     },
     "summary": {
-      "distance": 539,
-      "duration": 646,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "distance": 520,
+      "duration": 473,
+      "crosswalk_count": 5,
+      "slope_section_count": 5,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.48
     },
-    "stress_index": 0.4702,
+    "stress_index": 0.5103,
     "accessibility_grade": "C",
     "path": [
       [
@@ -4008,19 +3873,17 @@
         37.5556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "01eecc07-28b4-4e6a-9f01-9b2050bfaa0b",
-    "data_source": "formula_simulation",
+    "route_id": "한양대병원_산부인과_D",
     "hospital_name": "한양대병원 산부인과",
     "hospital_district": "성동구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "성동구 출발지",
-      "lat": 37.557700000000004,
-      "lng": 127.0412
+      "lat": 37.5585,
+      "lng": 127.04
     },
     "destination": {
       "name": "한양대병원 산부인과",
@@ -4028,14 +3891,14 @@
       "lng": 127.0445
     },
     "summary": {
-      "distance": 842,
-      "duration": 1010,
-      "crosswalk_count": 2,
+      "distance": 718,
+      "duration": 653,
+      "crosswalk_count": 3,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.69
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.67
     },
-    "stress_index": 0.7132,
+    "stress_index": 0.7058,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4067,19 +3930,17 @@
         37.5556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "b65d4f57-327a-46b4-82ef-4db538cb7a24",
-    "data_source": "formula_simulation",
+    "route_id": "한양대병원_산부인과_E",
     "hospital_name": "한양대병원 산부인과",
     "hospital_district": "성동구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "성동구 출발지",
-      "lat": 37.558,
-      "lng": 127.03920000000001
+      "lat": 37.5585,
+      "lng": 127.04
     },
     "destination": {
       "name": "한양대병원 산부인과",
@@ -4087,14 +3948,14 @@
       "lng": 127.0445
     },
     "summary": {
-      "distance": 492,
-      "duration": 590,
-      "crosswalk_count": 7,
+      "distance": 560,
+      "duration": 509,
+      "crosswalk_count": 8,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.61
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.78
     },
-    "stress_index": 0.6345,
+    "stress_index": 0.6237,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4126,12 +3987,10 @@
         37.5556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "180e12c0-7fca-4f03-ba24-88713cd1696c",
-    "data_source": "formula_simulation",
+    "route_id": "경희대병원_산부인과_A",
     "hospital_name": "경희대병원 산부인과",
     "hospital_district": "동대문구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -4146,14 +4005,14 @@
       "lng": 127.0518
     },
     "summary": {
-      "distance": 538,
-      "duration": 645,
+      "distance": 712,
+      "duration": 647,
       "crosswalk_count": 1,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.79
     },
-    "stress_index": 0.8553,
+    "stress_index": 0.8248,
     "accessibility_grade": "A",
     "path": [
       [
@@ -4185,19 +4044,17 @@
         37.5972
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e374f160-672e-487e-82d1-1d7bb35fb948",
-    "data_source": "formula_simulation",
+    "route_id": "경희대병원_산부인과_B",
     "hospital_name": "경희대병원 산부인과",
     "hospital_district": "동대문구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "동대문구 출발지",
-      "lat": 37.6012,
-      "lng": 127.048
+      "lat": 37.6002,
+      "lng": 127.0475
     },
     "destination": {
       "name": "경희대병원 산부인과",
@@ -4205,14 +4062,14 @@
       "lng": 127.0518
     },
     "summary": {
-      "distance": 200,
-      "duration": 240,
-      "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "distance": 203,
+      "duration": 185,
+      "crosswalk_count": 5,
+      "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.55
+      "barrier_free_ratio": 0.56
     },
-    "stress_index": 0.6825,
+    "stress_index": 0.609,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4244,19 +4101,17 @@
         37.5972
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "1b246dc6-e777-48ee-9f6d-291333430099",
-    "data_source": "formula_simulation",
+    "route_id": "경희대병원_산부인과_C",
     "hospital_name": "경희대병원 산부인과",
     "hospital_district": "동대문구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "동대문구 출발지",
-      "lat": 37.6007,
-      "lng": 127.0465
+      "lat": 37.6002,
+      "lng": 127.0475
     },
     "destination": {
       "name": "경희대병원 산부인과",
@@ -4264,15 +4119,15 @@
       "lng": 127.0518
     },
     "summary": {
-      "distance": 420,
-      "duration": 504,
-      "crosswalk_count": 8,
+      "distance": 502,
+      "duration": 456,
+      "crosswalk_count": 4,
       "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.47
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.34
     },
-    "stress_index": 0.5005,
-    "accessibility_grade": "C",
+    "stress_index": 0.5673,
+    "accessibility_grade": "B",
     "path": [
       [
         127.0465,
@@ -4303,19 +4158,17 @@
         37.5972
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3430bab6-842f-4058-8a5c-81dfd43a4378",
-    "data_source": "formula_simulation",
+    "route_id": "경희대병원_산부인과_D",
     "hospital_name": "경희대병원 산부인과",
     "hospital_district": "동대문구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "동대문구 출발지",
-      "lat": 37.5994,
-      "lng": 127.0487
+      "lat": 37.6002,
+      "lng": 127.0475
     },
     "destination": {
       "name": "경희대병원 산부인과",
@@ -4323,14 +4176,14 @@
       "lng": 127.0518
     },
     "summary": {
-      "distance": 562,
-      "duration": 674,
+      "distance": 634,
+      "duration": 576,
       "crosswalk_count": 2,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.44
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.7223,
+    "stress_index": 0.6843,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4362,19 +4215,17 @@
         37.5972
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "506c14a3-352f-4869-b1ac-737f052444cc",
-    "data_source": "formula_simulation",
+    "route_id": "경희대병원_산부인과_E",
     "hospital_name": "경희대병원 산부인과",
     "hospital_district": "동대문구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "동대문구 출발지",
-      "lat": 37.5997,
-      "lng": 127.0467
+      "lat": 37.6002,
+      "lng": 127.0475
     },
     "destination": {
       "name": "경희대병원 산부인과",
@@ -4382,14 +4233,14 @@
       "lng": 127.0518
     },
     "summary": {
-      "distance": 453,
-      "duration": 543,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.67
+      "distance": 656,
+      "duration": 596,
+      "crosswalk_count": 6,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.74
     },
-    "stress_index": 0.725,
+    "stress_index": 0.7017,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4421,12 +4272,10 @@
         37.5972
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a0e74094-e4c3-40cf-8ac2-9e2d315fe243",
-    "data_source": "formula_simulation",
+    "route_id": "중앙대병원_산부인과_A",
     "hospital_name": "중앙대병원 산부인과",
     "hospital_district": "동작구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -4441,14 +4290,14 @@
       "lng": 126.9612
     },
     "summary": {
-      "distance": 403,
-      "duration": 483,
+      "distance": 763,
+      "duration": 694,
       "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.89
     },
-    "stress_index": 0.8278,
+    "stress_index": 0.8313,
     "accessibility_grade": "A",
     "path": [
       [
@@ -4480,19 +4329,17 @@
         37.5028
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "75888b08-ac67-415a-85bb-832e0047fe5d",
-    "data_source": "formula_simulation",
+    "route_id": "중앙대병원_산부인과_B",
     "hospital_name": "중앙대병원 산부인과",
     "hospital_district": "동작구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "동작구 출발지",
-      "lat": 37.5068,
-      "lng": 126.9575
+      "lat": 37.5058,
+      "lng": 126.957
     },
     "destination": {
       "name": "중앙대병원 산부인과",
@@ -4500,14 +4347,14 @@
       "lng": 126.9612
     },
     "summary": {
-      "distance": 256,
-      "duration": 307,
-      "crosswalk_count": 6,
+      "distance": 287,
+      "duration": 261,
+      "crosswalk_count": 4,
       "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.63
     },
-    "stress_index": 0.601,
+    "stress_index": 0.6945,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4539,19 +4386,17 @@
         37.5028
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f9fe76f7-b7e4-4dcd-90c0-f517491ddad5",
-    "data_source": "formula_simulation",
+    "route_id": "중앙대병원_산부인과_C",
     "hospital_name": "중앙대병원 산부인과",
     "hospital_district": "동작구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "동작구 출발지",
-      "lat": 37.5063,
-      "lng": 126.95599999999999
+      "lat": 37.5058,
+      "lng": 126.957
     },
     "destination": {
       "name": "중앙대병원 산부인과",
@@ -4559,14 +4404,14 @@
       "lng": 126.9612
     },
     "summary": {
-      "distance": 656,
-      "duration": 787,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
+      "distance": 473,
+      "duration": 430,
+      "crosswalk_count": 5,
+      "slope_section_count": 5,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.39
+      "barrier_free_ratio": 0.38
     },
-    "stress_index": 0.4742,
+    "stress_index": 0.5032,
     "accessibility_grade": "C",
     "path": [
       [
@@ -4598,19 +4443,17 @@
         37.5028
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d1ae855d-5c02-4417-8f36-9ee733af02ed",
-    "data_source": "formula_simulation",
+    "route_id": "중앙대병원_산부인과_D",
     "hospital_name": "중앙대병원 산부인과",
     "hospital_district": "동작구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "동작구 출발지",
-      "lat": 37.505,
-      "lng": 126.95819999999999
+      "lat": 37.5058,
+      "lng": 126.957
     },
     "destination": {
       "name": "중앙대병원 산부인과",
@@ -4618,14 +4461,14 @@
       "lng": 126.9612
     },
     "summary": {
-      "distance": 843,
-      "duration": 1011,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.51
+      "distance": 693,
+      "duration": 630,
+      "crosswalk_count": 2,
+      "slope_section_count": 3,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.61
     },
-    "stress_index": 0.636,
+    "stress_index": 0.676,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4657,19 +4500,17 @@
         37.5028
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "cb4ba87e-eb48-4e24-8168-e79e67de7804",
-    "data_source": "formula_simulation",
+    "route_id": "중앙대병원_산부인과_E",
     "hospital_name": "중앙대병원 산부인과",
     "hospital_district": "동작구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "동작구 출발지",
-      "lat": 37.5053,
-      "lng": 126.9562
+      "lat": 37.5058,
+      "lng": 126.957
     },
     "destination": {
       "name": "중앙대병원 산부인과",
@@ -4677,14 +4518,14 @@
       "lng": 126.9612
     },
     "summary": {
-      "distance": 555,
-      "duration": 666,
-      "crosswalk_count": 7,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.52
+      "distance": 569,
+      "duration": 517,
+      "crosswalk_count": 6,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.79
     },
-    "stress_index": 0.6105,
+    "stress_index": 0.6237,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4716,12 +4557,10 @@
         37.5028
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "7fca9c9e-2ed1-4063-a386-4c72215f5156",
-    "data_source": "formula_simulation",
+    "route_id": "강동경희대병원_산부인과_A",
     "hospital_name": "강동경희대병원 산부인과",
     "hospital_district": "강동구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -4736,14 +4575,14 @@
       "lng": 127.1496
     },
     "summary": {
-      "distance": 451,
-      "duration": 541,
-      "crosswalk_count": 1,
+      "distance": 769,
+      "duration": 699,
+      "crosswalk_count": 2,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.92
     },
-    "stress_index": 0.8698,
+    "stress_index": 0.8098,
     "accessibility_grade": "A",
     "path": [
       [
@@ -4775,19 +4614,17 @@
         37.5499
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "5591ff3b-540a-485f-a459-a3a7c8b29a6c",
-    "data_source": "formula_simulation",
+    "route_id": "강동경희대병원_산부인과_B",
     "hospital_name": "강동경희대병원 산부인과",
     "hospital_district": "강동구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "강동구 출발지",
-      "lat": 37.553999999999995,
-      "lng": 127.1455
+      "lat": 37.553,
+      "lng": 127.145
     },
     "destination": {
       "name": "강동경희대병원 산부인과",
@@ -4795,15 +4632,15 @@
       "lng": 127.1496
     },
     "summary": {
-      "distance": 322,
-      "duration": 386,
-      "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "distance": 222,
+      "duration": 202,
+      "crosswalk_count": 3,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.5
+      "barrier_free_ratio": 0.67
     },
-    "stress_index": 0.6713,
-    "accessibility_grade": "B",
+    "stress_index": 0.7755,
+    "accessibility_grade": "A",
     "path": [
       [
         127.1455,
@@ -4834,19 +4671,17 @@
         37.5499
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "2fd4b8ac-5645-4941-9ed5-fe08aba5ae19",
-    "data_source": "formula_simulation",
+    "route_id": "강동경희대병원_산부인과_C",
     "hospital_name": "강동경희대병원 산부인과",
     "hospital_district": "강동구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "강동구 출발지",
-      "lat": 37.5535,
-      "lng": 127.14399999999999
+      "lat": 37.553,
+      "lng": 127.145
     },
     "destination": {
       "name": "강동경희대병원 산부인과",
@@ -4854,15 +4689,15 @@
       "lng": 127.1496
     },
     "summary": {
-      "distance": 526,
-      "duration": 631,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.47
+      "distance": 484,
+      "duration": 440,
+      "crosswalk_count": 3,
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.52
     },
-    "stress_index": 0.5078,
-    "accessibility_grade": "C",
+    "stress_index": 0.6723,
+    "accessibility_grade": "B",
     "path": [
       [
         127.14399999999999,
@@ -4893,19 +4728,17 @@
         37.5499
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a2dc0fcd-5af4-4c1e-b765-031cf38d61f2",
-    "data_source": "formula_simulation",
+    "route_id": "강동경희대병원_산부인과_D",
     "hospital_name": "강동경희대병원 산부인과",
     "hospital_district": "강동구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "강동구 출발지",
-      "lat": 37.5522,
-      "lng": 127.1462
+      "lat": 37.553,
+      "lng": 127.145
     },
     "destination": {
       "name": "강동경희대병원 산부인과",
@@ -4913,14 +4746,14 @@
       "lng": 127.1496
     },
     "summary": {
-      "distance": 881,
-      "duration": 1057,
-      "crosswalk_count": 2,
-      "slope_section_count": 2,
+      "distance": 689,
+      "duration": 626,
+      "crosswalk_count": 1,
+      "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.41
+      "barrier_free_ratio": 0.73
     },
-    "stress_index": 0.6647,
+    "stress_index": 0.7197,
     "accessibility_grade": "B",
     "path": [
       [
@@ -4952,19 +4785,17 @@
         37.5499
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3f954168-3f68-4505-8eca-fa79635dba66",
-    "data_source": "formula_simulation",
+    "route_id": "강동경희대병원_산부인과_E",
     "hospital_name": "강동경희대병원 산부인과",
     "hospital_district": "강동구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "강동구 출발지",
-      "lat": 37.552499999999995,
-      "lng": 127.1442
+      "lat": 37.553,
+      "lng": 127.145
     },
     "destination": {
       "name": "강동경희대병원 산부인과",
@@ -4972,14 +4803,14 @@
       "lng": 127.1496
     },
     "summary": {
-      "distance": 559,
-      "duration": 670,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.3
+      "distance": 604,
+      "duration": 549,
+      "crosswalk_count": 7,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.87
     },
-    "stress_index": 0.6768,
+    "stress_index": 0.7048,
     "accessibility_grade": "B",
     "path": [
       [
@@ -5011,12 +4842,10 @@
         37.5499
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f7babcce-1a76-4e4a-9da1-786332020b45",
-    "data_source": "formula_simulation",
+    "route_id": "순천향대서울병원_산부인과_A",
     "hospital_name": "순천향대서울병원 산부인과",
     "hospital_district": "용산구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -5031,14 +4860,14 @@
       "lng": 126.971
     },
     "summary": {
-      "distance": 530,
-      "duration": 636,
-      "crosswalk_count": 1,
+      "distance": 726,
+      "duration": 660,
+      "crosswalk_count": 2,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.87
     },
-    "stress_index": 0.8567,
+    "stress_index": 0.8095,
     "accessibility_grade": "A",
     "path": [
       [
@@ -5070,19 +4899,17 @@
         37.5357
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "bbcfa463-d99c-42a2-b048-d570bb8d837a",
-    "data_source": "formula_simulation",
+    "route_id": "순천향대서울병원_산부인과_B",
     "hospital_name": "순천향대서울병원 산부인과",
     "hospital_district": "용산구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "용산구 출발지",
-      "lat": 37.539699999999996,
-      "lng": 126.967
+      "lat": 37.5387,
+      "lng": 126.9665
     },
     "destination": {
       "name": "순천향대서울병원 산부인과",
@@ -5090,15 +4917,15 @@
       "lng": 126.971
     },
     "summary": {
-      "distance": 278,
-      "duration": 333,
+      "distance": 247,
+      "duration": 225,
       "crosswalk_count": 3,
-      "slope_section_count": 3,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "barrier_free_ratio": 0.65
     },
-    "stress_index": 0.676,
-    "accessibility_grade": "B",
+    "stress_index": 0.7725,
+    "accessibility_grade": "A",
     "path": [
       [
         126.967,
@@ -5129,19 +4956,17 @@
         37.5357
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "b87300e9-1a89-4dc8-90f3-63642301332f",
-    "data_source": "formula_simulation",
+    "route_id": "순천향대서울병원_산부인과_C",
     "hospital_name": "순천향대서울병원 산부인과",
     "hospital_district": "용산구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "용산구 출발지",
-      "lat": 37.5392,
-      "lng": 126.96549999999999
+      "lat": 37.5387,
+      "lng": 126.9665
     },
     "destination": {
       "name": "순천향대서울병원 산부인과",
@@ -5149,14 +4974,14 @@
       "lng": 126.971
     },
     "summary": {
-      "distance": 593,
-      "duration": 711,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
+      "distance": 402,
+      "duration": 365,
+      "crosswalk_count": 5,
+      "slope_section_count": 5,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "barrier_free_ratio": 0.49
     },
-    "stress_index": 0.4612,
+    "stress_index": 0.5315,
     "accessibility_grade": "C",
     "path": [
       [
@@ -5188,19 +5013,17 @@
         37.5357
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "4a1488ee-063f-476d-bc2a-1655a909ab5b",
-    "data_source": "formula_simulation",
+    "route_id": "순천향대서울병원_산부인과_D",
     "hospital_name": "순천향대서울병원 산부인과",
     "hospital_district": "용산구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "용산구 출발지",
-      "lat": 37.5379,
-      "lng": 126.9677
+      "lat": 37.5387,
+      "lng": 126.9665
     },
     "destination": {
       "name": "순천향대서울병원 산부인과",
@@ -5208,15 +5031,15 @@
       "lng": 126.971
     },
     "summary": {
-      "distance": 601,
-      "duration": 721,
+      "distance": 597,
+      "duration": 543,
       "crosswalk_count": 2,
-      "slope_section_count": 2,
+      "slope_section_count": 1,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.49
+      "barrier_free_ratio": 0.65
     },
-    "stress_index": 0.7233,
-    "accessibility_grade": "B",
+    "stress_index": 0.798,
+    "accessibility_grade": "A",
     "path": [
       [
         126.9677,
@@ -5247,19 +5070,17 @@
         37.5357
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "9e037846-4e52-4166-8a2b-332d25789389",
-    "data_source": "formula_simulation",
+    "route_id": "순천향대서울병원_산부인과_E",
     "hospital_name": "순천향대서울병원 산부인과",
     "hospital_district": "용산구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "용산구 출발지",
-      "lat": 37.538199999999996,
-      "lng": 126.9657
+      "lat": 37.5387,
+      "lng": 126.9665
     },
     "destination": {
       "name": "순천향대서울병원 산부인과",
@@ -5267,14 +5088,14 @@
       "lng": 126.971
     },
     "summary": {
-      "distance": 413,
-      "duration": 495,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.39
+      "distance": 625,
+      "duration": 568,
+      "crosswalk_count": 8,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.86
     },
-    "stress_index": 0.6897,
+    "stress_index": 0.6748,
     "accessibility_grade": "B",
     "path": [
       [
@@ -5306,12 +5127,10 @@
         37.5357
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "30e078fc-8af3-41fa-ae59-9c290f821d92",
-    "data_source": "formula_simulation",
+    "route_id": "강서미즈메디병원_A",
     "hospital_name": "강서미즈메디병원",
     "hospital_district": "강서구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -5326,14 +5145,14 @@
       "lng": 126.8349
     },
     "summary": {
-      "distance": 301,
-      "duration": 361,
-      "crosswalk_count": 2,
+      "distance": 691,
+      "duration": 628,
+      "crosswalk_count": 3,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.91
     },
-    "stress_index": 0.8698,
+    "stress_index": 0.7963,
     "accessibility_grade": "A",
     "path": [
       [
@@ -5365,19 +5184,17 @@
         37.5606
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "cbb3aa5a-8289-4870-a853-43aabb819e03",
-    "data_source": "formula_simulation",
+    "route_id": "강서미즈메디병원_B",
     "hospital_name": "강서미즈메디병원",
     "hospital_district": "강서구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "강서구 출발지",
-      "lat": 37.564499999999995,
-      "lng": 126.831
+      "lat": 37.5635,
+      "lng": 126.8305
     },
     "destination": {
       "name": "강서미즈메디병원",
@@ -5385,15 +5202,15 @@
       "lng": 126.8349
     },
     "summary": {
-      "distance": 330,
-      "duration": 396,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.46
+      "distance": 209,
+      "duration": 190,
+      "crosswalk_count": 3,
+      "slope_section_count": 2,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.614,
-    "accessibility_grade": "B",
+    "stress_index": 0.765,
+    "accessibility_grade": "A",
     "path": [
       [
         126.831,
@@ -5424,19 +5241,17 @@
         37.5606
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "9d9a0007-fea5-4fd2-a512-11ff4b684a96",
-    "data_source": "formula_simulation",
+    "route_id": "강서미즈메디병원_C",
     "hospital_name": "강서미즈메디병원",
     "hospital_district": "강서구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "강서구 출발지",
-      "lat": 37.564,
-      "lng": 126.8295
+      "lat": 37.5635,
+      "lng": 126.8305
     },
     "destination": {
       "name": "강서미즈메디병원",
@@ -5444,14 +5259,14 @@
       "lng": 126.8349
     },
     "summary": {
-      "distance": 698,
-      "duration": 837,
-      "crosswalk_count": 8,
-      "slope_section_count": 4,
-      "elevator_count": 0,
+      "distance": 500,
+      "duration": 455,
+      "crosswalk_count": 5,
+      "slope_section_count": 5,
+      "elevator_count": 1,
       "barrier_free_ratio": 0.46
     },
-    "stress_index": 0.4527,
+    "stress_index": 0.5107,
     "accessibility_grade": "C",
     "path": [
       [
@@ -5483,19 +5298,17 @@
         37.5606
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "bff9d4b7-621d-41aa-a84f-dc6394d93221",
-    "data_source": "formula_simulation",
+    "route_id": "강서미즈메디병원_D",
     "hospital_name": "강서미즈메디병원",
     "hospital_district": "강서구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "강서구 출발지",
-      "lat": 37.5627,
-      "lng": 126.8317
+      "lat": 37.5635,
+      "lng": 126.8305
     },
     "destination": {
       "name": "강서미즈메디병원",
@@ -5503,15 +5316,15 @@
       "lng": 126.8349
     },
     "summary": {
-      "distance": 517,
-      "duration": 620,
-      "crosswalk_count": 2,
-      "slope_section_count": 2,
+      "distance": 674,
+      "duration": 613,
+      "crosswalk_count": 3,
+      "slope_section_count": 1,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.5
+      "barrier_free_ratio": 0.73
     },
-    "stress_index": 0.7388,
-    "accessibility_grade": "B",
+    "stress_index": 0.7722,
+    "accessibility_grade": "A",
     "path": [
       [
         126.8317,
@@ -5542,19 +5355,17 @@
         37.5606
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e567f2b2-f011-4b7a-a81e-d5a51c77e9ac",
-    "data_source": "formula_simulation",
+    "route_id": "강서미즈메디병원_E",
     "hospital_name": "강서미즈메디병원",
     "hospital_district": "강서구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "강서구 출발지",
-      "lat": 37.562999999999995,
-      "lng": 126.8297
+      "lat": 37.5635,
+      "lng": 126.8305
     },
     "destination": {
       "name": "강서미즈메디병원",
@@ -5562,14 +5373,14 @@
       "lng": 126.8349
     },
     "summary": {
-      "distance": 655,
-      "duration": 786,
-      "crosswalk_count": 6,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.48
+      "distance": 634,
+      "duration": 576,
+      "crosswalk_count": 8,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.81
     },
-    "stress_index": 0.6128,
+    "stress_index": 0.7158,
     "accessibility_grade": "B",
     "path": [
       [
@@ -5601,12 +5412,10 @@
         37.5606
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "6a334342-2485-47ca-9af1-d89f9e94b8ed",
-    "data_source": "formula_simulation",
+    "route_id": "강남미즈메디병원_A",
     "hospital_name": "강남미즈메디병원",
     "hospital_district": "강남구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -5621,14 +5430,14 @@
       "lng": 127.0369
     },
     "summary": {
-      "distance": 476,
-      "duration": 571,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 787,
+      "duration": 715,
+      "crosswalk_count": 2,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.98
     },
-    "stress_index": 0.8657,
+    "stress_index": 0.8658,
     "accessibility_grade": "A",
     "path": [
       [
@@ -5660,19 +5469,17 @@
         37.5096
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3f042682-fdce-4aa2-894a-3cfd8a794f67",
-    "data_source": "formula_simulation",
+    "route_id": "강남미즈메디병원_B",
     "hospital_name": "강남미즈메디병원",
     "hospital_district": "강남구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5136,
-      "lng": 127.033
+      "lat": 37.5126,
+      "lng": 127.0325
     },
     "destination": {
       "name": "강남미즈메디병원",
@@ -5680,15 +5487,15 @@
       "lng": 127.0369
     },
     "summary": {
-      "distance": 345,
-      "duration": 414,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.43
+      "distance": 224,
+      "duration": 204,
+      "crosswalk_count": 5,
+      "slope_section_count": 1,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.65
     },
-    "stress_index": 0.607,
-    "accessibility_grade": "B",
+    "stress_index": 0.7725,
+    "accessibility_grade": "A",
     "path": [
       [
         127.033,
@@ -5719,19 +5526,17 @@
         37.5096
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c41cdc35-3ffb-4c30-abd4-71db8bdb5ce7",
-    "data_source": "formula_simulation",
+    "route_id": "강남미즈메디병원_C",
     "hospital_name": "강남미즈메디병원",
     "hospital_district": "강남구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5131,
-      "lng": 127.0315
+      "lat": 37.5126,
+      "lng": 127.0325
     },
     "destination": {
       "name": "강남미즈메디병원",
@@ -5739,14 +5544,14 @@
       "lng": 127.0369
     },
     "summary": {
-      "distance": 460,
-      "duration": 552,
-      "crosswalk_count": 5,
+      "distance": 485,
+      "duration": 441,
+      "crosswalk_count": 4,
       "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.68
+      "barrier_free_ratio": 0.44
     },
-    "stress_index": 0.6003,
+    "stress_index": 0.5852,
     "accessibility_grade": "B",
     "path": [
       [
@@ -5778,19 +5583,17 @@
         37.5096
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8a2524a7-d0fc-4a73-aa6e-eebade0f6af5",
-    "data_source": "formula_simulation",
+    "route_id": "강남미즈메디병원_D",
     "hospital_name": "강남미즈메디병원",
     "hospital_district": "강남구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5118,
-      "lng": 127.0337
+      "lat": 37.5126,
+      "lng": 127.0325
     },
     "destination": {
       "name": "강남미즈메디병원",
@@ -5798,15 +5601,15 @@
       "lng": 127.0369
     },
     "summary": {
-      "distance": 589,
-      "duration": 706,
+      "distance": 645,
+      "duration": 586,
       "crosswalk_count": 2,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.43
+      "slope_section_count": 1,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.76
     },
-    "stress_index": 0.7163,
-    "accessibility_grade": "B",
+    "stress_index": 0.8065,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0337,
@@ -5837,19 +5640,17 @@
         37.5096
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d05587ed-82af-4f44-9525-7bb10ee91840",
-    "data_source": "formula_simulation",
+    "route_id": "강남미즈메디병원_E",
     "hospital_name": "강남미즈메디병원",
     "hospital_district": "강남구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "강남구 출발지",
-      "lat": 37.5121,
-      "lng": 127.0317
+      "lat": 37.5126,
+      "lng": 127.0325
     },
     "destination": {
       "name": "강남미즈메디병원",
@@ -5857,14 +5658,14 @@
       "lng": 127.0369
     },
     "summary": {
-      "distance": 508,
-      "duration": 609,
-      "crosswalk_count": 7,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.52
+      "distance": 657,
+      "duration": 597,
+      "crosswalk_count": 9,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.94
     },
-    "stress_index": 0.6183,
+    "stress_index": 0.6565,
     "accessibility_grade": "B",
     "path": [
       [
@@ -5896,12 +5697,10 @@
         37.5096
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "6813eeb8-6a3a-4233-a9f8-be22ffe46bc0",
-    "data_source": "formula_simulation",
+    "route_id": "고려대구로병원_산부인과_A",
     "hospital_name": "고려대구로병원 산부인과",
     "hospital_district": "구로구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -5916,14 +5715,14 @@
       "lng": 126.8936
     },
     "summary": {
-      "distance": 387,
-      "duration": 464,
-      "crosswalk_count": 2,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 804,
+      "duration": 731,
+      "crosswalk_count": 1,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.89
     },
-    "stress_index": 0.8555,
+    "stress_index": 0.8745,
     "accessibility_grade": "A",
     "path": [
       [
@@ -5955,19 +5754,17 @@
         37.4924
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d284340c-97e3-41d0-88e5-4750e8bbbff2",
-    "data_source": "formula_simulation",
+    "route_id": "고려대구로병원_산부인과_B",
     "hospital_name": "고려대구로병원 산부인과",
     "hospital_district": "구로구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "구로구 출발지",
-      "lat": 37.496399999999994,
-      "lng": 126.8897
+      "lat": 37.4954,
+      "lng": 126.8892
     },
     "destination": {
       "name": "고려대구로병원 산부인과",
@@ -5975,14 +5772,14 @@
       "lng": 126.8936
     },
     "summary": {
-      "distance": 356,
-      "duration": 427,
-      "crosswalk_count": 4,
+      "distance": 201,
+      "duration": 183,
+      "crosswalk_count": 3,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.39
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.6492,
+    "stress_index": 0.715,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6014,19 +5811,17 @@
         37.4924
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "ab1e451b-bce6-4107-b8dc-8670bd36d388",
-    "data_source": "formula_simulation",
+    "route_id": "고려대구로병원_산부인과_C",
     "hospital_name": "고려대구로병원 산부인과",
     "hospital_district": "구로구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "구로구 출발지",
-      "lat": 37.4959,
-      "lng": 126.8882
+      "lat": 37.4954,
+      "lng": 126.8892
     },
     "destination": {
       "name": "고려대구로병원 산부인과",
@@ -6034,14 +5829,14 @@
       "lng": 126.8936
     },
     "summary": {
-      "distance": 785,
-      "duration": 942,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.55
+      "distance": 518,
+      "duration": 471,
+      "crosswalk_count": 4,
+      "slope_section_count": 5,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.45
     },
-    "stress_index": 0.4767,
+    "stress_index": 0.5312,
     "accessibility_grade": "C",
     "path": [
       [
@@ -6073,19 +5868,17 @@
         37.4924
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3e7a53ea-2f62-4e6c-aa16-89f8b255f42b",
-    "data_source": "formula_simulation",
+    "route_id": "고려대구로병원_산부인과_D",
     "hospital_name": "고려대구로병원 산부인과",
     "hospital_district": "구로구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "구로구 출발지",
-      "lat": 37.4946,
-      "lng": 126.8904
+      "lat": 37.4954,
+      "lng": 126.8892
     },
     "destination": {
       "name": "고려대구로병원 산부인과",
@@ -6093,14 +5886,14 @@
       "lng": 126.8936
     },
     "summary": {
-      "distance": 539,
-      "duration": 646,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.63
+      "distance": 759,
+      "duration": 690,
+      "crosswalk_count": 3,
+      "slope_section_count": 3,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.69
     },
-    "stress_index": 0.7047,
+    "stress_index": 0.652,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6132,19 +5925,17 @@
         37.4924
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e1a6a026-84aa-45a3-be18-227c711d64bb",
-    "data_source": "formula_simulation",
+    "route_id": "고려대구로병원_산부인과_E",
     "hospital_name": "고려대구로병원 산부인과",
     "hospital_district": "구로구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "구로구 출발지",
-      "lat": 37.494899999999994,
-      "lng": 126.8884
+      "lat": 37.4954,
+      "lng": 126.8892
     },
     "destination": {
       "name": "고려대구로병원 산부인과",
@@ -6152,14 +5943,14 @@
       "lng": 126.8936
     },
     "summary": {
-      "distance": 422,
-      "duration": 506,
-      "crosswalk_count": 5,
+      "distance": 504,
+      "duration": 458,
+      "crosswalk_count": 7,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.45
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.75
     },
-    "stress_index": 0.6722,
+    "stress_index": 0.6535,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6191,12 +5982,10 @@
         37.4924
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "b4393a18-8bd2-475d-a322-db543b069241",
-    "data_source": "formula_simulation",
+    "route_id": "노원을지대병원_산부인과_A",
     "hospital_name": "노원을지대병원 산부인과",
     "hospital_district": "노원구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -6211,14 +6000,14 @@
       "lng": 127.0758
     },
     "summary": {
-      "distance": 386,
-      "duration": 463,
+      "distance": 826,
+      "duration": 751,
       "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 2,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.79
     },
-    "stress_index": 0.8807,
+    "stress_index": 0.7558,
     "accessibility_grade": "A",
     "path": [
       [
@@ -6250,19 +6039,17 @@
         37.6351
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a8d8b076-5145-4e1e-9584-4b1ed29c1ac1",
-    "data_source": "formula_simulation",
+    "route_id": "노원을지대병원_산부인과_B",
     "hospital_name": "노원을지대병원 산부인과",
     "hospital_district": "노원구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "노원구 출발지",
-      "lat": 37.638999999999996,
-      "lng": 127.0719
+      "lat": 37.638,
+      "lng": 127.0714
     },
     "destination": {
       "name": "노원을지대병원 산부인과",
@@ -6270,14 +6057,14 @@
       "lng": 127.0758
     },
     "summary": {
-      "distance": 265,
-      "duration": 318,
-      "crosswalk_count": 5,
+      "distance": 234,
+      "duration": 213,
+      "crosswalk_count": 4,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.58
+      "barrier_free_ratio": 0.47
     },
-    "stress_index": 0.662,
+    "stress_index": 0.6705,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6309,19 +6096,17 @@
         37.6351
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8cc19301-25b1-45f0-a69c-07b4e2cbb972",
-    "data_source": "formula_simulation",
+    "route_id": "노원을지대병원_산부인과_C",
     "hospital_name": "노원을지대병원 산부인과",
     "hospital_district": "노원구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "노원구 출발지",
-      "lat": 37.6385,
-      "lng": 127.07039999999999
+      "lat": 37.638,
+      "lng": 127.0714
     },
     "destination": {
       "name": "노원을지대병원 산부인과",
@@ -6329,15 +6114,15 @@
       "lng": 127.0758
     },
     "summary": {
-      "distance": 410,
-      "duration": 492,
+      "distance": 498,
+      "duration": 453,
       "crosswalk_count": 4,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.39
+      "slope_section_count": 6,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.34
     },
-    "stress_index": 0.5902,
-    "accessibility_grade": "B",
+    "stress_index": 0.468,
+    "accessibility_grade": "C",
     "path": [
       [
         127.07039999999999,
@@ -6368,19 +6153,17 @@
         37.6351
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f3c2bd97-8e6c-4535-bebb-fee604de2773",
-    "data_source": "formula_simulation",
+    "route_id": "노원을지대병원_산부인과_D",
     "hospital_name": "노원을지대병원 산부인과",
     "hospital_district": "노원구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "노원구 출발지",
-      "lat": 37.6372,
-      "lng": 127.0726
+      "lat": 37.638,
+      "lng": 127.0714
     },
     "destination": {
       "name": "노원을지대병원 산부인과",
@@ -6388,14 +6171,14 @@
       "lng": 127.0758
     },
     "summary": {
-      "distance": 868,
-      "duration": 1041,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
+      "distance": 650,
+      "duration": 591,
+      "crosswalk_count": 1,
+      "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.42
+      "barrier_free_ratio": 0.55
     },
-    "stress_index": 0.5933,
+    "stress_index": 0.6492,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6427,19 +6210,17 @@
         37.6351
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "6896c13c-c5c6-4371-9431-733c511b1243",
-    "data_source": "formula_simulation",
+    "route_id": "노원을지대병원_산부인과_E",
     "hospital_name": "노원을지대병원 산부인과",
     "hospital_district": "노원구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "노원구 출발지",
-      "lat": 37.637499999999996,
-      "lng": 127.0706
+      "lat": 37.638,
+      "lng": 127.0714
     },
     "destination": {
       "name": "노원을지대병원 산부인과",
@@ -6447,14 +6228,14 @@
       "lng": 127.0758
     },
     "summary": {
-      "distance": 461,
-      "duration": 553,
-      "crosswalk_count": 6,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.38
+      "distance": 569,
+      "duration": 517,
+      "crosswalk_count": 7,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.75
     },
-    "stress_index": 0.6302,
+    "stress_index": 0.5927,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6486,12 +6267,10 @@
         37.6351
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "666bff5a-1526-4347-a3dc-278f6c3228e5",
-    "data_source": "formula_simulation",
+    "route_id": "인제대서울백병원_산부인과_A",
     "hospital_name": "인제대서울백병원 산부인과",
     "hospital_district": "중구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -6506,15 +6285,15 @@
       "lng": 126.9998
     },
     "summary": {
-      "distance": 478,
-      "duration": 573,
-      "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 815,
+      "duration": 741,
+      "crosswalk_count": 4,
+      "slope_section_count": 2,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.89
     },
-    "stress_index": 0.8653,
-    "accessibility_grade": "A",
+    "stress_index": 0.6977,
+    "accessibility_grade": "B",
     "path": [
       [
         126.9955,
@@ -6545,19 +6324,17 @@
         37.5611
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "99f42405-3f7d-49b9-9ca2-f6ad071409de",
-    "data_source": "formula_simulation",
+    "route_id": "인제대서울백병원_산부인과_B",
     "hospital_name": "인제대서울백병원 산부인과",
     "hospital_district": "중구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.565,
-      "lng": 126.99600000000001
+      "lat": 37.564,
+      "lng": 126.9955
     },
     "destination": {
       "name": "인제대서울백병원 산부인과",
@@ -6565,14 +6342,14 @@
       "lng": 126.9998
     },
     "summary": {
-      "distance": 365,
-      "duration": 438,
-      "crosswalk_count": 5,
-      "slope_section_count": 3,
+      "distance": 241,
+      "duration": 219,
+      "crosswalk_count": 4,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.67
+      "barrier_free_ratio": 0.59
     },
-    "stress_index": 0.6647,
+    "stress_index": 0.7385,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6604,19 +6381,17 @@
         37.5611
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "33787937-1ba7-4394-b2d8-03a4e36be307",
-    "data_source": "formula_simulation",
+    "route_id": "인제대서울백병원_산부인과_C",
     "hospital_name": "인제대서울백병원 산부인과",
     "hospital_district": "중구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5645,
-      "lng": 126.9945
+      "lat": 37.564,
+      "lng": 126.9955
     },
     "destination": {
       "name": "인제대서울백병원 산부인과",
@@ -6624,14 +6399,14 @@
       "lng": 126.9998
     },
     "summary": {
-      "distance": 465,
-      "duration": 558,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
+      "distance": 536,
+      "duration": 487,
+      "crosswalk_count": 5,
+      "slope_section_count": 6,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.66
+      "barrier_free_ratio": 0.36
     },
-    "stress_index": 0.5465,
+    "stress_index": 0.4397,
     "accessibility_grade": "C",
     "path": [
       [
@@ -6663,19 +6438,17 @@
         37.5611
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "348f9da7-b2a6-4c15-899e-cb8f88f7778d",
-    "data_source": "formula_simulation",
+    "route_id": "인제대서울백병원_산부인과_D",
     "hospital_name": "인제대서울백병원 산부인과",
     "hospital_district": "중구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5632,
-      "lng": 126.9967
+      "lat": 37.564,
+      "lng": 126.9955
     },
     "destination": {
       "name": "인제대서울백병원 산부인과",
@@ -6683,14 +6456,14 @@
       "lng": 126.9998
     },
     "summary": {
-      "distance": 744,
-      "duration": 892,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
+      "distance": 617,
+      "duration": 561,
+      "crosswalk_count": 2,
+      "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.55
+      "barrier_free_ratio": 0.66
     },
-    "stress_index": 0.6335,
+    "stress_index": 0.6462,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6722,19 +6495,17 @@
         37.5611
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "378cc0cc-5ca6-46b4-9846-7516b9740d37",
-    "data_source": "formula_simulation",
+    "route_id": "인제대서울백병원_산부인과_E",
     "hospital_name": "인제대서울백병원 산부인과",
     "hospital_district": "중구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "중구 출발지",
-      "lat": 37.5635,
-      "lng": 126.99470000000001
+      "lat": 37.564,
+      "lng": 126.9955
     },
     "destination": {
       "name": "인제대서울백병원 산부인과",
@@ -6742,14 +6513,14 @@
       "lng": 126.9998
     },
     "summary": {
-      "distance": 602,
-      "duration": 722,
-      "crosswalk_count": 5,
+      "distance": 548,
+      "duration": 498,
+      "crosswalk_count": 8,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.62
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.77
     },
-    "stress_index": 0.6677,
+    "stress_index": 0.6242,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6781,12 +6552,10 @@
         37.5611
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "82019110-9e5a-4993-9c9b-bdf9ef2b3b91",
-    "data_source": "formula_simulation",
+    "route_id": "분당서울대병원_A",
     "hospital_name": "분당서울대병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -6801,14 +6570,14 @@
       "lng": 127.1246
     },
     "summary": {
-      "distance": 310,
-      "duration": 372,
-      "crosswalk_count": 3,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "distance": 881,
+      "duration": 801,
+      "crosswalk_count": 1,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.82
     },
-    "stress_index": 0.8433,
+    "stress_index": 0.8512,
     "accessibility_grade": "A",
     "path": [
       [
@@ -6840,19 +6609,17 @@
         37.354
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c437f346-da90-415a-acfd-d79a737c4173",
-    "data_source": "formula_simulation",
+    "route_id": "분당서울대병원_B",
     "hospital_name": "분당서울대병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.358999999999995,
-      "lng": 127.1195
+      "lat": 37.358,
+      "lng": 127.119
     },
     "destination": {
       "name": "분당서울대병원",
@@ -6860,14 +6627,14 @@
       "lng": 127.1246
     },
     "summary": {
-      "distance": 351,
-      "duration": 421,
-      "crosswalk_count": 3,
+      "distance": 419,
+      "duration": 381,
+      "crosswalk_count": 4,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.58
+      "barrier_free_ratio": 0.51
     },
-    "stress_index": 0.7035,
+    "stress_index": 0.6567,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6899,19 +6666,17 @@
         37.354
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "74c8cfef-71ae-4fa6-af3a-1dd2c08ef2ba",
-    "data_source": "formula_simulation",
+    "route_id": "분당서울대병원_C",
     "hospital_name": "분당서울대병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.3585,
-      "lng": 127.118
+      "lat": 37.358,
+      "lng": 127.119
     },
     "destination": {
       "name": "분당서울대병원",
@@ -6919,14 +6684,14 @@
       "lng": 127.1246
     },
     "summary": {
-      "distance": 572,
-      "duration": 686,
+      "distance": 602,
+      "duration": 547,
       "crosswalk_count": 4,
       "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.32
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.43
     },
-    "stress_index": 0.5527,
+    "stress_index": 0.5642,
     "accessibility_grade": "B",
     "path": [
       [
@@ -6958,19 +6723,17 @@
         37.354
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f7c8053d-8e28-4574-96f5-9f2830b3f1b5",
-    "data_source": "formula_simulation",
+    "route_id": "분당서울대병원_D",
     "hospital_name": "분당서울대병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.3572,
-      "lng": 127.1202
+      "lat": 37.358,
+      "lng": 127.119
     },
     "destination": {
       "name": "분당서울대병원",
@@ -6978,14 +6741,14 @@
       "lng": 127.1246
     },
     "summary": {
-      "distance": 769,
-      "duration": 922,
+      "distance": 765,
+      "duration": 695,
       "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.31
+      "slope_section_count": 3,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.68
     },
-    "stress_index": 0.6433,
+    "stress_index": 0.6495,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7017,19 +6780,17 @@
         37.354
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "48a2abeb-44c3-4ab5-a17d-430bf521084f",
-    "data_source": "formula_simulation",
+    "route_id": "분당서울대병원_E",
     "hospital_name": "분당서울대병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.357499999999995,
-      "lng": 127.1182
+      "lat": 37.358,
+      "lng": 127.119
     },
     "destination": {
       "name": "분당서울대병원",
@@ -7037,14 +6798,14 @@
       "lng": 127.1246
     },
     "summary": {
-      "distance": 656,
-      "duration": 787,
-      "crosswalk_count": 6,
+      "distance": 724,
+      "duration": 658,
+      "crosswalk_count": 8,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.31
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.78
     },
-    "stress_index": 0.5872,
+    "stress_index": 0.5963,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7076,12 +6837,10 @@
         37.354
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "2a59318e-ee9d-48a5-b184-14e0f7d4d6dc",
-    "data_source": "formula_simulation",
+    "route_id": "분당차병원_A",
     "hospital_name": "분당차병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -7096,14 +6855,14 @@
       "lng": 127.1212
     },
     "summary": {
-      "distance": 455,
-      "duration": 546,
+      "distance": 845,
+      "duration": 768,
       "crosswalk_count": 1,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.83
     },
-    "stress_index": 0.8692,
+    "stress_index": 0.8587,
     "accessibility_grade": "A",
     "path": [
       [
@@ -7135,19 +6894,17 @@
         37.3813
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "7bcc4444-87b2-4c24-835a-d537ebecdc2b",
-    "data_source": "formula_simulation",
+    "route_id": "분당차병원_B",
     "hospital_name": "분당차병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.3853,
-      "lng": 127.1173
+      "lat": 37.3843,
+      "lng": 127.1168
     },
     "destination": {
       "name": "분당차병원",
@@ -7155,15 +6912,15 @@
       "lng": 127.1212
     },
     "summary": {
-      "distance": 298,
-      "duration": 357,
-      "crosswalk_count": 3,
-      "slope_section_count": 3,
+      "distance": 454,
+      "duration": 413,
+      "crosswalk_count": 4,
+      "slope_section_count": 1,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.58
+      "barrier_free_ratio": 0.6
     },
-    "stress_index": 0.712,
-    "accessibility_grade": "B",
+    "stress_index": 0.7643,
+    "accessibility_grade": "A",
     "path": [
       [
         127.1173,
@@ -7194,19 +6951,17 @@
         37.3813
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d6d0c952-505c-4f0d-ba18-805fb8e04caf",
-    "data_source": "formula_simulation",
+    "route_id": "분당차병원_C",
     "hospital_name": "분당차병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.384800000000006,
-      "lng": 127.1158
+      "lat": 37.3843,
+      "lng": 127.1168
     },
     "destination": {
       "name": "분당차병원",
@@ -7214,15 +6969,15 @@
       "lng": 127.1212
     },
     "summary": {
-      "distance": 646,
-      "duration": 775,
+      "distance": 613,
+      "duration": 557,
       "crosswalk_count": 4,
       "slope_section_count": 4,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.32
+      "barrier_free_ratio": 0.38
     },
-    "stress_index": 0.5403,
-    "accessibility_grade": "C",
+    "stress_index": 0.5548,
+    "accessibility_grade": "B",
     "path": [
       [
         127.1158,
@@ -7253,19 +7008,17 @@
         37.3813
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8f7e5f29-d288-4a96-b7ed-6f1fe9f90dcf",
-    "data_source": "formula_simulation",
+    "route_id": "분당차병원_D",
     "hospital_name": "분당차병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.383500000000005,
-      "lng": 127.118
+      "lat": 37.3843,
+      "lng": 127.1168
     },
     "destination": {
       "name": "분당차병원",
@@ -7273,15 +7026,15 @@
       "lng": 127.1212
     },
     "summary": {
-      "distance": 583,
-      "duration": 699,
-      "crosswalk_count": 2,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.65
+      "distance": 792,
+      "duration": 720,
+      "crosswalk_count": 3,
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.61
     },
-    "stress_index": 0.7503,
-    "accessibility_grade": "A",
+    "stress_index": 0.6345,
+    "accessibility_grade": "B",
     "path": [
       [
         127.118,
@@ -7312,19 +7065,17 @@
         37.3813
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "4907606d-450e-4878-8ea9-5af5e400ecca",
-    "data_source": "formula_simulation",
+    "route_id": "분당차병원_E",
     "hospital_name": "분당차병원",
     "hospital_district": "성남시 분당구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "성남시 분당구 출발지",
-      "lat": 37.3838,
-      "lng": 127.116
+      "lat": 37.3843,
+      "lng": 127.1168
     },
     "destination": {
       "name": "분당차병원",
@@ -7332,14 +7083,14 @@
       "lng": 127.1212
     },
     "summary": {
-      "distance": 366,
-      "duration": 439,
+      "distance": 640,
+      "duration": 582,
       "crosswalk_count": 7,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.69
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.78
     },
-    "stress_index": 0.6675,
+    "stress_index": 0.6353,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7371,12 +7122,10 @@
         37.3813
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d62c074e-d2ad-4c5b-96fb-3ccd964c5839",
-    "data_source": "formula_simulation",
+    "route_id": "부천차병원_A",
     "hospital_name": "부천차병원",
     "hospital_district": "부천시",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -7391,14 +7140,14 @@
       "lng": 126.7836
     },
     "summary": {
-      "distance": 339,
-      "duration": 406,
-      "crosswalk_count": 1,
+      "distance": 828,
+      "duration": 753,
+      "crosswalk_count": 2,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.83
     },
-    "stress_index": 0.8885,
+    "stress_index": 0.7865,
     "accessibility_grade": "A",
     "path": [
       [
@@ -7430,19 +7179,17 @@
         37.501
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "3a28a324-2410-48dc-b47e-c2f827f60af0",
-    "data_source": "formula_simulation",
+    "route_id": "부천차병원_B",
     "hospital_name": "부천차병원",
     "hospital_district": "부천시",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "부천시 출발지",
-      "lat": 37.504999999999995,
-      "lng": 126.7797
+      "lat": 37.504,
+      "lng": 126.7792
     },
     "destination": {
       "name": "부천차병원",
@@ -7450,14 +7197,14 @@
       "lng": 126.7836
     },
     "summary": {
-      "distance": 309,
-      "duration": 370,
-      "crosswalk_count": 4,
+      "distance": 339,
+      "duration": 308,
+      "crosswalk_count": 3,
       "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.67
+      "barrier_free_ratio": 0.58
     },
-    "stress_index": 0.699,
+    "stress_index": 0.7055,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7489,19 +7236,17 @@
         37.501
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "4386ccb5-e2c2-494a-8be3-3b7728d4a70a",
-    "data_source": "formula_simulation",
+    "route_id": "부천차병원_C",
     "hospital_name": "부천차병원",
     "hospital_district": "부천시",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "부천시 출발지",
-      "lat": 37.5045,
-      "lng": 126.7782
+      "lat": 37.504,
+      "lng": 126.7792
     },
     "destination": {
       "name": "부천차병원",
@@ -7509,14 +7254,14 @@
       "lng": 126.7836
     },
     "summary": {
-      "distance": 792,
-      "duration": 950,
-      "crosswalk_count": 4,
-      "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.67
+      "distance": 551,
+      "duration": 501,
+      "crosswalk_count": 3,
+      "slope_section_count": 3,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.45
     },
-    "stress_index": 0.5685,
+    "stress_index": 0.6507,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7548,19 +7293,17 @@
         37.501
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "104f398a-5eb8-495c-8801-6e3e5b62fd4c",
-    "data_source": "formula_simulation",
+    "route_id": "부천차병원_D",
     "hospital_name": "부천차병원",
     "hospital_district": "부천시",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "부천시 출발지",
-      "lat": 37.5032,
-      "lng": 126.7804
+      "lat": 37.504,
+      "lng": 126.7792
     },
     "destination": {
       "name": "부천차병원",
@@ -7568,15 +7311,15 @@
       "lng": 126.7836
     },
     "summary": {
-      "distance": 664,
-      "duration": 796,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.5
+      "distance": 761,
+      "duration": 692,
+      "crosswalk_count": 1,
+      "slope_section_count": 1,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.67
     },
-    "stress_index": 0.6893,
-    "accessibility_grade": "B",
+    "stress_index": 0.7987,
+    "accessibility_grade": "A",
     "path": [
       [
         126.7804,
@@ -7607,19 +7350,17 @@
         37.501
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "d09901f2-33b7-4fbb-a39e-af1d914c0a8b",
-    "data_source": "formula_simulation",
+    "route_id": "부천차병원_E",
     "hospital_name": "부천차병원",
     "hospital_district": "부천시",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "부천시 출발지",
-      "lat": 37.503499999999995,
-      "lng": 126.7784
+      "lat": 37.504,
+      "lng": 126.7792
     },
     "destination": {
       "name": "부천차병원",
@@ -7627,14 +7368,14 @@
       "lng": 126.7836
     },
     "summary": {
-      "distance": 658,
-      "duration": 789,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.33
+      "distance": 647,
+      "duration": 588,
+      "crosswalk_count": 8,
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.83
     },
-    "stress_index": 0.6148,
+    "stress_index": 0.7167,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7666,12 +7407,10 @@
         37.501
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8724cb8f-03d2-400b-9fc9-5ae387284141",
-    "data_source": "formula_simulation",
+    "route_id": "일산차병원_A",
     "hospital_name": "일산차병원",
     "hospital_district": "고양시 일산",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -7686,14 +7425,14 @@
       "lng": 126.8251
     },
     "summary": {
-      "distance": 480,
-      "duration": 576,
-      "crosswalk_count": 2,
+      "distance": 904,
+      "duration": 822,
+      "crosswalk_count": 1,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.86
     },
-    "stress_index": 0.84,
+    "stress_index": 0.8033,
     "accessibility_grade": "A",
     "path": [
       [
@@ -7725,19 +7464,17 @@
         37.6556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "4c03ec91-a63b-43ef-beb7-99c4e50890e6",
-    "data_source": "formula_simulation",
+    "route_id": "일산차병원_B",
     "hospital_name": "일산차병원",
     "hospital_district": "고양시 일산",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "고양시 일산 출발지",
-      "lat": 37.659499999999994,
-      "lng": 126.8212
+      "lat": 37.6585,
+      "lng": 126.8207
     },
     "destination": {
       "name": "일산차병원",
@@ -7745,14 +7482,14 @@
       "lng": 126.8251
     },
     "summary": {
-      "distance": 366,
-      "duration": 439,
-      "crosswalk_count": 4,
-      "slope_section_count": 3,
+      "distance": 471,
+      "duration": 428,
+      "crosswalk_count": 5,
+      "slope_section_count": 1,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.4
+      "barrier_free_ratio": 0.63
     },
-    "stress_index": 0.649,
+    "stress_index": 0.741,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7784,19 +7521,17 @@
         37.6556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "1cf951b3-0012-48d9-b5c0-af617b70f7bf",
-    "data_source": "formula_simulation",
+    "route_id": "일산차병원_C",
     "hospital_name": "일산차병원",
     "hospital_district": "고양시 일산",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "고양시 일산 출발지",
-      "lat": 37.659,
-      "lng": 126.8197
+      "lat": 37.6585,
+      "lng": 126.8207
     },
     "destination": {
       "name": "일산차병원",
@@ -7804,14 +7539,14 @@
       "lng": 126.8251
     },
     "summary": {
-      "distance": 754,
-      "duration": 904,
-      "crosswalk_count": 8,
+      "distance": 674,
+      "duration": 613,
+      "crosswalk_count": 4,
       "slope_section_count": 4,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.38
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.4
     },
-    "stress_index": 0.4313,
+    "stress_index": 0.5477,
     "accessibility_grade": "C",
     "path": [
       [
@@ -7843,19 +7578,17 @@
         37.6556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "6f739bd7-60ad-4fab-8132-f3e0e4c3bd84",
-    "data_source": "formula_simulation",
+    "route_id": "일산차병원_D",
     "hospital_name": "일산차병원",
     "hospital_district": "고양시 일산",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "고양시 일산 출발지",
-      "lat": 37.6577,
-      "lng": 126.8219
+      "lat": 37.6585,
+      "lng": 126.8207
     },
     "destination": {
       "name": "일산차병원",
@@ -7863,14 +7596,14 @@
       "lng": 126.8251
     },
     "summary": {
-      "distance": 649,
-      "duration": 778,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
+      "distance": 936,
+      "duration": 851,
+      "crosswalk_count": 3,
+      "slope_section_count": 3,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.33
+      "barrier_free_ratio": 0.61
     },
-    "stress_index": 0.6413,
+    "stress_index": 0.6105,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7902,19 +7635,17 @@
         37.6556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "fe7aeba7-e560-43b5-8b7b-7495fb1f610b",
-    "data_source": "formula_simulation",
+    "route_id": "일산차병원_E",
     "hospital_name": "일산차병원",
     "hospital_district": "고양시 일산",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "고양시 일산 출발지",
-      "lat": 37.657999999999994,
-      "lng": 126.8199
+      "lat": 37.6585,
+      "lng": 126.8207
     },
     "destination": {
       "name": "일산차병원",
@@ -7922,14 +7653,14 @@
       "lng": 126.8251
     },
     "summary": {
-      "distance": 448,
-      "duration": 537,
-      "crosswalk_count": 6,
+      "distance": 691,
+      "duration": 628,
+      "crosswalk_count": 7,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.55
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.84
     },
-    "stress_index": 0.6578,
+    "stress_index": 0.6358,
     "accessibility_grade": "B",
     "path": [
       [
@@ -7961,12 +7692,10 @@
         37.6556
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "e48e570b-25a5-4859-9b93-5b25807b80a2",
-    "data_source": "formula_simulation",
+    "route_id": "수원차병원_A",
     "hospital_name": "수원차병원",
     "hospital_district": "수원시 팔달구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -7981,14 +7710,14 @@
       "lng": 127.0318
     },
     "summary": {
-      "distance": 520,
-      "duration": 624,
-      "crosswalk_count": 2,
+      "distance": 993,
+      "duration": 903,
+      "crosswalk_count": 1,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.77
     },
-    "stress_index": 0.8333,
+    "stress_index": 0.775,
     "accessibility_grade": "A",
     "path": [
       [
@@ -8020,19 +7749,17 @@
         37.2643
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "619de4c8-408a-4362-b292-c0655b9bbb89",
-    "data_source": "formula_simulation",
+    "route_id": "수원차병원_B",
     "hospital_name": "수원차병원",
     "hospital_district": "수원시 팔달구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "수원시 팔달구 출발지",
-      "lat": 37.268299999999996,
-      "lng": 127.0279
+      "lat": 37.2673,
+      "lng": 127.0274
     },
     "destination": {
       "name": "수원차병원",
@@ -8040,14 +7767,14 @@
       "lng": 127.0318
     },
     "summary": {
-      "distance": 289,
-      "duration": 346,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
+      "distance": 458,
+      "duration": 416,
+      "crosswalk_count": 4,
+      "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.45
+      "barrier_free_ratio": 0.48
     },
-    "stress_index": 0.6175,
+    "stress_index": 0.6957,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8079,19 +7806,17 @@
         37.2643
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "21c0a187-0740-42a7-b2df-eef84972f115",
-    "data_source": "formula_simulation",
+    "route_id": "수원차병원_C",
     "hospital_name": "수원차병원",
     "hospital_district": "수원시 팔달구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "수원시 팔달구 출발지",
-      "lat": 37.2678,
-      "lng": 127.0264
+      "lat": 37.2673,
+      "lng": 127.0274
     },
     "destination": {
       "name": "수원차병원",
@@ -8099,14 +7824,14 @@
       "lng": 127.0318
     },
     "summary": {
-      "distance": 597,
-      "duration": 716,
-      "crosswalk_count": 7,
-      "slope_section_count": 4,
+      "distance": 609,
+      "duration": 554,
+      "crosswalk_count": 4,
+      "slope_section_count": 6,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.54
+      "barrier_free_ratio": 0.36
     },
-    "stress_index": 0.5065,
+    "stress_index": 0.4525,
     "accessibility_grade": "C",
     "path": [
       [
@@ -8138,19 +7863,17 @@
         37.2643
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "2a57fee8-099b-45f8-bd9b-03402b63cf86",
-    "data_source": "formula_simulation",
+    "route_id": "수원차병원_D",
     "hospital_name": "수원차병원",
     "hospital_district": "수원시 팔달구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "수원시 팔달구 출발지",
-      "lat": 37.2665,
-      "lng": 127.0286
+      "lat": 37.2673,
+      "lng": 127.0274
     },
     "destination": {
       "name": "수원차병원",
@@ -8158,14 +7881,14 @@
       "lng": 127.0318
     },
     "summary": {
-      "distance": 553,
-      "duration": 663,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.63
+      "distance": 818,
+      "duration": 744,
+      "crosswalk_count": 1,
+      "slope_section_count": 4,
+      "elevator_count": 2,
+      "barrier_free_ratio": 0.52
     },
-    "stress_index": 0.7273,
+    "stress_index": 0.6167,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8197,19 +7920,17 @@
         37.2643
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "19306214-c198-4f95-8e11-509ec93d23b7",
-    "data_source": "formula_simulation",
+    "route_id": "수원차병원_E",
     "hospital_name": "수원차병원",
     "hospital_district": "수원시 팔달구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "수원시 팔달구 출발지",
-      "lat": 37.266799999999996,
-      "lng": 127.0266
+      "lat": 37.2673,
+      "lng": 127.0274
     },
     "destination": {
       "name": "수원차병원",
@@ -8217,14 +7938,14 @@
       "lng": 127.0318
     },
     "summary": {
-      "distance": 375,
-      "duration": 450,
-      "crosswalk_count": 3,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.54
+      "distance": 723,
+      "duration": 657,
+      "crosswalk_count": 6,
+      "slope_section_count": 1,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.63
     },
-    "stress_index": 0.7435,
+    "stress_index": 0.674,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8256,12 +7977,10 @@
         37.2643
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "8e864db7-f1f7-4827-8d41-00c04a4c7a87",
-    "data_source": "formula_simulation",
+    "route_id": "아주대병원_산부인과_A",
     "hospital_name": "아주대병원 산부인과",
     "hospital_district": "수원시 영통구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -8276,14 +7995,14 @@
       "lng": 127.0432
     },
     "summary": {
-      "distance": 486,
-      "duration": 583,
+      "distance": 691,
+      "duration": 628,
       "crosswalk_count": 2,
-      "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "slope_section_count": 0,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.84
     },
-    "stress_index": 0.839,
+    "stress_index": 0.8608,
     "accessibility_grade": "A",
     "path": [
       [
@@ -8315,19 +8034,17 @@
         37.2789
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "fc8c98cc-4839-4352-b866-2d599c464a6b",
-    "data_source": "formula_simulation",
+    "route_id": "아주대병원_산부인과_B",
     "hospital_name": "아주대병원 산부인과",
     "hospital_district": "수원시 영통구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "수원시 영통구 출발지",
-      "lat": 37.2829,
-      "lng": 127.0393
+      "lat": 37.2819,
+      "lng": 127.0388
     },
     "destination": {
       "name": "아주대병원 산부인과",
@@ -8335,15 +8052,15 @@
       "lng": 127.0432
     },
     "summary": {
-      "distance": 218,
-      "duration": 261,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
+      "distance": 267,
+      "duration": 243,
+      "crosswalk_count": 5,
+      "slope_section_count": 1,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.59
+      "barrier_free_ratio": 0.63
     },
-    "stress_index": 0.6385,
-    "accessibility_grade": "B",
+    "stress_index": 0.7695,
+    "accessibility_grade": "A",
     "path": [
       [
         127.0393,
@@ -8374,19 +8091,17 @@
         37.2789
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "1b61e800-3dba-4fcf-8915-bc4415f3e091",
-    "data_source": "formula_simulation",
+    "route_id": "아주대병원_산부인과_C",
     "hospital_name": "아주대병원 산부인과",
     "hospital_district": "수원시 영통구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "수원시 영통구 출발지",
-      "lat": 37.2824,
-      "lng": 127.03779999999999
+      "lat": 37.2819,
+      "lng": 127.0388
     },
     "destination": {
       "name": "아주대병원 산부인과",
@@ -8394,15 +8109,15 @@
       "lng": 127.0432
     },
     "summary": {
-      "distance": 664,
-      "duration": 796,
+      "distance": 506,
+      "duration": 460,
       "crosswalk_count": 5,
-      "slope_section_count": 4,
+      "slope_section_count": 5,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.68
+      "barrier_free_ratio": 0.46
     },
-    "stress_index": 0.5663,
-    "accessibility_grade": "B",
+    "stress_index": 0.5097,
+    "accessibility_grade": "C",
     "path": [
       [
         127.03779999999999,
@@ -8433,19 +8148,17 @@
         37.2789
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "97f104eb-2132-49db-863d-42eac2a48144",
-    "data_source": "formula_simulation",
+    "route_id": "아주대병원_산부인과_D",
     "hospital_name": "아주대병원 산부인과",
     "hospital_district": "수원시 영통구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "수원시 영통구 출발지",
-      "lat": 37.2811,
-      "lng": 127.03999999999999
+      "lat": 37.2819,
+      "lng": 127.0388
     },
     "destination": {
       "name": "아주대병원 산부인과",
@@ -8453,14 +8166,14 @@
       "lng": 127.0432
     },
     "summary": {
-      "distance": 800,
-      "duration": 960,
-      "crosswalk_count": 5,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.5
+      "distance": 691,
+      "duration": 628,
+      "crosswalk_count": 3,
+      "slope_section_count": 1,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.57
     },
-    "stress_index": 0.6167,
+    "stress_index": 0.7453,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8492,19 +8205,17 @@
         37.2789
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "a20d70c6-256b-4aaf-8510-0cc0a829466d",
-    "data_source": "formula_simulation",
+    "route_id": "아주대병원_산부인과_E",
     "hospital_name": "아주대병원 산부인과",
     "hospital_district": "수원시 영통구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "수원시 영통구 출발지",
-      "lat": 37.2814,
-      "lng": 127.038
+      "lat": 37.2819,
+      "lng": 127.0388
     },
     "destination": {
       "name": "아주대병원 산부인과",
@@ -8512,14 +8223,14 @@
       "lng": 127.0432
     },
     "summary": {
-      "distance": 394,
-      "duration": 472,
+      "distance": 629,
+      "duration": 572,
       "crosswalk_count": 7,
       "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.74
     },
-    "stress_index": 0.6103,
+    "stress_index": 0.6312,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8551,12 +8262,10 @@
         37.2789
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "b171d1a6-6979-4c12-9e55-0ac47a681757",
-    "data_source": "formula_simulation",
+    "route_id": "인천차병원_A",
     "hospital_name": "인천차병원",
     "hospital_district": "인천 연수구",
     "route_name": "경로 A — 엘리베이터 우선",
@@ -8571,15 +8280,15 @@
       "lng": 126.6417
     },
     "summary": {
-      "distance": 314,
-      "duration": 376,
+      "distance": 919,
+      "duration": 835,
       "crosswalk_count": 3,
       "slope_section_count": 1,
-      "elevator_count": 1,
-      "barrier_free_ratio": 0.8
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.83
     },
-    "stress_index": 0.8427,
-    "accessibility_grade": "A",
+    "stress_index": 0.7463,
+    "accessibility_grade": "B",
     "path": [
       [
         126.6373,
@@ -8610,19 +8319,17 @@
         37.3936
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "f25e1bde-f384-46be-a728-4c8c63b18398",
-    "data_source": "formula_simulation",
+    "route_id": "인천차병원_B",
     "hospital_name": "인천차병원",
     "hospital_district": "인천 연수구",
     "route_name": "경로 B — 최단 거리",
     "origin": {
       "name": "인천 연수구 출발지",
-      "lat": 37.3976,
-      "lng": 126.6378
+      "lat": 37.3966,
+      "lng": 126.6373
     },
     "destination": {
       "name": "인천차병원",
@@ -8630,14 +8337,14 @@
       "lng": 126.6417
     },
     "summary": {
-      "distance": 264,
-      "duration": 316,
-      "crosswalk_count": 6,
-      "slope_section_count": 3,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.54
+      "distance": 439,
+      "duration": 399,
+      "crosswalk_count": 3,
+      "slope_section_count": 4,
+      "elevator_count": 1,
+      "barrier_free_ratio": 0.57
     },
-    "stress_index": 0.631,
+    "stress_index": 0.6373,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8669,19 +8376,17 @@
         37.3936
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "c6f305c5-2a27-40af-af29-fd589b6ffafe",
-    "data_source": "formula_simulation",
+    "route_id": "인천차병원_C",
     "hospital_name": "인천차병원",
     "hospital_district": "인천 연수구",
     "route_name": "경로 C — 일반 도보",
     "origin": {
       "name": "인천 연수구 출발지",
-      "lat": 37.3971,
-      "lng": 126.63629999999999
+      "lat": 37.3966,
+      "lng": 126.6373
     },
     "destination": {
       "name": "인천차병원",
@@ -8689,14 +8394,14 @@
       "lng": 126.6417
     },
     "summary": {
-      "distance": 744,
-      "duration": 892,
+      "distance": 593,
+      "duration": 539,
       "crosswalk_count": 4,
-      "slope_section_count": 4,
+      "slope_section_count": 6,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.39
+      "barrier_free_ratio": 0.36
     },
-    "stress_index": 0.5345,
+    "stress_index": 0.4552,
     "accessibility_grade": "C",
     "path": [
       [
@@ -8728,19 +8433,17 @@
         37.3936
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "087351b6-a7f5-4ec5-8555-b7c54dcd3d91",
-    "data_source": "formula_simulation",
+    "route_id": "인천차병원_D",
     "hospital_name": "인천차병원",
     "hospital_district": "인천 연수구",
     "route_name": "경로 D — 공원 경유",
     "origin": {
       "name": "인천 연수구 출발지",
-      "lat": 37.3958,
-      "lng": 126.6385
+      "lat": 37.3966,
+      "lng": 126.6373
     },
     "destination": {
       "name": "인천차병원",
@@ -8748,14 +8451,14 @@
       "lng": 126.6417
     },
     "summary": {
-      "distance": 781,
-      "duration": 937,
+      "distance": 773,
+      "duration": 703,
       "crosswalk_count": 2,
       "slope_section_count": 2,
       "elevator_count": 0,
-      "barrier_free_ratio": 0.49
+      "barrier_free_ratio": 0.52
     },
-    "stress_index": 0.6933,
+    "stress_index": 0.6992,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8787,19 +8490,17 @@
         37.3936
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   },
   {
-    "route_id": "fa1a96aa-cc51-43e0-a098-d62e74e8fe87",
-    "data_source": "formula_simulation",
+    "route_id": "인천차병원_E",
     "hospital_name": "인천차병원",
     "hospital_district": "인천 연수구",
     "route_name": "경로 E — 지하철역 경유",
     "origin": {
       "name": "인천 연수구 출발지",
-      "lat": 37.3961,
-      "lng": 126.6365
+      "lat": 37.3966,
+      "lng": 126.6373
     },
     "destination": {
       "name": "인천차병원",
@@ -8807,14 +8508,14 @@
       "lng": 126.6417
     },
     "summary": {
-      "distance": 437,
-      "duration": 524,
-      "crosswalk_count": 4,
-      "slope_section_count": 2,
-      "elevator_count": 0,
-      "barrier_free_ratio": 0.34
+      "distance": 726,
+      "duration": 660,
+      "crosswalk_count": 6,
+      "slope_section_count": 3,
+      "elevator_count": 3,
+      "barrier_free_ratio": 0.71
     },
-    "stress_index": 0.6782,
+    "stress_index": 0.5855,
     "accessibility_grade": "B",
     "path": [
       [
@@ -8846,7 +8547,6 @@
         37.3936
       ]
     ],
-    "travel_mode": "pedestrian",
-    "collected_at": "2025-05-30"
+    "data_source": "tmap_simulation_v2"
   }
 ]
