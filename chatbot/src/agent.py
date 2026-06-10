@@ -80,7 +80,7 @@ def make_graph(vectorstore: Chroma) -> StateGraph:
     @tool
     def lookup_company_rules_tool(query: str) -> str:
         """회사 취업규칙·사내 규정에 따른 HR 정책을 조회합니다.
-        '우리 회사', '사규', '취업규칙', '사내 규정' 관련 질문에 사용하세요."""
+        휴가·휴직·근로시간·임금 등 모성보호 관련 질문에서는 사용자가 '우리 회사'를 언급하지 않아도 항상 호출하세요."""
         return lookup_company_rules(query)
 
     tools = [search_laws, lookup_birth_benefits, lookup_leave_policy, lookup_company_rules_tool]
