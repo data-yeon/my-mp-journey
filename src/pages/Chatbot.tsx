@@ -3,6 +3,9 @@ import { Send, Plus, MapPin, Phone, FileText, ExternalLink, Bot, User } from 'lu
 import { Button } from '@/components/ui/button';
 import { gov24LocalBirthServices } from '@/data/gov24LocalBirthServices';
 import { requestChatAnswer } from '@/lib/chatApi';
+
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
+const warmUpBackend = () => { fetch(`${API_URL}/health`).catch(() => {}); };
 import type { UserRole } from '@/types/role';
 
 interface Message {
@@ -108,6 +111,8 @@ export default function ChatbotPage({ role }: ChatbotPageProps) {
     const [messages, setMessages] = useState<Message[]>([getInitialMessage(role)]);
     const [loading, setLoading] = useState(false);
     const bottomRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => { warmUpBackend(); }, []);
 
     useEffect(() => {
         setInput('');
