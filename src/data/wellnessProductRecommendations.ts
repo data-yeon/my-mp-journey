@@ -12996,7 +12996,6 @@ export const wellnessProductRecommendations = [
     ],
     "rank_in_period_category": 3
   }
-]
 ] as const;
 
 export type WellnessProductRecommendation = (typeof wellnessProductRecommendations)[number];
