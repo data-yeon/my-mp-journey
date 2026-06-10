@@ -10214,7 +10214,2789 @@ export const wellnessProductRecommendations = [
       }
     ],
     "rank_in_period_category": 3
+  },
+  {
+    "product_id": "5b016f2b-4c0b-4c0a-bb1b-23b6a914d77c",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 탈모 완화 샴푸",
+    "product_category": "바디케어",
+    "subcategory": "탈모샴푸",
+    "search_keyword": "산후 탈모 샴푸",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "출산 후 호르몬 변화로 인한 탈모에 대응하는 두피 강화 샴푸",
+    "review_count": 79,
+    "verified_purchase_ratio": 0.727,
+    "average_rating": 4.2,
+    "average_sentiment_score": 0.74,
+    "sentiment_percent": 74,
+    "average_aspect_score": 0.82,
+    "average_review_reliability_score": 0.84,
+    "average_pregnancy_fit_score": 0.86,
+    "average_safety_risk_score": 0.1,
+    "safety_risk_percent": 10,
+    "average_trust_score": 0.76,
+    "trust_percent": 76,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 40,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 21,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 18,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 28,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 24,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 16,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 30,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 24,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 17,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 36,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 24,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 16,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "향 민감도 개인차"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 25,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 19,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 22,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 22,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 28,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 8,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 40,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 24,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "668a24e1-7a8e-4919-96b8-9b8ca7fdb8c0",
+        "persona_summary": "32세 서울 직장맘, 산후 탈모 경험자",
+        "title": "출산 3개월째, 탈모 줄었어요",
+        "content": "호르몬 탈모로 심하게 빠졌는데 2달 쓰니 확실히 덜 빠지는 느낌이에요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.4,
+        "trust_percent": 74,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "cedd2806-fe2e-41a2-b3a9-13adfec18031",
+        "persona_summary": "29세 경기, 완모 중",
+        "title": "향이 좀 강해요",
+        "content": "효과는 있는데 향이 강해서 수유 중엔 조심했어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.8,
+        "trust_percent": 73,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 1
+  },
+  {
+    "product_id": "9c4d8c7d-81d8-4e8e-a53d-bb1d7eb19b0d",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 복대 골반 밴드",
+    "product_category": "바디케어",
+    "subcategory": "복대",
+    "search_keyword": "산후 복대 골반교정",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "출산 직후 벌어진 골반과 복부를 감싸 회복을 돕는 의료용 밴드",
+    "review_count": 59,
+    "verified_purchase_ratio": 0.657,
+    "average_rating": 4.5,
+    "average_sentiment_score": 0.8,
+    "sentiment_percent": 80,
+    "average_aspect_score": 0.87,
+    "average_review_reliability_score": 0.89,
+    "average_pregnancy_fit_score": 0.91,
+    "average_safety_risk_score": 0.08,
+    "safety_risk_percent": 8,
+    "average_trust_score": 0.82,
+    "trust_percent": 82,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 30,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 16,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 14,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 21,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 18,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 12,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 22,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 18,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 13,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 27,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 18,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 12,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "사이즈 선택 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 19,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 14,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 17,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 17,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 21,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 6,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 30,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 18,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "8c41018c-c4f5-4f50-8457-ab60ed9feabc",
+        "persona_summary": "34세 경기 고양, 제왕절개 산모",
+        "title": "제왕절개 후 필수품이에요",
+        "content": "제왕절개 후 움직일 때 배를 잡아줘서 정말 도움됐어요. 2개 샀어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.7,
+        "trust_percent": 81,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "a8e1f378-4d2e-4201-8e6c-5d274b681d80",
+        "persona_summary": "31세 서울, 자연분만",
+        "title": "자연분만도 좋아요",
+        "content": "골반이 빠르게 좁아지는 느낌이에요. 산후조리원에서도 계속 착용했어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.3,
+        "trust_percent": 78,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 2
+  },
+  {
+    "product_id": "d0038d4d-c243-4ee0-a4dc-a7eaaaabf0b7",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "유두크림 모유수유 케어",
+    "product_category": "바디케어",
+    "subcategory": "수유케어",
+    "search_keyword": "수유 유두크림",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "모유수유 초기 유두 갈라짐과 통증을 완화하는 라놀린 성분 크림",
+    "review_count": 77,
+    "verified_purchase_ratio": 0.769,
+    "average_rating": 4.4,
+    "average_sentiment_score": 0.78,
+    "sentiment_percent": 78,
+    "average_aspect_score": 0.84,
+    "average_review_reliability_score": 0.86,
+    "average_pregnancy_fit_score": 0.88,
+    "average_safety_risk_score": 0.06,
+    "safety_risk_percent": 6,
+    "average_trust_score": 0.8,
+    "trust_percent": 80,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 38,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 21,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 18,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 27,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 15,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 29,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 17,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 35,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 15,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "수유 전 닦아내기 필요"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 25,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 18,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 22,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 22,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 27,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 8,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 38,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 23,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "ed0d9c9a-294a-4a52-ace6-c000895db6db",
+        "persona_summary": "30세 인천, 완모 준비 중",
+        "title": "완모맘 필수템",
+        "content": "수유 초기 트러블 없이 잘 넘어갈 수 있었어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.6,
+        "trust_percent": 72,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "955e68b1-b98c-4c27-8561-b7665de5e745",
+        "persona_summary": "28세 서울, 초보맘",
+        "title": "수유 전에 꼭 닦아야해요",
+        "content": "아기 입에 닿지 않도록 주의해야 한다는 점 참고하세요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.1,
+        "trust_percent": 79,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 3
+  },
+  {
+    "product_id": "ea0dbb46-66c0-4904-86c2-ef17c07514d4",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 미역국 키트",
+    "product_category": "식품",
+    "subcategory": "산후식품",
+    "search_keyword": "산후 미역국 간편",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "요오드·철분이 풍부한 국내산 미역으로 구성된 산후 회복 식품",
+    "review_count": 90,
+    "verified_purchase_ratio": 0.676,
+    "average_rating": 4.3,
+    "average_sentiment_score": 0.76,
+    "sentiment_percent": 76,
+    "average_aspect_score": 0.86,
+    "average_review_reliability_score": 0.88,
+    "average_pregnancy_fit_score": 0.9,
+    "average_safety_risk_score": 0.05,
+    "safety_risk_percent": 5,
+    "average_trust_score": 0.78,
+    "trust_percent": 78,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 45,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 24,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 21,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 31,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 27,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 18,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 34,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 27,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 20,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 40,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 27,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 18,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "나트륨 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 29,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 22,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 25,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 25,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 31,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 9,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 45,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 27,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "c517f5da-81ae-4d7e-b96b-eb072146ac4f",
+        "persona_summary": "33세 대전, 산후조리원 퇴소 후",
+        "title": "산후조리원 퇴소 후 바로 써요",
+        "content": "간편하게 끓여 먹을 수 있어서 혼자 조리할 때도 편해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.5,
+        "trust_percent": 75,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "d67dba6b-4261-4737-be74-481b5dbaf508",
+        "persona_summary": "29세 경기 수원",
+        "title": "맛은 보통",
+        "content": "편리함은 최고인데 직접 끓인 것보다 맛은 좀 달려요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.9,
+        "trust_percent": 73,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 1
+  },
+  {
+    "product_id": "5acf1f5f-f700-4ca3-af43-680678813105",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "수유 쿠키 귀리 간식",
+    "product_category": "식품",
+    "subcategory": "수유간식",
+    "search_keyword": "수유 간식 모유량 증가",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "귀리·호로파 성분으로 모유 분비를 돕는 수유 전용 간식",
+    "review_count": 77,
+    "verified_purchase_ratio": 0.861,
+    "average_rating": 4.0,
+    "average_sentiment_score": 0.68,
+    "sentiment_percent": 68,
+    "average_aspect_score": 0.78,
+    "average_review_reliability_score": 0.8,
+    "average_pregnancy_fit_score": 0.82,
+    "average_safety_risk_score": 0.12,
+    "safety_risk_percent": 12,
+    "average_trust_score": 0.69,
+    "trust_percent": 69,
+    "recommendation_label": "조건부 추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 38,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 21,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 18,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 27,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 15,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 29,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 17,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 35,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 23,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 15,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "개인마다 효과 차이 큼",
+      "글루텐 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 25,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 18,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 22,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 22,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 27,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 8,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 38,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 23,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "d3810d01-ab97-4d77-aa57-50c660937ef6",
+        "persona_summary": "31세 서울 마포, 혼합수유",
+        "title": "효과 있는 사람 많아요",
+        "content": "먹고 나서 모유량이 좀 늘었어요. 효과는 개인차가 있는 것 같아요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.2,
+        "trust_percent": 66,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "d0aedef2-1ddf-4d4f-bb8e-3b93691ddee3",
+        "persona_summary": "30세 경기 성남",
+        "title": "맛있어서 과식 조심",
+        "content": "맛있어서 하루에 많이 먹게 돼요. 칼로리 주의하세요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.8,
+        "trust_percent": 67,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 2
+  },
+  {
+    "product_id": "27bb8da2-934e-4ea9-87ca-ed4b6fbffaf2",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 한방차 세트",
+    "product_category": "식품",
+    "subcategory": "산후차",
+    "search_keyword": "산후 회복 한방차",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "쑥·당귀·황기 성분으로 어혈 제거와 기력 회복을 돕는 산후 전용 차",
+    "review_count": 87,
+    "verified_purchase_ratio": 0.805,
+    "average_rating": 4.1,
+    "average_sentiment_score": 0.7,
+    "sentiment_percent": 70,
+    "average_aspect_score": 0.8,
+    "average_review_reliability_score": 0.82,
+    "average_pregnancy_fit_score": 0.84,
+    "average_safety_risk_score": 0.14,
+    "safety_risk_percent": 14,
+    "average_trust_score": 0.71,
+    "trust_percent": 71,
+    "recommendation_label": "조건부 추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 44,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 23,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 20,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 30,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 17,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 33,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 19,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 39,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 17,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "수유 중 성분 확인 필요",
+      "알레르기 체크"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 28,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 21,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 24,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 24,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 30,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 9,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 44,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 26,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "aa864062-476d-4da7-be1d-511468afd44a",
+        "persona_summary": "35세 부산, 출산 2주 차",
+        "title": "산후 부기 빠지는데 좋아요",
+        "content": "부기가 좀 빠진 느낌이에요. 따뜻하게 마시면 회복에 도움 되는 것 같아요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.3,
+        "trust_percent": 66,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "0eaaae64-d714-46a0-bf15-4f2eaae96d0b",
+        "persona_summary": "28세 광주",
+        "title": "향이 강해서 호불호",
+        "content": "한약 냄새가 강해서 못 드시는 분도 있을 것 같아요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.7,
+        "trust_percent": 70,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 3
+  },
+  {
+    "product_id": "5eb143bb-6681-4901-8388-f99a94c59036",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "수유부 종합비타민",
+    "product_category": "영양제",
+    "subcategory": "수유비타민",
+    "search_keyword": "수유중 비타민",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "수유 중 소모가 큰 비타민D·칼슘·요오드를 보충하는 수유부 전용 영양제",
+    "review_count": 95,
+    "verified_purchase_ratio": 0.81,
+    "average_rating": 4.4,
+    "average_sentiment_score": 0.78,
+    "sentiment_percent": 78,
+    "average_aspect_score": 0.85,
+    "average_review_reliability_score": 0.87,
+    "average_pregnancy_fit_score": 0.89,
+    "average_safety_risk_score": 0.07,
+    "safety_risk_percent": 7,
+    "average_trust_score": 0.8,
+    "trust_percent": 80,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 48,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 26,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 22,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 33,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 28,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 19,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 36,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 28,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 21,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 43,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 28,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 19,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "복용량 준수"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 30,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 23,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 27,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 27,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 33,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 10,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 48,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 28,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "83c7a67c-17a7-448a-bc08-e21cffc81eb0",
+        "persona_summary": "32세 서울, 모유수유 중",
+        "title": "산후 필수 영양제예요",
+        "content": "수유 중에는 영양 소모가 크니까 꼭 챙겨 먹어야 해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.6,
+        "trust_percent": 79,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "94477f60-f8be-44a4-ab46-e69d5f10da46",
+        "persona_summary": "30세 경기 용인",
+        "title": "알약이 좀 커요",
+        "content": "효과는 좋은데 알약이 커서 삼키기 조금 불편해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.1,
+        "trust_percent": 73,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 1
+  },
+  {
+    "product_id": "609a485c-f679-45fd-b518-5c41e2f282e7",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 철분제 고함량",
+    "product_category": "영양제",
+    "subcategory": "철분제",
+    "search_keyword": "출산 후 철분제",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "분만 시 출혈로 감소한 철분을 보충하는 고흡수율 산후 철분 보충제",
+    "review_count": 68,
+    "verified_purchase_ratio": 0.733,
+    "average_rating": 4.2,
+    "average_sentiment_score": 0.72,
+    "sentiment_percent": 72,
+    "average_aspect_score": 0.83,
+    "average_review_reliability_score": 0.85,
+    "average_pregnancy_fit_score": 0.87,
+    "average_safety_risk_score": 0.1,
+    "safety_risk_percent": 10,
+    "average_trust_score": 0.75,
+    "trust_percent": 75,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 34,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 18,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 16,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 24,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 20,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 14,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 26,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 20,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 15,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 31,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 20,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 14,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "변비 부작용 가능",
+      "공복 복용 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 22,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 16,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 19,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 19,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 24,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 7,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 34,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 20,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "b8e97073-b169-49a4-8d63-67a38a57fbed",
+        "persona_summary": "33세 서울 송파, 산후 빈혈",
+        "title": "빈혈 회복에 도움돼요",
+        "content": "출산 후 빈혈 진단받고 먹기 시작했어요. 2달 만에 수치 정상화됐어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.4,
+        "trust_percent": 71,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "24df3bd4-6d2d-4fca-b1ae-bc51c029e0b5",
+        "persona_summary": "29세 경기, 수유 중",
+        "title": "변비 올 수 있어요",
+        "content": "철분제 특성상 변비가 생길 수 있으니 물 많이 드세요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.9,
+        "trust_percent": 67,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 2
+  },
+  {
+    "product_id": "df60440c-7353-4315-ac26-fea930db72a0",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "오메가3 산후·수유용",
+    "product_category": "영양제",
+    "subcategory": "오메가3",
+    "search_keyword": "수유중 오메가3",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "DHA 함량을 높인 수유부 전용 오메가3로 아기 뇌 발달과 산모 회복을 동시에 지원",
+    "review_count": 28,
+    "verified_purchase_ratio": 0.739,
+    "average_rating": 4.3,
+    "average_sentiment_score": 0.75,
+    "sentiment_percent": 75,
+    "average_aspect_score": 0.84,
+    "average_review_reliability_score": 0.86,
+    "average_pregnancy_fit_score": 0.88,
+    "average_safety_risk_score": 0.08,
+    "safety_risk_percent": 8,
+    "average_trust_score": 0.78,
+    "trust_percent": 78,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 14,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 8,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 6,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 10,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 8,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 6,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 11,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 8,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 6,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 13,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 8,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 6,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "용량 조절 필요"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 9,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 7,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 8,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 8,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 10,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 3,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 14,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 8,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "8fdde01a-87f9-45ec-b43b-d8c8ed5b351a",
+        "persona_summary": "31세 서울 마포, 완모",
+        "title": "임신 때부터 계속 먹고있어요",
+        "content": "임신 때부터 먹던 거 수유 버전으로 바꿨어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.5,
+        "trust_percent": 73,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "352d3d69-5a5f-48c5-9f85-0ffc1d2de8c2",
+        "persona_summary": "28세 인천",
+        "title": "생선 냄새 거의 없어요",
+        "content": "비린 맛 없이 먹기 편해서 꾸준히 먹을 수 있어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.2,
+        "trust_percent": 70,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 3
+  },
+  {
+    "product_id": "7f596f43-fc4e-4027-a709-0af61dd68c2f",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "수유쿠션 C자형",
+    "product_category": "용품",
+    "subcategory": "수유쿠션",
+    "search_keyword": "수유쿠션 C자",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "목과 허리 부담을 줄이는 C자형 수유 자세 보조 쿠션",
+    "review_count": 38,
+    "verified_purchase_ratio": 0.749,
+    "average_rating": 4.5,
+    "average_sentiment_score": 0.82,
+    "sentiment_percent": 82,
+    "average_aspect_score": 0.88,
+    "average_review_reliability_score": 0.9,
+    "average_pregnancy_fit_score": 0.92,
+    "average_safety_risk_score": 0.05,
+    "safety_risk_percent": 5,
+    "average_trust_score": 0.84,
+    "trust_percent": 84,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 19,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 10,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 9,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 13,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 11,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 8,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 14,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 11,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 8,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 17,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 11,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 8,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "세탁 방법 확인"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 12,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 9,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 11,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 11,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 13,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 4,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 19,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 11,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "ab33b691-61e0-4ad4-bd06-2b9b705fab98",
+        "persona_summary": "30세 경기 고양, 신생아 엄마",
+        "title": "수유 자세 잡기 너무 편해요",
+        "content": "신생아 때부터 지금까지 매일 써요. 없었으면 어쩔 뻔.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.8,
+        "trust_percent": 81,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "79aa14d0-a1f1-4532-8e0a-c94c28576eb4",
+        "persona_summary": "32세 서울 노원",
+        "title": "세탁 자주 해야해요",
+        "content": "자주 써서 세탁도 자주 해야 하는데 세탁 방법 꼭 확인하세요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.2,
+        "trust_percent": 77,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 1
+  },
+  {
+    "product_id": "17ec0b77-d588-4fdb-a273-36971dedfd72",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "유축기 휴대용 전동",
+    "product_category": "용품",
+    "subcategory": "유축기",
+    "search_keyword": "휴대용 유축기 전동",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "소음이 적고 흡입 강도 조절이 가능한 직장 복귀 대비 휴대용 전동 유축기",
+    "review_count": 34,
+    "verified_purchase_ratio": 0.72,
+    "average_rating": 4.2,
+    "average_sentiment_score": 0.72,
+    "sentiment_percent": 72,
+    "average_aspect_score": 0.83,
+    "average_review_reliability_score": 0.85,
+    "average_pregnancy_fit_score": 0.87,
+    "average_safety_risk_score": 0.12,
+    "safety_risk_percent": 12,
+    "average_trust_score": 0.75,
+    "trust_percent": 75,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 17,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 9,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 8,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 12,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 10,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 7,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 13,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 10,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 7,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 15,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 10,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 7,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "부품 관리 중요",
+      "흡입 강도 조절 필수"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 11,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 8,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 10,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 10,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 12,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 3,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 17,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 10,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "90bff7eb-abc0-4bd4-a482-bede550b5f05",
+        "persona_summary": "33세 서울 강남, 직장 복귀 준비 중",
+        "title": "직장 복귀 후 필수템",
+        "content": "회사에서 조용히 쓸 수 있어요. 가방에 쏙 들어가는 사이즈라 편해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.4,
+        "trust_percent": 72,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "3a4248c2-ac7a-415e-a1c7-9aac992398f9",
+        "persona_summary": "31세 경기 분당, 직장맘",
+        "title": "소음 제로는 아니에요",
+        "content": "생각보다 소리가 약간 있어요. 조용한 회의실에선 신경 쓰여요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.0,
+        "trust_percent": 73,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 2
+  },
+  {
+    "product_id": "b78ecbac-89ca-41c4-ba56-3440a14c4094",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "신생아 속싸개 스와들",
+    "product_category": "용품",
+    "subcategory": "속싸개",
+    "search_keyword": "신생아 스와들 속싸개",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "모로 반사를 줄여 신생아 수면을 돕는 편리한 벨크로형 스와들",
+    "review_count": 84,
+    "verified_purchase_ratio": 0.787,
+    "average_rating": 4.4,
+    "average_sentiment_score": 0.79,
+    "sentiment_percent": 79,
+    "average_aspect_score": 0.86,
+    "average_review_reliability_score": 0.88,
+    "average_pregnancy_fit_score": 0.9,
+    "average_safety_risk_score": 0.06,
+    "safety_risk_percent": 6,
+    "average_trust_score": 0.81,
+    "trust_percent": 81,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 42,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 23,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 19,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 29,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 17,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 32,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 18,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 38,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 17,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "엉덩이 공간 확인 필수",
+      "과도한 착용 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 27,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 20,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 24,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 24,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 29,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 8,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 42,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 25,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "03bb6dc8-1277-42b2-a7bc-1aa65e22c211",
+        "persona_summary": "29세 서울 은평, 신생아 엄마",
+        "title": "수면시간 늘었어요",
+        "content": "스와들 하고 재우니까 아기가 덜 깨요. 신세계예요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.7,
+        "trust_percent": 79,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "958b1d95-5ab5-406f-a3fd-1bca6dc68117",
+        "persona_summary": "31세 경기, 출산 1개월 차",
+        "title": "사이즈 빨리 작아져요",
+        "content": "신생아 사이즈는 금방 작아지니 두 사이즈 사두는 걸 추천해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.1,
+        "trust_percent": 73,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 3
+  },
+  {
+    "product_id": "6c0230b1-a02b-4f7f-950a-488888f6945f",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "수유브라 원더와이어",
+    "product_category": "의류",
+    "subcategory": "수유브라",
+    "search_keyword": "수유브라 편한",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "착탈이 간편한 원터치 클립과 넓은 어깨끈으로 수유 편의성과 지지력을 동시에 잡은 수유 브라",
+    "review_count": 50,
+    "verified_purchase_ratio": 0.63,
+    "average_rating": 4.4,
+    "average_sentiment_score": 0.8,
+    "sentiment_percent": 80,
+    "average_aspect_score": 0.86,
+    "average_review_reliability_score": 0.88,
+    "average_pregnancy_fit_score": 0.9,
+    "average_safety_risk_score": 0.06,
+    "safety_risk_percent": 6,
+    "average_trust_score": 0.82,
+    "trust_percent": 82,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 25,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 14,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 12,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 18,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 15,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 10,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 19,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 15,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 11,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 22,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 15,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 10,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "사이즈 변화 고려해 여유 있게 구매"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 16,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 12,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 14,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 14,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 18,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 5,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 25,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 15,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "94e0d63e-820a-44e8-80e8-9ef12c82b0d7",
+        "persona_summary": "30세 서울 서초, 완모 중",
+        "title": "수유할 때 정말 편해요",
+        "content": "원터치로 열리니까 새벽 수유 때도 힘들지 않아요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.6,
+        "trust_percent": 82,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "95012d39-b2be-49a8-8bbf-8b44dfebadac",
+        "persona_summary": "32세 경기 수원",
+        "title": "사이즈 크게 사세요",
+        "content": "출산 후 가슴이 커져서 평소보다 한두 사이즈 크게 사는 게 좋아요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.2,
+        "trust_percent": 80,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 1
+  },
+  {
+    "product_id": "75a6ea23-ae28-4676-b17a-fa27c28d6eab",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 조리복 홈웨어 세트",
+    "product_category": "의류",
+    "subcategory": "조리복",
+    "search_keyword": "산후조리원 조리복",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "수유 개구부와 후기 복부를 배려한 산후조리원·가정 겸용 홈웨어 세트",
+    "review_count": 88,
+    "verified_purchase_ratio": 0.811,
+    "average_rating": 4.3,
+    "average_sentiment_score": 0.76,
+    "sentiment_percent": 76,
+    "average_aspect_score": 0.83,
+    "average_review_reliability_score": 0.85,
+    "average_pregnancy_fit_score": 0.87,
+    "average_safety_risk_score": 0.07,
+    "safety_risk_percent": 7,
+    "average_trust_score": 0.79,
+    "trust_percent": 79,
+    "recommendation_label": "추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 44,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 24,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 20,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 31,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 18,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 33,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 19,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 40,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 26,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 18,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "원단 수축 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 28,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 21,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 25,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 25,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 31,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 9,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 44,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 26,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "4ec70516-1dce-422b-85b0-dee987877b97",
+        "persona_summary": "33세 인천, 산후조리원 입소 중",
+        "title": "병원 퇴원부터 지금까지 입어요",
+        "content": "수유하기 편하고 보온도 돼서 조리원에서도 가정에서도 써요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.5,
+        "trust_percent": 73,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "93508272-9c80-4601-86cb-b92822d06746",
+        "persona_summary": "29세 서울 양천",
+        "title": "세탁 후 줄어요",
+        "content": "처음 세탁하면 약간 줄어드니 조심하세요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.0,
+        "trust_percent": 78,
+        "sentiment_label": "긍정"
+      }
+    ],
+    "rank_in_period_category": 2
+  },
+  {
+    "product_id": "ac6a2958-f10d-40f3-8c52-4012bfad59a5",
+    "schema_version": "wellness_product_dummy_v2_persona",
+    "source_type": "dummy_aggregate_from_synthetic_v2",
+    "product_name": "산후 압박 레깅스",
+    "product_category": "의류",
+    "subcategory": "압박레깅스",
+    "search_keyword": "산후 부기 레깅스",
+    "target_period": "산후",
+    "target_week_range": "41-52",
+    "week": [
+      41,
+      52
+    ],
+    "fit_reason": "하체 부기 완화와 순환 개선을 돕는 의료용 압박 소재 산후 레깅스",
+    "review_count": 82,
+    "verified_purchase_ratio": 0.797,
+    "average_rating": 4.1,
+    "average_sentiment_score": 0.7,
+    "sentiment_percent": 70,
+    "average_aspect_score": 0.79,
+    "average_review_reliability_score": 0.81,
+    "average_pregnancy_fit_score": 0.83,
+    "average_safety_risk_score": 0.13,
+    "safety_risk_percent": 13,
+    "average_trust_score": 0.72,
+    "trust_percent": 72,
+    "recommendation_label": "조건부 추천",
+    "review_detail_distribution": [
+      {
+        "name": "normal",
+        "count": 41,
+        "ratio": 0.5
+      },
+      {
+        "name": "short",
+        "count": 22,
+        "ratio": 0.27
+      },
+      {
+        "name": "detailed",
+        "count": 19,
+        "ratio": 0.23
+      }
+    ],
+    "review_context_segments": {
+      "usage_phases": [
+        {
+          "name": "첫 사용",
+          "count": 29,
+          "ratio": 0.35
+        },
+        {
+          "name": "1주 사용",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "한 달 사용",
+          "count": 16,
+          "ratio": 0.2
+        }
+      ],
+      "review_focuses": [
+        {
+          "name": "사용감",
+          "count": 31,
+          "ratio": 0.38
+        },
+        {
+          "name": "효과",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "성분 안전성",
+          "count": 18,
+          "ratio": 0.22
+        }
+      ],
+      "purchase_contexts": [
+        {
+          "name": "산후 회복 목적",
+          "count": 37,
+          "ratio": 0.45
+        },
+        {
+          "name": "지인 추천",
+          "count": 25,
+          "ratio": 0.3
+        },
+        {
+          "name": "수유 준비",
+          "count": 16,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "warning_tags": [
+      "압박 강도 개인차",
+      "장시간 착용 주의"
+    ],
+    "persona_segments": {
+      "occupations": [
+        {
+          "name": "사무직",
+          "count": 26,
+          "ratio": 0.32
+        },
+        {
+          "name": "전문직/연구직",
+          "count": 20,
+          "ratio": 0.24
+        },
+        {
+          "name": "전업주부",
+          "count": 23,
+          "ratio": 0.28
+        }
+      ],
+      "regions": [
+        {
+          "name": "서울",
+          "count": 23,
+          "ratio": 0.28
+        },
+        {
+          "name": "경기",
+          "count": 29,
+          "ratio": 0.35
+        },
+        {
+          "name": "인천",
+          "count": 8,
+          "ratio": 0.1
+        }
+      ],
+      "income_bands": [
+        {
+          "name": "중간",
+          "count": 41,
+          "ratio": 0.5
+        },
+        {
+          "name": "높음",
+          "count": 25,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "sample_reviews": [
+      {
+        "review_id": "fde57cae-9f9d-4d71-980d-d49d520e4f05",
+        "persona_summary": "31세 서울 강동, 출산 한 달 차",
+        "title": "부기 빠지는 데 도움돼요",
+        "content": "종일 서있는 날에 신으면 다리 부기가 확실히 덜해요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 4.3,
+        "trust_percent": 70,
+        "sentiment_label": "긍정"
+      },
+      {
+        "review_id": "35faf892-75c8-46c2-92d7-3ad6b576c393",
+        "persona_summary": "30세 경기, 산후 3주차",
+        "title": "압박이 좀 강해요",
+        "content": "초반엔 압박이 너무 강해서 조금씩 늘려가며 착용했어요.",
+        "review_context": {
+          "usage_phase": "한 달 사용",
+          "review_focus": "효과",
+          "purchase_context_type": "산후 회복 목적",
+          "comparison_target": null
+        },
+        "review_detail_level": "normal",
+        "rating": 3.9,
+        "trust_percent": 68,
+        "sentiment_label": "중립"
+      }
+    ],
+    "rank_in_period_category": 3
   }
+]
 ] as const;
 
 export type WellnessProductRecommendation = (typeof wellnessProductRecommendations)[number];

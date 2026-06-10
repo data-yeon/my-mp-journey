@@ -51,6 +51,14 @@ const CATEGORY_TIMELINE = [
     categories: ["용품", "의류", "식품"],
     tip: "출산 준비, 수유 용품, 복부 압박 완화",
   },
+  {
+    label: "산후 (출산 후)",
+    color: "bg-rose-100 text-rose-800",
+    bar: "bg-rose-400",
+    range: [41, 52],
+    categories: ["용품", "영양제", "의류", "바디케어"],
+    tip: "수유·유축, 산후 회복, 신생아 용품, 탈모·체형 케어",
+  },
 ];
 
 function average(values: number[]) {
@@ -59,9 +67,10 @@ function average(values: number[]) {
 }
 
 function getStageLabel(week: number) {
-  if (week <= 12) return { label: "초기", description: "입덧, 냄새 민감도, 기초 영양 관리 중심", className: "bg-sky-100 text-sky-800 hover:bg-sky-100" };
-  if (week <= 27) return { label: "중기", description: "붓기, 보습, 철분·칼슘 보충, 수면 자세 관리 중심", className: "bg-primary/15 text-primary hover:bg-primary/15" };
-  return { label: "후기", description: "출산 준비, 수유·수면 보조, 압박감 완화 중심", className: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" };
+  if (week <= 12) return { label: "초기", description: "입덧, 냄새 민감도, 기초 영양 관리 중심", className: "bg-sky-100 text-sky-800 hover:bg-sky-100", isPostpartum: false };
+  if (week <= 27) return { label: "중기", description: "붓기, 보습, 철분·칼슘 보충, 수면 자세 관리 중심", className: "bg-primary/15 text-primary hover:bg-primary/15", isPostpartum: false };
+  if (week <= 40) return { label: "후기", description: "출산 준비, 수유·수면 보조, 압박감 완화 중심", className: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100", isPostpartum: false };
+  return { label: "산후", description: "수유·유축 관리, 산후 회복, 신생아 용품, 탈모·체형 케어 중심", className: "bg-rose-100 text-rose-800 hover:bg-rose-100", isPostpartum: true };
 }
 
 function getLabelClass(label: string) {
@@ -330,16 +339,16 @@ export default function Wellness() {
   return (
     <main className="flex-1 overflow-y-auto bg-background p-6 lg:p-8">
       <div className="mb-6 pr-28">
-        <h1 className="text-2xl font-bold text-foreground">임신 주수별 제품 추천</h1>
+        <h1 className="text-2xl font-bold text-foreground">임신·산후 제품 추천</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          합성 리뷰 1,500건을 집계한 신뢰점수·감성점수·안전성 리스크로 제품을 선별합니다.
+          임신 초기부터 산후 12주까지, 합성 리뷰 1,500건을 집계한 신뢰점수·감성점수·안전성 리스크로 제품을 선별합니다.
         </p>
       </div>
 
       {/* 임신 시기 타임라인 배너 */}
       <Card className="mb-5 overflow-hidden">
         <CardContent className="p-0">
-          <div className="grid grid-cols-3 divide-x divide-border">
+          <div className="grid grid-cols-2 divide-x divide-y md:grid-cols-4 md:divide-y-0 divide-border">
             {CATEGORY_TIMELINE.map((t) => {
               const isActive = currentWeek >= t.range[0] && currentWeek <= t.range[1];
               return (
@@ -372,8 +381,10 @@ export default function Wellness() {
           <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
             <div>
               <div className="mb-2 flex items-center gap-3">
-                <span className="text-sm font-semibold text-foreground">임신 주수</span>
-                <Badge className={stage.className}>{stage.label} {currentWeek}주</Badge>
+                <span className="text-sm font-semibold text-foreground">임신·산후 주수</span>
+                <Badge className={stage.className}>
+                  {stage.isPostpartum ? `산후 ${currentWeek - 40}주` : `${stage.label} ${currentWeek}주`}
+                </Badge>
               </div>
               <p className="text-xs text-muted-foreground">{stage.description}</p>
             </div>
@@ -383,9 +394,9 @@ export default function Wellness() {
             </div>
           </div>
 
-          <Slider value={week} onValueChange={setWeek} min={1} max={40} step={1} className="w-full" />
+          <Slider value={week} onValueChange={setWeek} min={1} max={52} step={1} className="w-full" />
           <div className="flex justify-between text-xs text-muted-foreground">
-            <span>1주</span><span>12주</span><span>27주</span><span>40주</span>
+            <span>1주</span><span>12주</span><span>27주</span><span>40주</span><span className="text-rose-600">산후12주</span>
           </div>
 
           <div className="flex flex-wrap gap-2">
