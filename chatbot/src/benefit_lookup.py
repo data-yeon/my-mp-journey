@@ -40,12 +40,20 @@ def load_birth_services() -> list[dict]:
 def extract_region(text: str) -> tuple[str, str]:
     """질문에서 시도, 시군구 추출."""
     services = load_birth_services()
-    known = {s.get("region", "") for s in services}
 
-    for full in sorted(known, key=len, reverse=True):
+    # 1. 전체 region 문자열 일치 (예: "서울특별시 마포구")
+    known_regions = {s.get("region", "") for s in services if s.get("region")}
+    for full in sorted(known_regions, key=len, reverse=True):
         if full and full in text:
             return "", full
 
+    # 2. 시군구 단독 일치 (예: "마포구", "성남시")
+    known_districts = {s.get("district", "") for s in services if s.get("district")}
+    for district in sorted(known_districts, key=len, reverse=True):
+        if district and district in text:
+            return "", district
+
+    # 3. 시도 약칭 일치 (예: "서울" → "서울특별시")
     for short, full in _PROVINCE_MAP.items():
         if short in text:
             return full, ""
@@ -70,7 +78,8 @@ def lookup_birth_services(question: str, limit: int = 5) -> str:
 
     def _matches(s: dict) -> bool:
         region = s.get("region", "")
-        if district and district in region:
+        s_district = s.get("district", "")
+        if district and (district in region or district == s_district):
             return True
         if province and region.startswith(province):
             return True
